@@ -129,5 +129,15 @@ namespace Financial_Tracker.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp_Image_2026-04-07_at_4.41.24_PM-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

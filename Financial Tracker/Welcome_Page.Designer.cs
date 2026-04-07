@@ -37,10 +37,12 @@
             pictureBox1 = new PictureBox();
             button2 = new Button();
             button3 = new Button();
+            pictureBox4 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -140,7 +142,6 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(10, 15, 30);
-            //button3.BackgroundImage = Properties.Resources.full_moon;
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
@@ -150,12 +151,23 @@
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = false;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview;
+            pictureBox4.Location = new Point(1113, 30);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(38, 47);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 3;
+            pictureBox4.TabStop = false;
+            // 
             // Welcome_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1175, 659);
+            Controls.Add(pictureBox4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(panel1);
@@ -166,6 +178,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -180,5 +193,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private PictureBox pictureBox4;
     }
 }
