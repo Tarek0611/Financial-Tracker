@@ -43,7 +43,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.MediumSpringGreen;
+            panel1.BackColor = Color.FromArgb(26, 37, 71);
             panel1.Controls.Add(button1);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
@@ -57,7 +57,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.MediumSpringGreen;
+            button1.BackColor = Color.FromArgb(26, 37, 71);
             button1.BackgroundImage = Properties.Resources.next_button;
             button1.BackgroundImageLayout = ImageLayout.Stretch;
             button1.FlatAppearance.BorderSize = 0;
@@ -72,7 +72,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.MediumSpringGreen;
+            label2.BackColor = Color.FromArgb(26, 37, 71);
             label2.Font = new Font("Impact", 25.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.Transparent;
             label2.Location = new Point(34, 292);
@@ -84,7 +84,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.MediumSpringGreen;
+            label1.BackColor = Color.FromArgb(26, 37, 71);
             label1.Font = new Font("Impact", 25.8000011F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.Transparent;
             label1.Location = new Point(132, 247);
@@ -127,7 +127,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.background;
+            BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1175, 659);
             Controls.Add(panel1);
             Name = "Welcome_Page";
