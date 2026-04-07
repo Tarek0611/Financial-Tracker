@@ -34,7 +34,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.background2;
+            BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1804, 1083);
             Name = "Dashboard";
             Text = "Dashboard";

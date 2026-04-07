@@ -66,20 +66,21 @@ namespace Financial_Tracker
             dash.Show();
             this.Hide();
         }
-        
-    
+
+
 
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
         {
-            
+
             txtUserName.BackColor = Color.FromArgb(35, 45, 65);
         }
         private void txtUserPassword_TextChanged(object sender, EventArgs e)
         {
-            
+
             txtPassword.BackColor = Color.FromArgb(35, 45, 65);
         }
+
     }
-    
+
 }

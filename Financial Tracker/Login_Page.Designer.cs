@@ -37,13 +37,15 @@
             rbFemale = new RadioButton();
             rbMale = new RadioButton();
             lblErrorLogIn = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Gemini_Generated_Image_ejfl4dejfl4dejfl_removebg_preview;
-            pictureBox1.Location = new Point(450, 12);
+            pictureBox1.Location = new Point(109, 3);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(205, 176);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -53,22 +55,22 @@
             // lblUserName
             // 
             lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Segoe UI", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Font = new Font("Impact", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblUserName.ForeColor = Color.White;
-            lblUserName.Location = new Point(262, 252);
+            lblUserName.Location = new Point(4, 207);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(121, 31);
+            lblUserName.Size = new Size(118, 28);
             lblUserName.TabIndex = 1;
             lblUserName.Text = "Username";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPassword.Font = new Font("Impact", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblPassword.ForeColor = Color.White;
-            lblPassword.Location = new Point(262, 325);
+            lblPassword.Location = new Point(3, 273);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(114, 31);
+            lblPassword.Size = new Size(113, 28);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password";
             // 
@@ -76,7 +78,7 @@
             // 
             txtUserName.BackColor = Color.FromArgb(35, 45, 65);
             txtUserName.ForeColor = Color.White;
-            txtUserName.Location = new Point(450, 257);
+            txtUserName.Location = new Point(127, 207);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(192, 27);
             txtUserName.TabIndex = 3;
@@ -86,7 +88,7 @@
             // 
             txtPassword.BackColor = Color.FromArgb(35, 45, 65);
             txtPassword.ForeColor = Color.White;
-            txtPassword.Location = new Point(450, 325);
+            txtPassword.Location = new Point(127, 274);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(192, 27);
             txtPassword.TabIndex = 4;
@@ -94,13 +96,15 @@
             // 
             // btnLogIn
             // 
-            btnLogIn.BackColor = Color.FromArgb(35, 45, 65);
+            btnLogIn.BackgroundImage = Properties.Resources.enter__1_;
+            btnLogIn.BackgroundImageLayout = ImageLayout.Stretch;
+            btnLogIn.FlatAppearance.BorderSize = 0;
+            btnLogIn.FlatStyle = FlatStyle.Flat;
             btnLogIn.ForeColor = Color.White;
-            btnLogIn.Location = new Point(519, 467);
+            btnLogIn.Location = new Point(168, 402);
             btnLogIn.Name = "btnLogIn";
-            btnLogIn.Size = new Size(83, 38);
+            btnLogIn.Size = new Size(81, 78);
             btnLogIn.TabIndex = 5;
-            btnLogIn.Text = "LogIn";
             btnLogIn.UseVisualStyleBackColor = false;
             btnLogIn.Click += btnLogIn_Click;
             // 
@@ -108,7 +112,7 @@
             // 
             rbFemale.AutoSize = true;
             rbFemale.ForeColor = Color.White;
-            rbFemale.Location = new Point(413, 393);
+            rbFemale.Location = new Point(210, 342);
             rbFemale.Name = "rbFemale";
             rbFemale.Size = new Size(78, 24);
             rbFemale.TabIndex = 6;
@@ -119,7 +123,7 @@
             // 
             rbMale.AutoSize = true;
             rbMale.ForeColor = Color.White;
-            rbMale.Location = new Point(270, 393);
+            rbMale.Location = new Point(141, 342);
             rbMale.Name = "rbMale";
             rbMale.Size = new Size(63, 24);
             rbMale.TabIndex = 7;
@@ -135,6 +139,22 @@
             lblErrorLogIn.Size = new Size(0, 20);
             lblErrorLogIn.TabIndex = 8;
             // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(26, 37, 71);
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(btnLogIn);
+            panel1.Controls.Add(rbMale);
+            panel1.Controls.Add(txtUserName);
+            panel1.Controls.Add(rbFemale);
+            panel1.Controls.Add(lblUserName);
+            panel1.Controls.Add(txtPassword);
+            panel1.Controls.Add(lblPassword);
+            panel1.Location = new Point(356, 35);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(416, 507);
+            panel1.TabIndex = 9;
+            // 
             // Login_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -142,18 +162,13 @@
             BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1131, 591);
             Controls.Add(lblErrorLogIn);
-            Controls.Add(rbMale);
-            Controls.Add(rbFemale);
-            Controls.Add(btnLogIn);
-            Controls.Add(txtPassword);
-            Controls.Add(txtUserName);
-            Controls.Add(lblPassword);
-            Controls.Add(lblUserName);
-            Controls.Add(pictureBox1);
+            Controls.Add(panel1);
             Name = "Login_Page";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Page";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -169,5 +184,6 @@
         private RadioButton rbFemale;
         private RadioButton rbMale;
         private Label lblErrorLogIn;
+        private Panel panel1;
     }
 }
