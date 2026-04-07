@@ -101,7 +101,7 @@
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
             btnLogIn.ForeColor = Color.White;
-            btnLogIn.Location = new Point(168, 402);
+            btnLogIn.Location = new Point(160, 390);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(81, 78);
             btnLogIn.TabIndex = 5;
@@ -123,7 +123,7 @@
             // 
             rbMale.AutoSize = true;
             rbMale.ForeColor = Color.White;
-            rbMale.Location = new Point(141, 342);
+            rbMale.Location = new Point(127, 342);
             rbMale.Name = "rbMale";
             rbMale.Size = new Size(63, 24);
             rbMale.TabIndex = 7;
@@ -160,7 +160,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1131, 591);
+            ClientSize = new Size(1175, 659);
             Controls.Add(lblErrorLogIn);
             Controls.Add(panel1);
             Name = "Login_Page";
