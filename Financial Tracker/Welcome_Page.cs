@@ -6,5 +6,15 @@ namespace Financial_Tracker
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // hide current form
+
+            Login_Page login = new Login_Page(); // create instance
+            login.Show(); // show it
+        }
     }
+
 }
+
