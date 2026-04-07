@@ -12,9 +12,11 @@ namespace Financial_Tracker
 {
     public partial class Dashboard : Form
     {
+
         public Dashboard()
         {
             InitializeComponent();
+
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -38,6 +40,16 @@ namespace Financial_Tracker
         }
 
         private void lblUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

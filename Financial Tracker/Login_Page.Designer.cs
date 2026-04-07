@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             lblUserName = new Label();
             lblPassword = new Label();
             txtUserName = new TextBox();
@@ -38,39 +37,30 @@
             rbMale = new RadioButton();
             lblErrorLogIn = new Label();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.Gemini_Generated_Image_ejfl4dejfl4dejfl_removebg_preview;
-            pictureBox1.Location = new Point(109, 3);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(205, 176);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // lblUserName
             // 
             lblUserName.AutoSize = true;
-            lblUserName.Font = new Font("Impact", 13.2000008F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblUserName.Font = new Font("Impact", 13.2000008F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserName.ForeColor = Color.White;
-            lblUserName.Location = new Point(4, 207);
+            lblUserName.Location = new Point(25, 214);
             lblUserName.Name = "lblUserName";
-            lblUserName.Size = new Size(118, 28);
+            lblUserName.Size = new Size(110, 28);
             lblUserName.TabIndex = 1;
             lblUserName.Text = "Username";
             // 
             // lblPassword
             // 
             lblPassword.AutoSize = true;
-            lblPassword.Font = new Font("Impact", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblPassword.Font = new Font("Impact", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblPassword.ForeColor = Color.White;
-            lblPassword.Location = new Point(3, 273);
+            lblPassword.Location = new Point(30, 278);
             lblPassword.Name = "lblPassword";
-            lblPassword.Size = new Size(113, 28);
+            lblPassword.Size = new Size(105, 28);
             lblPassword.TabIndex = 2;
             lblPassword.Text = "Password";
             // 
@@ -78,7 +68,7 @@
             // 
             txtUserName.BackColor = Color.FromArgb(35, 45, 65);
             txtUserName.ForeColor = Color.White;
-            txtUserName.Location = new Point(127, 207);
+            txtUserName.Location = new Point(140, 214);
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(192, 27);
             txtUserName.TabIndex = 3;
@@ -88,7 +78,7 @@
             // 
             txtPassword.BackColor = Color.FromArgb(35, 45, 65);
             txtPassword.ForeColor = Color.White;
-            txtPassword.Location = new Point(127, 274);
+            txtPassword.Location = new Point(140, 278);
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(192, 27);
             txtPassword.TabIndex = 4;
@@ -101,7 +91,7 @@
             btnLogIn.FlatAppearance.BorderSize = 0;
             btnLogIn.FlatStyle = FlatStyle.Flat;
             btnLogIn.ForeColor = Color.White;
-            btnLogIn.Location = new Point(160, 390);
+            btnLogIn.Location = new Point(194, 420);
             btnLogIn.Name = "btnLogIn";
             btnLogIn.Size = new Size(81, 78);
             btnLogIn.TabIndex = 5;
@@ -112,7 +102,7 @@
             // 
             rbFemale.AutoSize = true;
             rbFemale.ForeColor = Color.White;
-            rbFemale.Location = new Point(210, 342);
+            rbFemale.Location = new Point(254, 346);
             rbFemale.Name = "rbFemale";
             rbFemale.Size = new Size(78, 24);
             rbFemale.TabIndex = 6;
@@ -123,7 +113,7 @@
             // 
             rbMale.AutoSize = true;
             rbMale.ForeColor = Color.White;
-            rbMale.Location = new Point(127, 342);
+            rbMale.Location = new Point(140, 346);
             rbMale.Name = "rbMale";
             rbMale.Size = new Size(63, 24);
             rbMale.TabIndex = 7;
@@ -150,10 +140,20 @@
             panel1.Controls.Add(lblUserName);
             panel1.Controls.Add(txtPassword);
             panel1.Controls.Add(lblPassword);
-            panel1.Location = new Point(356, 35);
+            panel1.Location = new Point(302, 35);
             panel1.Name = "panel1";
-            panel1.Size = new Size(416, 507);
+            panel1.Size = new Size(451, 521);
             panel1.TabIndex = 9;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.profile;
+            pictureBox1.Location = new Point(173, 50);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(125, 117);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
             // 
             // Login_Page
             // 
@@ -166,16 +166,14 @@
             Name = "Login_Page";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Page";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label lblUserName;
         private Label lblPassword;
         private TextBox txtUserName;
@@ -185,5 +183,6 @@
         private RadioButton rbMale;
         private Label lblErrorLogIn;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

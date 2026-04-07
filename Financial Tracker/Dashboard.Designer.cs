@@ -30,25 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
-            panel8 = new Panel();
-            lblLogO = new Label();
-            pictureBox6 = new PictureBox();
             panel7 = new Panel();
-            lblSettin = new Label();
-            pictureBox5 = new PictureBox();
             panel6 = new Panel();
             pictureBox4 = new PictureBox();
-            lblAnaly = new Label();
             panel5 = new Panel();
             pictureBox3 = new PictureBox();
-            lblExpenses = new Label();
             panel4 = new Panel();
-            lblDashboard = new Label();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
             label3 = new Label();
-            lblWelcome = new Label();
+            welcome_label = new Label();
             panel3 = new Panel();
             panel11 = new Panel();
             pictureBox9 = new PictureBox();
@@ -59,12 +51,13 @@
             panel9 = new Panel();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
-            lblUser = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            button3 = new Button();
+            pictureBox5 = new PictureBox();
+            button4 = new Button();
             panel1.SuspendLayout();
-            panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel5.SuspendLayout();
@@ -80,12 +73,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(25, 35, 55);
-            panel1.Controls.Add(panel8);
             panel1.Controls.Add(panel7);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
@@ -97,182 +90,91 @@
             panel1.Size = new Size(220, 659);
             panel1.TabIndex = 0;
             // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(35, 45, 63);
-            panel8.Controls.Add(lblLogO);
-            panel8.Controls.Add(pictureBox6);
-            panel8.Cursor = Cursors.Hand;
-            panel8.Location = new Point(18, 573);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(175, 54);
-            panel8.TabIndex = 4;
-            // 
-            // lblLogO
-            // 
-            lblLogO.AutoSize = true;
-            lblLogO.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblLogO.ForeColor = Color.White;
-            lblLogO.Location = new Point(58, 15);
-            lblLogO.Name = "lblLogO";
-            lblLogO.Size = new Size(78, 28);
-            lblLogO.TabIndex = 2;
-            lblLogO.Text = "Logout";
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(20, 6);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(36, 42);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 0;
-            pictureBox6.TabStop = false;
-            // 
             // panel7
             // 
             panel7.BackColor = Color.FromArgb(35, 45, 63);
-            panel7.Controls.Add(lblSettin);
+            panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Cursor = Cursors.Hand;
-            panel7.Location = new Point(18, 373);
+            panel7.Location = new Point(0, 581);
             panel7.Name = "panel7";
-            panel7.Size = new Size(175, 54);
-            panel7.TabIndex = 3;
-            // 
-            // lblSettin
-            // 
-            lblSettin.AutoSize = true;
-            lblSettin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSettin.ForeColor = Color.White;
-            lblSettin.Location = new Point(58, 15);
-            lblSettin.Name = "lblSettin";
-            lblSettin.Size = new Size(89, 28);
-            lblSettin.TabIndex = 1;
-            lblSettin.Text = "Settings";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(20, 6);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(36, 42);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 0;
-            pictureBox5.TabStop = false;
+            panel7.Size = new Size(150, 45);
+            panel7.TabIndex = 6;
             // 
             // panel6
             // 
             panel6.BackColor = Color.FromArgb(35, 45, 63);
+            panel6.Controls.Add(button3);
             panel6.Controls.Add(pictureBox4);
-            panel6.Controls.Add(lblAnaly);
-            panel6.Cursor = Cursors.Hand;
-            panel6.Location = new Point(18, 299);
+            panel6.Location = new Point(0, 351);
             panel6.Name = "panel6";
-            panel6.Size = new Size(175, 54);
-            panel6.TabIndex = 3;
+            panel6.Size = new Size(220, 60);
+            panel6.TabIndex = 5;
             // 
             // pictureBox4
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(20, 6);
+            pictureBox4.Image = Properties.Resources.cogwheel;
+            pictureBox4.Location = new Point(3, 0);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(36, 42);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 0;
+            pictureBox4.Size = new Size(62, 60);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
-            // 
-            // lblAnaly
-            // 
-            lblAnaly.AutoSize = true;
-            lblAnaly.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblAnaly.ForeColor = Color.White;
-            lblAnaly.Location = new Point(58, 15);
-            lblAnaly.Name = "lblAnaly";
-            lblAnaly.Size = new Size(99, 28);
-            lblAnaly.TabIndex = 3;
-            lblAnaly.Text = "Analytics";
             // 
             // panel5
             // 
             panel5.BackColor = Color.FromArgb(35, 45, 63);
+            panel5.Controls.Add(button2);
             panel5.Controls.Add(pictureBox3);
-            panel5.Controls.Add(lblExpenses);
-            panel5.Cursor = Cursors.Hand;
-            panel5.Location = new Point(18, 227);
+            panel5.Location = new Point(0, 264);
             panel5.Name = "panel5";
-            panel5.Size = new Size(175, 54);
-            panel5.TabIndex = 3;
+            panel5.Size = new Size(220, 60);
+            panel5.TabIndex = 4;
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(8, 6);
+            pictureBox3.Image = Properties.Resources.budget;
+            pictureBox3.Location = new Point(3, 0);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(48, 42);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 0;
+            pictureBox3.Size = new Size(62, 60);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
-            // 
-            // lblExpenses
-            // 
-            lblExpenses.AutoSize = true;
-            lblExpenses.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExpenses.ForeColor = Color.White;
-            lblExpenses.Location = new Point(58, 15);
-            lblExpenses.Name = "lblExpenses";
-            lblExpenses.Size = new Size(98, 28);
-            lblExpenses.TabIndex = 2;
-            lblExpenses.Text = "Expenses";
             // 
             // panel4
             // 
             panel4.BackColor = Color.FromArgb(35, 45, 63);
-            panel4.Controls.Add(lblDashboard);
+            panel4.Controls.Add(button1);
             panel4.Controls.Add(pictureBox2);
-            panel4.Cursor = Cursors.Hand;
-            panel4.Location = new Point(18, 155);
+            panel4.Location = new Point(0, 170);
             panel4.Name = "panel4";
-            panel4.Size = new Size(175, 54);
-            panel4.TabIndex = 2;
-            // 
-            // lblDashboard
-            // 
-            lblDashboard.AutoSize = true;
-            lblDashboard.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDashboard.ForeColor = Color.White;
-            lblDashboard.Location = new Point(58, 15);
-            lblDashboard.Name = "lblDashboard";
-            lblDashboard.Size = new Size(114, 28);
-            lblDashboard.TabIndex = 0;
-            lblDashboard.Text = "Dashboard";
+            panel4.Size = new Size(220, 60);
+            panel4.TabIndex = 3;
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(20, 6);
+            pictureBox2.Image = Properties.Resources.dashboard__1_;
+            pictureBox2.Location = new Point(3, 0);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(36, 42);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 0;
+            pictureBox2.Size = new Size(62, 60);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(3, 12);
+            pictureBox1.Image = Properties.Resources.dashboard;
+            pictureBox1.Location = new Point(18, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(202, 127);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
+            pictureBox1.Size = new Size(125, 125);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
             // panel2
             // 
             panel2.BackColor = Color.FromArgb(35, 45, 65);
-            panel2.Controls.Add(lblUser);
             panel2.Controls.Add(label3);
-            panel2.Controls.Add(lblWelcome);
+            panel2.Controls.Add(welcome_label);
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
@@ -282,24 +184,24 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
             label3.Location = new Point(62, 83);
             label3.Name = "label3";
-            label3.Size = new Size(229, 20);
+            label3.Size = new Size(224, 22);
             label3.TabIndex = 1;
-            label3.Text = "Your’r in control of your finance";
+            label3.Text = "Enjoy managing your finances";
             // 
-            // lblWelcome
+            // welcome_label
             // 
-            lblWelcome.AutoSize = true;
-            lblWelcome.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblWelcome.ForeColor = Color.White;
-            lblWelcome.Location = new Point(35, 12);
-            lblWelcome.Name = "lblWelcome";
-            lblWelcome.Size = new Size(340, 60);
-            lblWelcome.TabIndex = 0;
-            lblWelcome.Text = "Welcome back,";
+            welcome_label.AutoSize = true;
+            welcome_label.Font = new Font("Impact", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            welcome_label.ForeColor = Color.White;
+            welcome_label.Location = new Point(35, 12);
+            welcome_label.Name = "welcome_label";
+            welcome_label.Size = new Size(308, 54);
+            welcome_label.TabIndex = 0;
+            welcome_label.Text = "Welcome back,";
             // 
             // panel3
             // 
@@ -325,10 +227,10 @@
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = (Image)resources.GetObject("pictureBox9.Image");
+            pictureBox9.Image = Properties.Resources.spending;
             pictureBox9.Location = new Point(17, 15);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(61, 64);
+            pictureBox9.Size = new Size(64, 64);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
@@ -358,10 +260,10 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Image = Properties.Resources.salary;
             pictureBox8.Location = new Point(17, 15);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(61, 64);
+            pictureBox8.Size = new Size(64, 64);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
@@ -391,10 +293,10 @@
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.Screenshot_2026_04_07_183526;
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(17, 15);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(61, 64);
+            pictureBox7.Size = new Size(64, 64);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
@@ -410,17 +312,76 @@
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
             // 
-            // lblUser
+            // button1
             // 
-            lblUser.AutoSize = true;
-            lblUser.Font = new Font("Segoe UI", 25.8000011F, FontStyle.Bold);
-            lblUser.ForeColor = Color.White;
-            lblUser.Location = new Point(404, 43);
-            lblUser.Name = "lblUser";
-            lblUser.Size = new Size(151, 60);
-            lblUser.TabIndex = 2;
-            lblUser.Text = "label4";
-            lblUser.Click += lblUser_Click;
+            button1.BackColor = Color.FromArgb(35, 45, 63);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(63, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 55);
+            button1.TabIndex = 3;
+            button1.Text = "Dashboard";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(35, 45, 63);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(65, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(151, 55);
+            button2.TabIndex = 6;
+            button2.Text = "Expenses";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(35, 45, 63);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(65, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(151, 55);
+            button3.TabIndex = 6;
+            button3.Text = "Settings";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.logout;
+            pictureBox5.Location = new Point(3, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(43, 42);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 6;
+            pictureBox5.TabStop = false;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(35, 45, 63);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(47, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(103, 45);
+            button4.TabIndex = 7;
+            button4.Text = "Log out";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = false;
             // 
             // Dashboard
             // 
@@ -434,20 +395,12 @@
             Name = "Dashboard";
             Text = "Dashboard";
             panel1.ResumeLayout(false);
-            panel8.ResumeLayout(false);
-            panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel7.ResumeLayout(false);
-            panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel6.ResumeLayout(false);
-            panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel5.ResumeLayout(false);
-            panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             panel4.ResumeLayout(false);
-            panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel2.ResumeLayout(false);
@@ -462,6 +415,7 @@
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
@@ -470,22 +424,6 @@
         private Panel panel1;
         private Panel panel2;
         private Panel panel3;
-        private PictureBox pictureBox1;
-        private Panel panel4;
-        private PictureBox pictureBox2;
-        private Panel panel7;
-        private PictureBox pictureBox5;
-        private Panel panel6;
-        private PictureBox pictureBox4;
-        private Panel panel5;
-        private PictureBox pictureBox3;
-        private Panel panel8;
-        private PictureBox pictureBox6;
-        private Label lblDashboard;
-        private Label lblSettin;
-        private Label lblExpenses;
-        private Label lblAnaly;
-        private Label lblLogO;
         private Panel panel9;
         private PictureBox pictureBox7;
         private Label lblTotalBalance;
@@ -495,8 +433,23 @@
         private Panel panel10;
         private PictureBox pictureBox8;
         private Label label1;
-        private Label lblWelcome;
+        private Label welcome_label;
         private Label label3;
-        private Label lblUser;
+        private PictureBox pictureBox1;
+        private Panel panel4;
+        private Panel panel6;
+        private Panel panel5;
+        private Panel panel7;
+        private PictureBox pictureBox2;
+        private Label label4;
+        private Label label6;
+        private PictureBox pictureBox4;
+        private Label label5;
+        private PictureBox pictureBox3;
+        private Button button1;
+        private Button button3;
+        private Button button2;
+        private Button button4;
+        private PictureBox pictureBox5;
     }
 }
