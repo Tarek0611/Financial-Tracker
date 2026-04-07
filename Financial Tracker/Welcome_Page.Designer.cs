@@ -140,7 +140,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(10, 15, 30);
-            button3.BackgroundImage = Properties.Resources.full_moon;
+            //button3.BackgroundImage = Properties.Resources.full_moon;
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
