@@ -35,6 +35,8 @@
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
+            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -50,7 +52,7 @@
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(341, 45);
+            panel1.Location = new Point(336, 45);
             panel1.Name = "panel1";
             panel1.Size = new Size(512, 548);
             panel1.TabIndex = 0;
@@ -123,12 +125,39 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(10, 15, 30);
+            button2.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(31, 599);
+            button2.Name = "button2";
+            button2.Size = new Size(147, 48);
+            button2.TabIndex = 1;
+            button2.Text = "Contributers";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(10, 15, 30);
+            button3.BackgroundImage = Properties.Resources.full_moon;
+            button3.BackgroundImageLayout = ImageLayout.Stretch;
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(1070, 30);
+            button3.Name = "button3";
+            button3.Size = new Size(68, 66);
+            button3.TabIndex = 2;
+            button3.UseVisualStyleBackColor = false;
+            // 
             // Welcome_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1175, 659);
+            Controls.Add(button3);
+            Controls.Add(button2);
             Controls.Add(panel1);
             Name = "Welcome_Page";
             Text = "Welcome Page";
@@ -149,5 +178,7 @@
         private Label label2;
         private Label label1;
         private Button button1;
+        private Button button2;
+        private Button button3;
     }
 }
