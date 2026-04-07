@@ -55,7 +55,7 @@ namespace Financial_Tracker
                 return;
             }
 
-            // 
+            // Check Male or Female
             string gender = rbMale.Checked ? "Male" : "Female";
 
             // Show a welcome message with the name he entered

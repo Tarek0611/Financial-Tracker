@@ -29,26 +29,25 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
-            button1 = new Button();
+            btnGo = new Button();
             label2 = new Label();
             label1 = new Label();
             pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            button2 = new Button();
+            btnContributers = new Button();
             button3 = new Button();
-            pictureBox4 = new PictureBox();
+            button4 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(26, 37, 71);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(btnGo);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(pictureBox3);
@@ -59,19 +58,19 @@
             panel1.Size = new Size(512, 548);
             panel1.TabIndex = 0;
             // 
-            // button1
+            // btnGo
             // 
-            button1.BackColor = Color.FromArgb(26, 37, 71);
-            button1.BackgroundImage = Properties.Resources.next_button;
-            button1.BackgroundImageLayout = ImageLayout.Stretch;
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(208, 415);
-            button1.Name = "button1";
-            button1.Size = new Size(92, 87);
-            button1.TabIndex = 6;
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
+            btnGo.BackColor = Color.FromArgb(26, 37, 71);
+            btnGo.BackgroundImage = Properties.Resources.next_button;
+            btnGo.BackgroundImageLayout = ImageLayout.Zoom;
+            btnGo.FlatAppearance.BorderSize = 0;
+            btnGo.FlatStyle = FlatStyle.Flat;
+            btnGo.Location = new Point(208, 415);
+            btnGo.Name = "btnGo";
+            btnGo.Size = new Size(92, 87);
+            btnGo.TabIndex = 6;
+            btnGo.UseVisualStyleBackColor = false;
+            btnGo.Click += button1_Click;
             // 
             // label2
             // 
@@ -127,17 +126,17 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // button2
+            // btnContributers
             // 
-            button2.BackColor = Color.FromArgb(10, 15, 30);
-            button2.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(31, 599);
-            button2.Name = "button2";
-            button2.Size = new Size(147, 48);
-            button2.TabIndex = 1;
-            button2.Text = "Contributers";
-            button2.UseVisualStyleBackColor = false;
+            btnContributers.BackColor = Color.FromArgb(10, 15, 30);
+            btnContributers.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnContributers.ForeColor = Color.White;
+            btnContributers.Location = new Point(31, 599);
+            btnContributers.Name = "btnContributers";
+            btnContributers.Size = new Size(147, 48);
+            btnContributers.TabIndex = 1;
+            btnContributers.Text = "Contributers";
+            btnContributers.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
@@ -151,15 +150,18 @@
             button3.TabIndex = 2;
             button3.UseVisualStyleBackColor = false;
             // 
-            // pictureBox4
+            // button4
             // 
-            pictureBox4.Image = Properties.Resources.WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview;
-            pictureBox4.Location = new Point(1113, 30);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(38, 47);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
+            button4.BackColor = Color.Transparent;
+            button4.BackgroundImage = Properties.Resources.WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview;
+            button4.BackgroundImageLayout = ImageLayout.Zoom;
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Location = new Point(1106, 12);
+            button4.Name = "button4";
+            button4.Size = new Size(42, 37);
+            button4.TabIndex = 7;
+            button4.UseVisualStyleBackColor = false;
             // 
             // Welcome_Page
             // 
@@ -167,9 +169,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1175, 659);
-            Controls.Add(pictureBox4);
+            Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnContributers);
             Controls.Add(panel1);
             Name = "Welcome_Page";
             Text = "Welcome Page";
@@ -178,7 +180,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
         }
 
@@ -190,9 +191,9 @@
         private PictureBox pictureBox3;
         private Label label2;
         private Label label1;
-        private Button button1;
-        private Button button2;
+        private Button btnGo;
+        private Button btnContributers;
         private Button button3;
-        private PictureBox pictureBox4;
+        private Button button4;
     }
 }
