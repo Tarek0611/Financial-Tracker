@@ -19,6 +19,8 @@ namespace Financial_Tracker
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+
+
             Color myDefaultColor = Color.FromArgb(35, 45, 65);
             Color errorColor = Color.FromArgb(120, 40, 40);
 
@@ -26,46 +28,58 @@ namespace Financial_Tracker
             txtPassword.BackColor = myDefaultColor;
             lblErrorLogIn.Visible = false;
 
-            //  Verify username
-            if (string.IsNullOrEmpty(txtUserName.Text))
+            if (string.IsNullOrWhiteSpace(txtUserName.Text))
             {
                 txtUserName.BackColor = errorColor;
-                lblErrorLogIn.Text = "⚠️ اسم المستخدم مطلوب!";
-                lblErrorLogIn.ForeColor = Color.Tomato;
+                lblErrorLogIn.Text = "Please enter your new username";
                 lblErrorLogIn.Visible = true;
                 txtUserName.Focus();
                 return;
             }
 
-            //  Password verification
-            if (string.IsNullOrEmpty(txtPassword.Text))
+            // Verify that the user wrote the password
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
             {
                 txtPassword.BackColor = errorColor;
-                lblErrorLogIn.Text = "⚠️ كلمة المرور مطلوبة!";
-                lblErrorLogIn.ForeColor = Color.Tomato;
+                lblErrorLogIn.Text = "Please set a password";
                 lblErrorLogIn.Visible = true;
                 txtPassword.Focus();
                 return;
             }
 
-
-            if (txtUserName.Text == "Mohamed" && txtPassword.Text == "123")
+            //  Check the type selection (if you want Basic)
+            if (!rbMale.Checked && !rbFemale.Checked)
             {
-                MessageBox.Show("تم تسجيل الدخول بنجاح!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                // Go to the next form 
-            }
-            else
-            {
-                lblErrorLogIn.Text = "❌ البيانات غير صحيحة!";
+                lblErrorLogIn.Text = "Please select gender (male/female)";
                 lblErrorLogIn.Visible = true;
+                return;
             }
+
+            // 
+            string gender = rbMale.Checked ? "Male" : "Female";
+
+            // Show a welcome message with the name he entered
+            MessageBox.Show($"Welcome {txtUserName.Text}!\nYour account has been created and logged in successfully.", "Welcome", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //  Go to Dashboard
+            Dashboard dash = new Dashboard();
+            dash.Show();
+            this.Hide();
         }
+        
+    
+
 
         private void txtUserName_TextChanged(object sender, EventArgs e)
         {
             
             txtUserName.BackColor = Color.FromArgb(35, 45, 65);
         }
+        private void txtUserPassword_TextChanged(object sender, EventArgs e)
+        {
+            
+            txtPassword.BackColor = Color.FromArgb(35, 45, 65);
+        }
     }
-    }
+    
 }

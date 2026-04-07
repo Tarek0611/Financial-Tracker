@@ -90,6 +90,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(192, 27);
             txtPassword.TabIndex = 4;
+            txtPassword.TextChanged += txtUserPassword_TextChanged;
             // 
             // btnLogIn
             // 
@@ -129,7 +130,7 @@
             // 
             lblErrorLogIn.AutoSize = true;
             lblErrorLogIn.ForeColor = Color.White;
-            lblErrorLogIn.Location = new Point(519, 525);
+            lblErrorLogIn.Location = new Point(478, 522);
             lblErrorLogIn.Name = "lblErrorLogIn";
             lblErrorLogIn.Size = new Size(0, 20);
             lblErrorLogIn.TabIndex = 8;
