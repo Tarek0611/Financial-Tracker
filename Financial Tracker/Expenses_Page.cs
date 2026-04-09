@@ -16,20 +16,8 @@ namespace Financial_Tracker
         {
             InitializeComponent();
 
-            //Head coloring
-            tblExopenses.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(33, 37, 41);
-            tblExopenses.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
-            tblExopenses.ColumnHeadersDefaultCellStyle.SelectionBackColor = Color.FromArgb(33, 37, 41); // عشان ميتغيرش لما تضغط عليه
-
-            // Background coloring
-            tblExopenses.BackgroundColor = Color.FromArgb(26, 28, 30);
-            tblExopenses.DefaultCellStyle.BackColor = Color.FromArgb(26, 28, 30);
-            tblExopenses.DefaultCellStyle.ForeColor = Color.White;
-            tblExopenses.DefaultCellStyle.SelectionBackColor = Color.FromArgb(100, 100, 100);
-
-
-            tblExopenses.DefaultCellStyle.SelectionForeColor = Color.White; ;
-            tblExopenses.DefaultCellStyle.SelectionForeColor = Color.White;
+         
+           
 
         
         }
@@ -53,7 +41,9 @@ namespace Financial_Tracker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Hide();
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
         }
     }
 }
