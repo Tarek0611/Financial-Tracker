@@ -95,9 +95,9 @@
             // 
             panel3.Controls.Add(panel8);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(220, 125);
+            panel3.Location = new Point(220, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(955, 534);
+            panel3.Size = new Size(955, 659);
             panel3.TabIndex = 5;
             // 
             // panel8
@@ -115,10 +115,9 @@
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(lbluserProfile);
             panel8.Controls.Add(lblProfile);
-            panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
-            panel8.Size = new Size(955, 534);
+            panel8.Size = new Size(955, 659);
             panel8.TabIndex = 3;
             panel8.Paint += panel8_Paint;
             // 
@@ -340,7 +339,6 @@
             panel2.BackColor = Color.FromArgb(35, 45, 65);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(welcome_label);
-            panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
             panel2.Size = new Size(955, 125);
@@ -476,6 +474,7 @@
             button2.Text = "Expenses";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // pictureBox3
             // 
@@ -486,6 +485,7 @@
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += button2_Click;
             // 
             // panel4
             // 
@@ -499,6 +499,7 @@
             // 
             // button1
             // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             button1.BackColor = Color.FromArgb(35, 45, 63);
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
@@ -511,9 +512,11 @@
             button1.Text = "Dashboard";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // pictureBox2
             // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox2.Image = Properties.Resources.dashboard__1_;
             pictureBox2.Location = new Point(3, 0);
             pictureBox2.Name = "pictureBox2";
@@ -521,6 +524,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += button1_Click;
             // 
             // pictureBox1
             // 

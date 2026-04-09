@@ -67,6 +67,13 @@ namespace Financial_Tracker
             setting_Page.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Expenses_Page expenses_ = new Expenses_Page();
+            expenses_.Show();
+            this.Hide();
+        }
     }
-    
+
 }
