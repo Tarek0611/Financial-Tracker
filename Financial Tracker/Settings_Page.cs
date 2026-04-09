@@ -21,5 +21,15 @@ namespace Financial_Tracker
         {
 
         }
+
+        private void lblCurrency_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailProfile_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
