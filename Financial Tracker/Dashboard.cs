@@ -53,5 +53,20 @@ namespace Financial_Tracker
         {
 
         }
+
+        private void panel6_Click(object sender, EventArgs e)
+        {
+            Settings_Page setting_Page = new Settings_Page();
+            setting_Page.Show();
+            this.Hide();
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Settings_Page setting_Page = new Settings_Page();
+            setting_Page.Show();
+            this.Hide();
+        }
     }
+    
 }
