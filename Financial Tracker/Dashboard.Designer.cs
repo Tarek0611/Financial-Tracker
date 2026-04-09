@@ -31,11 +31,16 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             panel1 = new Panel();
             panel7 = new Panel();
+            button4 = new Button();
+            pictureBox5 = new PictureBox();
             panel6 = new Panel();
+            button3 = new Button();
             pictureBox4 = new PictureBox();
             panel5 = new Panel();
+            button2 = new Button();
             pictureBox3 = new PictureBox();
             panel4 = new Panel();
+            button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel2 = new Panel();
@@ -51,13 +56,9 @@
             panel9 = new Panel();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            pictureBox5 = new PictureBox();
-            button4 = new Button();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel5.SuspendLayout();
@@ -73,7 +74,6 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -87,18 +87,44 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 659);
+            panel1.Size = new Size(220, 780);
             panel1.TabIndex = 0;
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 581);
+            panel7.Location = new Point(0, 714);
             panel7.Name = "panel7";
             panel7.Size = new Size(150, 45);
             panel7.TabIndex = 6;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(35, 45, 63);
+            button4.FlatAppearance.BorderSize = 0;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(47, 0);
+            button4.Name = "button4";
+            button4.Size = new Size(103, 45);
+            button4.TabIndex = 7;
+            button4.Text = "Log out";
+            button4.TextAlign = ContentAlignment.MiddleLeft;
+            button4.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.logout;
+            pictureBox5.Location = new Point(3, 0);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(43, 42);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 6;
+            pictureBox5.TabStop = false;
             // 
             // panel6
             // 
@@ -109,6 +135,22 @@
             panel6.Name = "panel6";
             panel6.Size = new Size(220, 60);
             panel6.TabIndex = 5;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(35, 45, 63);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(65, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(151, 55);
+            button3.TabIndex = 6;
+            button3.Text = "Settings";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // pictureBox4
             // 
@@ -130,6 +172,21 @@
             panel5.Size = new Size(220, 60);
             panel5.TabIndex = 4;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(35, 45, 63);
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(65, 4);
+            button2.Name = "button2";
+            button2.Size = new Size(151, 55);
+            button2.TabIndex = 6;
+            button2.Text = "Expenses";
+            button2.TextAlign = ContentAlignment.MiddleLeft;
+            button2.UseVisualStyleBackColor = false;
+            // 
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.budget;
@@ -149,6 +206,21 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(220, 60);
             panel4.TabIndex = 3;
+            // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(35, 45, 63);
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(63, 2);
+            button1.Name = "button1";
+            button1.Size = new Size(151, 55);
+            button1.TabIndex = 3;
+            button1.Text = "Dashboard";
+            button1.TextAlign = ContentAlignment.MiddleLeft;
+            button1.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
@@ -178,7 +250,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(955, 125);
+            panel2.Size = new Size(1159, 125);
             panel2.TabIndex = 1;
             // 
             // label3
@@ -211,18 +283,19 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(220, 125);
             panel3.Name = "panel3";
-            panel3.Size = new Size(955, 534);
+            panel3.Size = new Size(1159, 655);
             panel3.TabIndex = 2;
             // 
             // panel11
             // 
+            panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(35, 45, 63);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(label2);
             panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(662, 30);
+            panel11.Location = new Point(806, 30);
             panel11.Name = "panel11";
-            panel11.Size = new Size(266, 98);
+            panel11.Size = new Size(316, 98);
             panel11.TabIndex = 2;
             // 
             // pictureBox9
@@ -249,13 +322,14 @@
             // 
             // panel10
             // 
+            panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = Color.FromArgb(35, 45, 63);
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(label1);
             panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(360, 30);
+            panel10.Location = new Point(426, 30);
             panel10.Name = "panel10";
-            panel10.Size = new Size(266, 98);
+            panel10.Size = new Size(316, 98);
             panel10.TabIndex = 2;
             // 
             // pictureBox8
@@ -287,7 +361,7 @@
             panel9.Cursor = Cursors.Hand;
             panel9.Location = new Point(45, 30);
             panel9.Name = "panel9";
-            panel9.Size = new Size(266, 98);
+            panel9.Size = new Size(316, 98);
             panel9.TabIndex = 0;
             panel9.Paint += panel9_Paint;
             // 
@@ -312,83 +386,12 @@
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
             // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(35, 45, 63);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(63, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(151, 55);
-            button1.TabIndex = 3;
-            button1.Text = "Dashboard";
-            button1.TextAlign = ContentAlignment.MiddleLeft;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(35, 45, 63);
-            button2.FlatAppearance.BorderSize = 0;
-            button2.FlatStyle = FlatStyle.Flat;
-            button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(65, 4);
-            button2.Name = "button2";
-            button2.Size = new Size(151, 55);
-            button2.TabIndex = 6;
-            button2.Text = "Expenses";
-            button2.TextAlign = ContentAlignment.MiddleLeft;
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(35, 45, 63);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(65, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(151, 55);
-            button3.TabIndex = 6;
-            button3.Text = "Settings";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.logout;
-            pictureBox5.Location = new Point(3, 0);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(43, 42);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 6;
-            pictureBox5.TabStop = false;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(35, 45, 63);
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(47, 0);
-            button4.Name = "button4";
-            button4.Size = new Size(103, 45);
-            button4.TabIndex = 7;
-            button4.Text = "Log out";
-            button4.TextAlign = ContentAlignment.MiddleLeft;
-            button4.UseVisualStyleBackColor = false;
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1175, 659);
+            ClientSize = new Size(1379, 780);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -396,6 +399,7 @@
             Text = "Dashboard";
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             panel5.ResumeLayout(false);
@@ -415,7 +419,6 @@
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
         }
 
