@@ -28,19 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expenses_Page));
             panel8 = new Panel();
-            tblExopenses = new DataGridView();
-            colDate = new DataGridViewTextBoxColumn();
-            colDescription = new DataGridViewTextBoxColumn();
-            colAmount = new DataGridViewTextBoxColumn();
-            colAction = new DataGridViewTextBoxColumn();
-            panel3 = new Panel();
+            label4 = new Label();
+            label2 = new Label();
             label1 = new Label();
-            lblmoney = new Label();
-            lblExpen = new Label();
-            btnGo = new Button();
+            button7 = new Button();
+            button6 = new Button();
+            button5 = new Button();
             panel2 = new Panel();
             label3 = new Label();
             welcome_label = new Label();
@@ -59,8 +53,6 @@
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)tblExopenses).BeginInit();
-            panel3.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
@@ -77,122 +69,96 @@
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(10, 15, 30);
-            panel8.Controls.Add(tblExopenses);
-            panel8.Controls.Add(panel3);
-            panel8.Controls.Add(btnGo);
+            panel8.Controls.Add(label4);
+            panel8.Controls.Add(label2);
+            panel8.Controls.Add(label1);
+            panel8.Controls.Add(button7);
+            panel8.Controls.Add(button6);
+            panel8.Controls.Add(button5);
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(220, 125);
             panel8.Name = "panel8";
-            panel8.Size = new Size(955, 534);
+            panel8.Size = new Size(1154, 644);
             panel8.TabIndex = 5;
             // 
-            // tblExopenses
+            // label4
             // 
-            tblExopenses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            tblExopenses.BackgroundColor = Color.FromArgb(35, 45, 63);
-            tblExopenses.BorderStyle = BorderStyle.None;
-            tblExopenses.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = Color.FromArgb(33, 37, 41);
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.ButtonFace;
-            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(45, 106, 135);
-            dataGridViewCellStyle1.SelectionForeColor = Color.White;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            tblExopenses.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            tblExopenses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tblExopenses.Columns.AddRange(new DataGridViewColumn[] { colDate, colDescription, colAmount, colAction });
-            tblExopenses.EnableHeadersVisualStyles = false;
-            tblExopenses.Location = new Point(25, 120);
-            tblExopenses.Name = "tblExopenses";
-            tblExopenses.RowHeadersVisible = false;
-            tblExopenses.RowHeadersWidth = 51;
-            tblExopenses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            tblExopenses.Size = new Size(901, 289);
-            tblExopenses.TabIndex = 1;
-            tblExopenses.CellContentClick += dataGridView1_CellContentClick;
+            label4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            label4.AutoSize = true;
+            label4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(909, 320);
+            label4.Name = "label4";
+            label4.Size = new Size(122, 25);
+            label4.TabIndex = 5;
+            label4.Text = "Show Reports";
             // 
-            // colDate
+            // label2
             // 
-            colDate.HeaderText = "Date";
-            colDate.MinimumWidth = 6;
-            colDate.Name = "colDate";
-            // 
-            // colDescription
-            // 
-            colDescription.HeaderText = "Description";
-            colDescription.MinimumWidth = 6;
-            colDescription.Name = "colDescription";
-            // 
-            // colAmount
-            // 
-            colAmount.HeaderText = "Amount";
-            colAmount.MinimumWidth = 6;
-            colAmount.Name = "colAmount";
-            // 
-            // colAction
-            // 
-            colAction.HeaderText = "Action";
-            colAction.MinimumWidth = 6;
-            colAction.Name = "colAction";
-            // 
-            // panel3
-            // 
-            panel3.BackColor = Color.FromArgb(35, 45, 63);
-            panel3.Controls.Add(label1);
-            panel3.Controls.Add(lblmoney);
-            panel3.Controls.Add(lblExpen);
-            panel3.Location = new Point(333, 16);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(237, 98);
-            panel3.TabIndex = 0;
+            label2.Anchor = AnchorStyles.Top;
+            label2.AutoSize = true;
+            label2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(520, 320);
+            label2.Name = "label2";
+            label2.Size = new Size(121, 25);
+            label2.TabIndex = 4;
+            label2.Text = "Add Expenses";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Gainsboro;
-            label1.Location = new Point(15, 40);
+            label1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(155, 320);
             label1.Name = "label1";
-            label1.Size = new Size(35, 41);
-            label1.TabIndex = 1;
-            label1.Text = "$";
-            label1.Click += label1_Click;
+            label1.Size = new Size(107, 25);
+            label1.TabIndex = 3;
+            label1.Text = "Add Income";
             // 
-            // lblmoney
+            // button7
             // 
-            lblmoney.AutoSize = true;
-            lblmoney.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblmoney.ForeColor = Color.Gainsboro;
-            lblmoney.Location = new Point(39, 40);
-            lblmoney.Name = "lblmoney";
-            lblmoney.Size = new Size(170, 41);
-            lblmoney.TabIndex = 2;
-            lblmoney.Text = "17,757,278";
+            button7.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            button7.BackColor = Color.FromArgb(10, 15, 30);
+            button7.BackgroundImage = Properties.Resources.report;
+            button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.Cursor = Cursors.Hand;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(884, 186);
+            button7.Name = "button7";
+            button7.Size = new Size(131, 131);
+            button7.TabIndex = 2;
+            button7.UseVisualStyleBackColor = false;
             // 
-            // lblExpen
+            // button6
             // 
-            lblExpen.AutoSize = true;
-            lblExpen.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExpen.ForeColor = Color.DarkGray;
-            lblExpen.Location = new Point(15, 12);
-            lblExpen.Name = "lblExpen";
-            lblExpen.Size = new Size(174, 28);
-            lblExpen.TabIndex = 0;
-            lblExpen.Text = "TOTAL EXPENSES";
+            button6.Anchor = AnchorStyles.Top;
+            button6.BackColor = Color.FromArgb(10, 15, 30);
+            button6.BackgroundImage = Properties.Resources.expense__1_;
+            button6.BackgroundImageLayout = ImageLayout.Stretch;
+            button6.Cursor = Cursors.Hand;
+            button6.FlatAppearance.BorderSize = 0;
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.Location = new Point(520, 186);
+            button6.Name = "button6";
+            button6.Size = new Size(131, 131);
+            button6.TabIndex = 1;
+            button6.UseVisualStyleBackColor = false;
             // 
-            // btnGo
+            // button5
             // 
-            btnGo.BackColor = Color.FromArgb(10, 15, 30);
-            btnGo.BackgroundImage = (Image)resources.GetObject("btnGo.BackgroundImage");
-            btnGo.BackgroundImageLayout = ImageLayout.Zoom;
-            btnGo.FlatAppearance.BorderSize = 0;
-            btnGo.FlatStyle = FlatStyle.Flat;
-            btnGo.Location = new Point(833, 415);
-            btnGo.Name = "btnGo";
-            btnGo.Size = new Size(122, 119);
-            btnGo.TabIndex = 7;
-            btnGo.UseVisualStyleBackColor = false;
+            button5.BackColor = Color.FromArgb(10, 15, 30);
+            button5.BackgroundImage = Properties.Resources.profits;
+            button5.BackgroundImageLayout = ImageLayout.Stretch;
+            button5.Cursor = Cursors.Hand;
+            button5.FlatAppearance.BorderSize = 0;
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.Location = new Point(155, 186);
+            button5.Name = "button5";
+            button5.Size = new Size(131, 131);
+            button5.TabIndex = 0;
+            button5.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
@@ -202,7 +168,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(955, 125);
+            panel2.Size = new Size(1154, 125);
             panel2.TabIndex = 7;
             // 
             // label3
@@ -238,15 +204,16 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 659);
+            panel1.Size = new Size(220, 769);
             panel1.TabIndex = 6;
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 581);
+            panel7.Location = new Point(0, 689);
             panel7.Name = "panel7";
             panel7.Size = new Size(150, 45);
             panel7.TabIndex = 6;
@@ -254,6 +221,7 @@
             // button4
             // 
             button4.BackColor = Color.FromArgb(35, 45, 63);
+            button4.Cursor = Cursors.Hand;
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -289,6 +257,7 @@
             // button3
             // 
             button3.BackColor = Color.FromArgb(35, 45, 63);
+            button3.Cursor = Cursors.Hand;
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -326,6 +295,7 @@
             // button2
             // 
             button2.BackColor = Color.FromArgb(35, 45, 63);
+            button2.Cursor = Cursors.Hand;
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -361,6 +331,7 @@
             // button1
             // 
             button1.BackColor = Color.FromArgb(35, 45, 63);
+            button1.Cursor = Cursors.Hand;
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
@@ -399,16 +370,14 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1175, 659);
+            ClientSize = new Size(1374, 769);
             Controls.Add(panel8);
             Controls.Add(panel2);
             Controls.Add(panel1);
             Name = "Expenses_Page";
             Text = "Expenses_Page";
             panel8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)tblExopenses).EndInit();
-            panel3.ResumeLayout(false);
-            panel3.PerformLayout();
+            panel8.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -427,9 +396,6 @@
         #endregion
 
         private Panel panel8;
-        private Panel panel3;
-        private Label label1;
-        private Label lblExpen;
         private Panel panel2;
         private Label label3;
         private Label welcome_label;
@@ -447,12 +413,11 @@
         private Button button1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
-        private Label lblmoney;
-        private DataGridView tblExopenses;
-        private DataGridViewTextBoxColumn colDate;
-        private DataGridViewTextBoxColumn colDescription;
-        private DataGridViewTextBoxColumn colAmount;
-        private DataGridViewTextBoxColumn colAction;
-        private Button btnGo;
+        private Button button5;
+        private Button button7;
+        private Button button6;
+        private Label label4;
+        private Label label2;
+        private Label label1;
     }
 }

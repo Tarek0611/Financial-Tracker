@@ -151,22 +151,6 @@
             button3.Text = "Settings";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click_1;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(35, 45, 63);
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(65, 3);
-            button3.Name = "button3";
-            button3.Size = new Size(151, 55);
-            button3.TabIndex = 6;
-            button3.Text = "Settings";
-            button3.TextAlign = ContentAlignment.MiddleLeft;
-            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // pictureBox4
