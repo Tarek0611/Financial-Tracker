@@ -22,6 +22,7 @@ namespace Financial_Tracker
 
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
             Expenses_Page expenses_ = new Expenses_Page();
@@ -34,6 +35,16 @@ namespace Financial_Tracker
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
             this.Hide();
+=======
+        private void lblCurrency_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblEmailProfile_Click(object sender, EventArgs e)
+        {
+
+>>>>>>> 7ad76a054d4e6892810515350360dd5890e32e64
         }
     }
 }

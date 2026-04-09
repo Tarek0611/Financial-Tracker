@@ -28,10 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings_Page));
             panel3 = new Panel();
             panel8 = new Panel();
-            btnDiscardProfile = new Button();
             btnSaveChanges = new Button();
             panel12 = new Panel();
             pictureBox9 = new PictureBox();
@@ -68,6 +66,8 @@
             button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            panel13 = new Panel();
+            btnDiscardProfile = new Button();
             panel3.SuspendLayout();
             panel8.SuspendLayout();
             panel12.SuspendLayout();
@@ -89,6 +89,7 @@
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
@@ -97,54 +98,50 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(220, 0);
             panel3.Name = "panel3";
+<<<<<<< HEAD
             panel3.Size = new Size(955, 659);
+=======
+            panel3.Size = new Size(1217, 719);
+>>>>>>> 7ad76a054d4e6892810515350360dd5890e32e64
             panel3.TabIndex = 5;
             // 
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(10, 15, 30);
-            panel8.Controls.Add(btnDiscardProfile);
-            panel8.Controls.Add(btnSaveChanges);
             panel8.Controls.Add(panel12);
-            panel8.Controls.Add(lblBudgetProfile);
-            panel8.Controls.Add(lblReferences);
             panel8.Controls.Add(panel11);
-            panel8.Controls.Add(lblCurrency);
             panel8.Controls.Add(panel10);
-            panel8.Controls.Add(lblEmailProfile);
             panel8.Controls.Add(panel9);
+<<<<<<< HEAD
             panel8.Controls.Add(lbluserProfile);
             panel8.Controls.Add(lblProfile);
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
             panel8.Size = new Size(955, 659);
+=======
+            panel8.Controls.Add(panel13);
+            panel8.Dock = DockStyle.Fill;
+            panel8.Location = new Point(0, 0);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(1217, 719);
+>>>>>>> 7ad76a054d4e6892810515350360dd5890e32e64
             panel8.TabIndex = 3;
             panel8.Paint += panel8_Paint;
             // 
-            // btnDiscardProfile
-            // 
-            btnDiscardProfile.BackColor = Color.DimGray;
-            btnDiscardProfile.FlatStyle = FlatStyle.Flat;
-            btnDiscardProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDiscardProfile.ForeColor = Color.White;
-            btnDiscardProfile.Location = new Point(793, 459);
-            btnDiscardProfile.Name = "btnDiscardProfile";
-            btnDiscardProfile.Size = new Size(135, 44);
-            btnDiscardProfile.TabIndex = 11;
-            btnDiscardProfile.Text = "Discard";
-            btnDiscardProfile.UseVisualStyleBackColor = false;
-            // 
             // btnSaveChanges
             // 
-            btnSaveChanges.BackColor = Color.FromArgb(45, 106, 135);
+            btnSaveChanges.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnSaveChanges.BackColor = Color.FromArgb(25, 35, 55);
+            btnSaveChanges.BackgroundImage = Properties.Resources.check;
+            btnSaveChanges.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSaveChanges.FlatAppearance.BorderSize = 0;
             btnSaveChanges.FlatStyle = FlatStyle.Flat;
             btnSaveChanges.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSaveChanges.ForeColor = Color.White;
-            btnSaveChanges.Location = new Point(603, 459);
+            btnSaveChanges.Location = new Point(360, 433);
             btnSaveChanges.Name = "btnSaveChanges";
-            btnSaveChanges.Size = new Size(161, 44);
+            btnSaveChanges.Size = new Size(64, 64);
             btnSaveChanges.TabIndex = 10;
-            btnSaveChanges.Text = "Save Changes";
             btnSaveChanges.UseVisualStyleBackColor = false;
             // 
             // panel12
@@ -152,17 +149,17 @@
             panel12.BackColor = Color.FromArgb(35, 45, 63);
             panel12.Controls.Add(pictureBox9);
             panel12.Controls.Add(txtBudgetProfile);
-            panel12.Location = new Point(537, 281);
+            panel12.Location = new Point(677, 273);
             panel12.Name = "panel12";
             panel12.Size = new Size(280, 36);
             panel12.TabIndex = 9;
             // 
             // pictureBox9
             // 
-            pictureBox9.Image = Properties.Resources.Screenshot_2026_04_08_205438;
-            pictureBox9.Location = new Point(3, 0);
+            pictureBox9.Image = Properties.Resources.budget__1_;
+            pictureBox9.Location = new Point(4, 0);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(35, 36);
+            pictureBox9.Size = new Size(35, 35);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
@@ -182,7 +179,7 @@
             lblBudgetProfile.AutoSize = true;
             lblBudgetProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBudgetProfile.ForeColor = Color.White;
-            lblBudgetProfile.Location = new Point(537, 253);
+            lblBudgetProfile.Location = new Point(529, 227);
             lblBudgetProfile.Name = "lblBudgetProfile";
             lblBudgetProfile.Size = new Size(112, 25);
             lblBudgetProfile.TabIndex = 8;
@@ -193,7 +190,7 @@
             lblReferences.AutoSize = true;
             lblReferences.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblReferences.ForeColor = Color.Silver;
-            lblReferences.Location = new Point(46, 209);
+            lblReferences.Location = new Point(60, 185);
             lblReferences.Name = "lblReferences";
             lblReferences.Size = new Size(163, 31);
             lblReferences.TabIndex = 7;
@@ -204,7 +201,7 @@
             panel11.BackColor = Color.FromArgb(35, 45, 63);
             panel11.Controls.Add(comboBox1);
             panel11.Controls.Add(pictureBox8);
-            panel11.Location = new Point(49, 281);
+            panel11.Location = new Point(207, 274);
             panel11.Name = "panel11";
             panel11.Size = new Size(280, 36);
             panel11.TabIndex = 6;
@@ -222,10 +219,10 @@
             // 
             // pictureBox8
             // 
-            pictureBox8.Image = (Image)resources.GetObject("pictureBox8.Image");
+            pictureBox8.Image = Properties.Resources.exchange1;
             pictureBox8.Location = new Point(3, 0);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(35, 36);
+            pictureBox8.Size = new Size(35, 35);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
@@ -235,28 +232,29 @@
             lblCurrency.AutoSize = true;
             lblCurrency.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCurrency.ForeColor = Color.White;
-            lblCurrency.Location = new Point(49, 253);
+            lblCurrency.Location = new Point(62, 228);
             lblCurrency.Name = "lblCurrency";
             lblCurrency.Size = new Size(81, 25);
             lblCurrency.TabIndex = 5;
             lblCurrency.Text = "Currency";
+            lblCurrency.Click += lblCurrency_Click;
             // 
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(35, 45, 63);
             panel10.Controls.Add(pictureBox7);
             panel10.Controls.Add(textBox1);
-            panel10.Location = new Point(537, 97);
+            panel10.Location = new Point(677, 89);
             panel10.Name = "panel10";
             panel10.Size = new Size(280, 36);
             panel10.TabIndex = 4;
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.Screenshot_2026_04_08_205438;
-            pictureBox7.Location = new Point(3, 0);
+            pictureBox7.Image = Properties.Resources.mail;
+            pictureBox7.Location = new Point(3, 1);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(35, 36);
+            pictureBox7.Size = new Size(35, 35);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
@@ -266,7 +264,7 @@
             textBox1.BackColor = Color.FromArgb(35, 45, 63);
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(66, 8);
+            textBox1.Location = new Point(63, 8);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(205, 20);
             textBox1.TabIndex = 0;
@@ -276,28 +274,29 @@
             lblEmailProfile.AutoSize = true;
             lblEmailProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmailProfile.ForeColor = Color.White;
-            lblEmailProfile.Location = new Point(537, 69);
+            lblEmailProfile.Location = new Point(531, 43);
             lblEmailProfile.Name = "lblEmailProfile";
             lblEmailProfile.Size = new Size(124, 25);
             lblEmailProfile.TabIndex = 3;
             lblEmailProfile.Text = "Email Address";
+            lblEmailProfile.Click += lblEmailProfile_Click;
             // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(35, 45, 63);
             panel9.Controls.Add(pictureBox6);
             panel9.Controls.Add(txtUserProfile);
-            panel9.Location = new Point(46, 105);
+            panel9.Location = new Point(204, 98);
             panel9.Name = "panel9";
             panel9.Size = new Size(280, 36);
             panel9.TabIndex = 2;
             // 
             // pictureBox6
             // 
-            pictureBox6.Image = Properties.Resources.Screenshot_2026_04_08_205438;
+            pictureBox6.Image = Properties.Resources.user;
             pictureBox6.Location = new Point(3, 0);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(35, 36);
+            pictureBox6.Size = new Size(35, 35);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
@@ -317,18 +316,18 @@
             lbluserProfile.AutoSize = true;
             lbluserProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lbluserProfile.ForeColor = Color.White;
-            lbluserProfile.Location = new Point(46, 77);
+            lbluserProfile.Location = new Point(60, 52);
             lbluserProfile.Name = "lbluserProfile";
-            lbluserProfile.Size = new Size(94, 25);
+            lbluserProfile.Size = new Size(91, 25);
             lbluserProfile.TabIndex = 1;
-            lbluserProfile.Text = "UserName";
+            lbluserProfile.Text = "Username";
             // 
             // lblProfile
             // 
             lblProfile.AutoSize = true;
             lblProfile.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblProfile.ForeColor = Color.Silver;
-            lblProfile.Location = new Point(46, 34);
+            lblProfile.Location = new Point(3, 3);
             lblProfile.Name = "lblProfile";
             lblProfile.Size = new Size(103, 31);
             lblProfile.TabIndex = 0;
@@ -341,7 +340,7 @@
             panel2.Controls.Add(welcome_label);
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(955, 125);
+            panel2.Size = new Size(1217, 125);
             panel2.TabIndex = 4;
             // 
             // label3
@@ -377,15 +376,16 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 659);
+            panel1.Size = new Size(220, 844);
             panel1.TabIndex = 3;
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 581);
+            panel7.Location = new Point(0, 766);
             panel7.Name = "panel7";
             panel7.Size = new Size(150, 45);
             panel7.TabIndex = 6;
@@ -536,11 +536,43 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(25, 35, 55);
+            panel13.Controls.Add(btnSaveChanges);
+            panel13.Controls.Add(lblBudgetProfile);
+            panel13.Controls.Add(btnDiscardProfile);
+            panel13.Controls.Add(lblEmailProfile);
+            panel13.Controls.Add(lblReferences);
+            panel13.Controls.Add(lblCurrency);
+            panel13.Controls.Add(lblProfile);
+            panel13.Controls.Add(lbluserProfile);
+            panel13.Location = new Point(144, 18);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(911, 534);
+            panel13.TabIndex = 12;
+            // 
+            // btnDiscardProfile
+            // 
+            btnDiscardProfile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnDiscardProfile.BackColor = Color.FromArgb(25, 35, 55);
+            btnDiscardProfile.BackgroundImage = Properties.Resources.no;
+            btnDiscardProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDiscardProfile.FlatAppearance.BorderSize = 0;
+            btnDiscardProfile.FlatStyle = FlatStyle.Flat;
+            btnDiscardProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDiscardProfile.ForeColor = Color.White;
+            btnDiscardProfile.Location = new Point(472, 433);
+            btnDiscardProfile.Name = "btnDiscardProfile";
+            btnDiscardProfile.Size = new Size(64, 64);
+            btnDiscardProfile.TabIndex = 11;
+            btnDiscardProfile.UseVisualStyleBackColor = false;
+            // 
             // Settings_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1175, 659);
+            ClientSize = new Size(1437, 844);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
@@ -548,7 +580,6 @@
             Text = "Settings_Page";
             panel3.ResumeLayout(false);
             panel8.ResumeLayout(false);
-            panel8.PerformLayout();
             panel12.ResumeLayout(false);
             panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -572,6 +603,8 @@
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -616,6 +649,7 @@
         private PictureBox pictureBox9;
         private TextBox txtBudgetProfile;
         private Label lblBudgetProfile;
+        private Panel panel13;
         private Button btnDiscardProfile;
     }
 }

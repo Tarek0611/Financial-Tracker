@@ -87,15 +87,16 @@
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 659);
+            panel1.Size = new Size(220, 780);
             panel1.TabIndex = 0;
             // 
             // panel7
             // 
+            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 581);
+            panel7.Location = new Point(0, 714);
             panel7.Name = "panel7";
             panel7.Size = new Size(150, 45);
             panel7.TabIndex = 6;
@@ -151,6 +152,22 @@
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click_1;
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(35, 45, 63);
+            button3.FlatAppearance.BorderSize = 0;
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button3.ForeColor = Color.White;
+            button3.Location = new Point(65, 3);
+            button3.Name = "button3";
+            button3.Size = new Size(151, 55);
+            button3.TabIndex = 6;
+            button3.Text = "Settings";
+            button3.TextAlign = ContentAlignment.MiddleLeft;
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // pictureBox4
             // 
@@ -253,7 +270,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(220, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(955, 125);
+            panel2.Size = new Size(1159, 125);
             panel2.TabIndex = 1;
             // 
             // label3
@@ -286,18 +303,19 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(220, 125);
             panel3.Name = "panel3";
-            panel3.Size = new Size(955, 534);
+            panel3.Size = new Size(1159, 655);
             panel3.TabIndex = 2;
             // 
             // panel11
             // 
+            panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(35, 45, 63);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(label2);
             panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(662, 30);
+            panel11.Location = new Point(806, 30);
             panel11.Name = "panel11";
-            panel11.Size = new Size(266, 98);
+            panel11.Size = new Size(316, 98);
             panel11.TabIndex = 2;
             // 
             // pictureBox9
@@ -324,13 +342,14 @@
             // 
             // panel10
             // 
+            panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = Color.FromArgb(35, 45, 63);
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(label1);
             panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(360, 30);
+            panel10.Location = new Point(426, 30);
             panel10.Name = "panel10";
-            panel10.Size = new Size(266, 98);
+            panel10.Size = new Size(316, 98);
             panel10.TabIndex = 2;
             // 
             // pictureBox8
@@ -362,7 +381,7 @@
             panel9.Cursor = Cursors.Hand;
             panel9.Location = new Point(45, 30);
             panel9.Name = "panel9";
-            panel9.Size = new Size(266, 98);
+            panel9.Size = new Size(316, 98);
             panel9.TabIndex = 0;
             panel9.Paint += panel9_Paint;
             // 
@@ -392,7 +411,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1175, 659);
+            ClientSize = new Size(1379, 780);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
