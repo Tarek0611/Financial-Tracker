@@ -22,6 +22,8 @@ namespace Financial_Tracker
 
         private void btnContributers_Click(object sender, EventArgs e)
         {
+            Contributors contributors = new Contributors();
+            contributors.Show();
             this.Hide();
         }
     }
