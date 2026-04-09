@@ -98,11 +98,8 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(220, 0);
             panel3.Name = "panel3";
-<<<<<<< HEAD
             panel3.Size = new Size(955, 659);
-=======
             panel3.Size = new Size(1217, 719);
->>>>>>> 7ad76a054d4e6892810515350360dd5890e32e64
             panel3.TabIndex = 5;
             // 
             // panel8
@@ -112,19 +109,16 @@
             panel8.Controls.Add(panel11);
             panel8.Controls.Add(panel10);
             panel8.Controls.Add(panel9);
-<<<<<<< HEAD
             panel8.Controls.Add(lbluserProfile);
             panel8.Controls.Add(lblProfile);
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
             panel8.Size = new Size(955, 659);
-=======
             panel8.Controls.Add(panel13);
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
             panel8.Size = new Size(1217, 719);
->>>>>>> 7ad76a054d4e6892810515350360dd5890e32e64
             panel8.TabIndex = 3;
             panel8.Paint += panel8_Paint;
             // 
