@@ -93,6 +93,7 @@
             label4.Size = new Size(122, 25);
             label4.TabIndex = 5;
             label4.Text = "Show Reports";
+            label4.Click += button7_Click;
             // 
             // label2
             // 
@@ -131,6 +132,7 @@
             button7.Size = new Size(131, 131);
             button7.TabIndex = 2;
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button6
             // 
