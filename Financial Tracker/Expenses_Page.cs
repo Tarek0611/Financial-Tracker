@@ -16,10 +16,6 @@ namespace Financial_Tracker
         {
             InitializeComponent();
 
-         
-           
-
-        
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +25,7 @@ namespace Financial_Tracker
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,5 +41,16 @@ namespace Financial_Tracker
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
+    
 }

@@ -373,6 +373,16 @@ namespace Financial_Tracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_2026_04_10_105609_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_2026-04-10_105609-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spending {
             get {
                 object obj = ResourceManager.GetObject("spending", resourceCulture);

@@ -25,8 +25,6 @@ namespace Financial_Tracker
             Contributors contributors = new Contributors();
             contributors.Show();
             this.Hide();
-            Contributors contributors = new Contributors();
-            contributors.Show();
         }
     }
 
