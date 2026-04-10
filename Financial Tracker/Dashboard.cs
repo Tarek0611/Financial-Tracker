@@ -51,6 +51,9 @@ namespace Financial_Tracker
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Settings_Page settings = new Settings_Page();
+            settings.Show();
+            this.Hide();
 
         }
 

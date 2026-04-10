@@ -25,10 +25,16 @@ namespace Financial_Tracker
             Contributors contributors = new Contributors();
             contributors.Show();
             this.Hide();
+<<<<<<< HEAD
             Contributors contributor = new Contributors();
             contributors.Show();
         }
     }
+=======
+>>>>>>> 03a15088de4ea64523fc2c92eb76733b7464c0c2
 
+        }
+
+    }
 }
 

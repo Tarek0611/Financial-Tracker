@@ -16,10 +16,13 @@ namespace Financial_Tracker
         {
             InitializeComponent();
 
+<<<<<<< HEAD
 
 
 
 
+=======
+>>>>>>> 03a15088de4ea64523fc2c92eb76733b7464c0c2
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -46,6 +49,7 @@ namespace Financial_Tracker
             dashboard.Show();
         }
 
+<<<<<<< HEAD
         private void button5_Click(object sender, EventArgs e)
         {
             // 1. بنعمل نسخة (Object) من الفورم اللي عايزين نفتحها
@@ -57,4 +61,24 @@ namespace Financial_Tracker
         }
     }
     
+=======
+        private void panel8_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Show_Reports_Page show_Reports_Page = new Show_Reports_Page();
+            show_Reports_Page.Show();
+            this.Hide();
+        }
+    }
+
+>>>>>>> 03a15088de4ea64523fc2c92eb76733b7464c0c2
 }
