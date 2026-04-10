@@ -158,7 +158,9 @@
             button5.Name = "button5";
             button5.Size = new Size(131, 131);
             button5.TabIndex = 0;
+            button5.Text = " ";
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // panel2
             // 

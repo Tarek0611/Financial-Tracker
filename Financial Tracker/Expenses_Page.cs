@@ -16,10 +16,10 @@ namespace Financial_Tracker
         {
             InitializeComponent();
 
-         
-           
 
-        
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -29,7 +29,7 @@ namespace Financial_Tracker
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -45,5 +45,16 @@ namespace Financial_Tracker
             Dashboard dashboard = new Dashboard();
             dashboard.Show();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            // 1. بنعمل نسخة (Object) من الفورم اللي عايزين نفتحها
+            AddIncome frm = new AddIncome();
+
+            // 2. بنعرض الفورم كـ Popup فوق الداشبورد
+            frm.ShowDialog();
+
+        }
     }
+    
 }
