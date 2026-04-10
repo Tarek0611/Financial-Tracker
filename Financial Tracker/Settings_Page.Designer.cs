@@ -30,25 +30,27 @@
         {
             panel3 = new Panel();
             panel8 = new Panel();
-            btnSaveChanges = new Button();
             panel12 = new Panel();
             pictureBox9 = new PictureBox();
             txtBudgetProfile = new TextBox();
-            lblBudgetProfile = new Label();
-            lblReferences = new Label();
             panel11 = new Panel();
             comboBox1 = new ComboBox();
             pictureBox8 = new PictureBox();
-            lblCurrency = new Label();
             panel10 = new Panel();
             pictureBox7 = new PictureBox();
             textBox1 = new TextBox();
-            lblEmailProfile = new Label();
             panel9 = new Panel();
             pictureBox6 = new PictureBox();
             txtUserProfile = new TextBox();
             lbluserProfile = new Label();
             lblProfile = new Label();
+            panel13 = new Panel();
+            btnSaveChanges = new Button();
+            lblBudgetProfile = new Label();
+            btnDiscardProfile = new Button();
+            lblEmailProfile = new Label();
+            lblReferences = new Label();
+            lblCurrency = new Label();
             panel2 = new Panel();
             label3 = new Label();
             welcome_label = new Label();
@@ -66,8 +68,6 @@
             button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            panel13 = new Panel();
-            btnDiscardProfile = new Button();
             panel3.SuspendLayout();
             panel8.SuspendLayout();
             panel12.SuspendLayout();
@@ -78,6 +78,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            panel13.SuspendLayout();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
@@ -89,7 +90,6 @@
             panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
@@ -98,8 +98,7 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(220, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(955, 659);
-            panel3.Size = new Size(1217, 719);
+            panel3.Size = new Size(1217, 844);
             panel3.TabIndex = 5;
             // 
             // panel8
@@ -109,34 +108,13 @@
             panel8.Controls.Add(panel11);
             panel8.Controls.Add(panel10);
             panel8.Controls.Add(panel9);
-            panel8.Controls.Add(lbluserProfile);
-            panel8.Controls.Add(lblProfile);
-            panel8.Location = new Point(0, 0);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(955, 659);
             panel8.Controls.Add(panel13);
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 0);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1217, 719);
+            panel8.Size = new Size(1217, 844);
             panel8.TabIndex = 3;
             panel8.Paint += panel8_Paint;
-            // 
-            // btnSaveChanges
-            // 
-            btnSaveChanges.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnSaveChanges.BackColor = Color.FromArgb(25, 35, 55);
-            btnSaveChanges.BackgroundImage = Properties.Resources.check;
-            btnSaveChanges.BackgroundImageLayout = ImageLayout.Stretch;
-            btnSaveChanges.FlatAppearance.BorderSize = 0;
-            btnSaveChanges.FlatStyle = FlatStyle.Flat;
-            btnSaveChanges.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSaveChanges.ForeColor = Color.White;
-            btnSaveChanges.Location = new Point(360, 433);
-            btnSaveChanges.Name = "btnSaveChanges";
-            btnSaveChanges.Size = new Size(64, 64);
-            btnSaveChanges.TabIndex = 10;
-            btnSaveChanges.UseVisualStyleBackColor = false;
             // 
             // panel12
             // 
@@ -167,28 +145,6 @@
             txtBudgetProfile.Name = "txtBudgetProfile";
             txtBudgetProfile.Size = new Size(205, 20);
             txtBudgetProfile.TabIndex = 0;
-            // 
-            // lblBudgetProfile
-            // 
-            lblBudgetProfile.AutoSize = true;
-            lblBudgetProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblBudgetProfile.ForeColor = Color.White;
-            lblBudgetProfile.Location = new Point(529, 227);
-            lblBudgetProfile.Name = "lblBudgetProfile";
-            lblBudgetProfile.Size = new Size(112, 25);
-            lblBudgetProfile.TabIndex = 8;
-            lblBudgetProfile.Text = "Budget Limit";
-            // 
-            // lblReferences
-            // 
-            lblReferences.AutoSize = true;
-            lblReferences.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblReferences.ForeColor = Color.Silver;
-            lblReferences.Location = new Point(60, 185);
-            lblReferences.Name = "lblReferences";
-            lblReferences.Size = new Size(163, 31);
-            lblReferences.TabIndex = 7;
-            lblReferences.Text = "PREFERENCES";
             // 
             // panel11
             // 
@@ -221,18 +177,6 @@
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
             // 
-            // lblCurrency
-            // 
-            lblCurrency.AutoSize = true;
-            lblCurrency.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCurrency.ForeColor = Color.White;
-            lblCurrency.Location = new Point(62, 228);
-            lblCurrency.Name = "lblCurrency";
-            lblCurrency.Size = new Size(81, 25);
-            lblCurrency.TabIndex = 5;
-            lblCurrency.Text = "Currency";
-            lblCurrency.Click += lblCurrency_Click;
-            // 
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(35, 45, 63);
@@ -262,18 +206,6 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(205, 20);
             textBox1.TabIndex = 0;
-            // 
-            // lblEmailProfile
-            // 
-            lblEmailProfile.AutoSize = true;
-            lblEmailProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblEmailProfile.ForeColor = Color.White;
-            lblEmailProfile.Location = new Point(531, 43);
-            lblEmailProfile.Name = "lblEmailProfile";
-            lblEmailProfile.Size = new Size(124, 25);
-            lblEmailProfile.TabIndex = 3;
-            lblEmailProfile.Text = "Email Address";
-            lblEmailProfile.Click += lblEmailProfile_Click;
             // 
             // panel9
             // 
@@ -326,6 +258,100 @@
             lblProfile.Size = new Size(103, 31);
             lblProfile.TabIndex = 0;
             lblProfile.Text = "PROFILE";
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(25, 35, 55);
+            panel13.Controls.Add(btnSaveChanges);
+            panel13.Controls.Add(lblBudgetProfile);
+            panel13.Controls.Add(btnDiscardProfile);
+            panel13.Controls.Add(lblEmailProfile);
+            panel13.Controls.Add(lblReferences);
+            panel13.Controls.Add(lblCurrency);
+            panel13.Controls.Add(lblProfile);
+            panel13.Controls.Add(lbluserProfile);
+            panel13.Location = new Point(144, 18);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(911, 534);
+            panel13.TabIndex = 12;
+            // 
+            // btnSaveChanges
+            // 
+            btnSaveChanges.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnSaveChanges.BackColor = Color.FromArgb(25, 35, 55);
+            btnSaveChanges.BackgroundImage = Properties.Resources.check;
+            btnSaveChanges.BackgroundImageLayout = ImageLayout.Stretch;
+            btnSaveChanges.FlatAppearance.BorderSize = 0;
+            btnSaveChanges.FlatStyle = FlatStyle.Flat;
+            btnSaveChanges.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSaveChanges.ForeColor = Color.White;
+            btnSaveChanges.Location = new Point(360, 433);
+            btnSaveChanges.Name = "btnSaveChanges";
+            btnSaveChanges.Size = new Size(64, 64);
+            btnSaveChanges.TabIndex = 10;
+            btnSaveChanges.UseVisualStyleBackColor = false;
+            // 
+            // lblBudgetProfile
+            // 
+            lblBudgetProfile.AutoSize = true;
+            lblBudgetProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblBudgetProfile.ForeColor = Color.White;
+            lblBudgetProfile.Location = new Point(529, 227);
+            lblBudgetProfile.Name = "lblBudgetProfile";
+            lblBudgetProfile.Size = new Size(112, 25);
+            lblBudgetProfile.TabIndex = 8;
+            lblBudgetProfile.Text = "Budget Limit";
+            // 
+            // btnDiscardProfile
+            // 
+            btnDiscardProfile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btnDiscardProfile.BackColor = Color.FromArgb(25, 35, 55);
+            btnDiscardProfile.BackgroundImage = Properties.Resources.no;
+            btnDiscardProfile.BackgroundImageLayout = ImageLayout.Stretch;
+            btnDiscardProfile.FlatAppearance.BorderSize = 0;
+            btnDiscardProfile.FlatStyle = FlatStyle.Flat;
+            btnDiscardProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnDiscardProfile.ForeColor = Color.White;
+            btnDiscardProfile.Location = new Point(472, 433);
+            btnDiscardProfile.Name = "btnDiscardProfile";
+            btnDiscardProfile.Size = new Size(64, 64);
+            btnDiscardProfile.TabIndex = 11;
+            btnDiscardProfile.UseVisualStyleBackColor = false;
+            // 
+            // lblEmailProfile
+            // 
+            lblEmailProfile.AutoSize = true;
+            lblEmailProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEmailProfile.ForeColor = Color.White;
+            lblEmailProfile.Location = new Point(531, 43);
+            lblEmailProfile.Name = "lblEmailProfile";
+            lblEmailProfile.Size = new Size(124, 25);
+            lblEmailProfile.TabIndex = 3;
+            lblEmailProfile.Text = "Email Address";
+            lblEmailProfile.Click += lblEmailProfile_Click;
+            // 
+            // lblReferences
+            // 
+            lblReferences.AutoSize = true;
+            lblReferences.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblReferences.ForeColor = Color.Silver;
+            lblReferences.Location = new Point(60, 185);
+            lblReferences.Name = "lblReferences";
+            lblReferences.Size = new Size(163, 31);
+            lblReferences.TabIndex = 7;
+            lblReferences.Text = "PREFERENCES";
+            // 
+            // lblCurrency
+            // 
+            lblCurrency.AutoSize = true;
+            lblCurrency.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCurrency.ForeColor = Color.White;
+            lblCurrency.Location = new Point(62, 228);
+            lblCurrency.Name = "lblCurrency";
+            lblCurrency.Size = new Size(81, 25);
+            lblCurrency.TabIndex = 5;
+            lblCurrency.Text = "Currency";
+            lblCurrency.Click += lblCurrency_Click;
             // 
             // panel2
             // 
@@ -398,6 +424,7 @@
             button4.Text = "Log out";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // pictureBox5
             // 
@@ -530,38 +557,6 @@
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(25, 35, 55);
-            panel13.Controls.Add(btnSaveChanges);
-            panel13.Controls.Add(lblBudgetProfile);
-            panel13.Controls.Add(btnDiscardProfile);
-            panel13.Controls.Add(lblEmailProfile);
-            panel13.Controls.Add(lblReferences);
-            panel13.Controls.Add(lblCurrency);
-            panel13.Controls.Add(lblProfile);
-            panel13.Controls.Add(lbluserProfile);
-            panel13.Location = new Point(144, 18);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(911, 534);
-            panel13.TabIndex = 12;
-            // 
-            // btnDiscardProfile
-            // 
-            btnDiscardProfile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            btnDiscardProfile.BackColor = Color.FromArgb(25, 35, 55);
-            btnDiscardProfile.BackgroundImage = Properties.Resources.no;
-            btnDiscardProfile.BackgroundImageLayout = ImageLayout.Stretch;
-            btnDiscardProfile.FlatAppearance.BorderSize = 0;
-            btnDiscardProfile.FlatStyle = FlatStyle.Flat;
-            btnDiscardProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnDiscardProfile.ForeColor = Color.White;
-            btnDiscardProfile.Location = new Point(472, 433);
-            btnDiscardProfile.Name = "btnDiscardProfile";
-            btnDiscardProfile.Size = new Size(64, 64);
-            btnDiscardProfile.TabIndex = 11;
-            btnDiscardProfile.UseVisualStyleBackColor = false;
-            // 
             // Settings_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -585,6 +580,8 @@
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -597,8 +594,6 @@
             panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            panel13.ResumeLayout(false);
-            panel13.PerformLayout();
             ResumeLayout(false);
         }
 

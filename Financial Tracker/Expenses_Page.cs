@@ -16,13 +16,8 @@ namespace Financial_Tracker
         {
             InitializeComponent();
 
-<<<<<<< HEAD
 
 
-
-
-=======
->>>>>>> 03a15088de4ea64523fc2c92eb76733b7464c0c2
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -49,19 +44,16 @@ namespace Financial_Tracker
             dashboard.Show();
         }
 
-<<<<<<< HEAD
+
         private void button5_Click(object sender, EventArgs e)
         {
-            // 1. بنعمل نسخة (Object) من الفورم اللي عايزين نفتحها
-            AddIncome frm = new AddIncome();
-
-            // 2. بنعرض الفورم كـ Popup فوق الداشبورد
-            frm.ShowDialog();
+            AddIncome addincome = new AddIncome();
+            addincome.Show();
 
         }
-    }
-    
-=======
+
+
+
         private void panel8_Paint(object sender, PaintEventArgs e)
         {
 
@@ -78,7 +70,12 @@ namespace Financial_Tracker
             show_Reports_Page.Show();
             this.Hide();
         }
-    }
 
->>>>>>> 03a15088de4ea64523fc2c92eb76733b7464c0c2
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login_Page login = new Login_Page();
+            login.Show();
+        }
+    }
 }

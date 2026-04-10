@@ -238,6 +238,7 @@
             button4.Text = "Log out";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // pictureBox5
             // 

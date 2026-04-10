@@ -58,5 +58,12 @@ namespace Financial_Tracker
             dashboard.Show();
             this.Hide();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login_Page login = new Login_Page();
+            login.Show();
+        }
     }
 }

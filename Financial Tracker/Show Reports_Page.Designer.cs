@@ -177,7 +177,6 @@
             // tblShowReports
             // 
             tblShowReports.BackgroundColor = Color.FromArgb(64, 64, 64);
-            tblShowReports.BorderStyle = BorderStyle.None;
             dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = SystemColors.WindowFrame;
             dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
@@ -190,7 +189,7 @@
             tblShowReports.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
             tblShowReports.EnableHeadersVisualStyles = false;
             tblShowReports.GridColor = Color.FromArgb(64, 64, 64);
-            tblShowReports.Location = new Point(87, 420);
+            tblShowReports.Location = new Point(118, 399);
             tblShowReports.Name = "tblShowReports";
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
@@ -202,7 +201,7 @@
             tblShowReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             tblShowReports.RowHeadersVisible = false;
             tblShowReports.RowHeadersWidth = 100;
-            tblShowReports.Size = new Size(945, 288);
+            tblShowReports.Size = new Size(883, 352);
             tblShowReports.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -210,28 +209,28 @@
             dataGridViewTextBoxColumn1.HeaderText = "Amount";
             dataGridViewTextBoxColumn1.MinimumWidth = 6;
             dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 125;
+            dataGridViewTextBoxColumn1.Width = 220;
             // 
             // dataGridViewTextBoxColumn2
             // 
             dataGridViewTextBoxColumn2.HeaderText = "Desription";
             dataGridViewTextBoxColumn2.MinimumWidth = 6;
             dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 125;
+            dataGridViewTextBoxColumn2.Width = 220;
             // 
             // dataGridViewTextBoxColumn3
             // 
             dataGridViewTextBoxColumn3.HeaderText = "Date";
             dataGridViewTextBoxColumn3.MinimumWidth = 6;
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 125;
+            dataGridViewTextBoxColumn3.Width = 220;
             // 
             // dataGridViewTextBoxColumn4
             // 
             dataGridViewTextBoxColumn4.HeaderText = "Action";
             dataGridViewTextBoxColumn4.MinimumWidth = 6;
             dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.Width = 125;
+            dataGridViewTextBoxColumn4.Width = 220;
             // 
             // panel10
             // 
@@ -430,6 +429,7 @@
             button5.Text = "Log out";
             button5.TextAlign = ContentAlignment.MiddleLeft;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // pictureBox11
             // 
@@ -876,10 +876,6 @@
         private Label welcome_label;
         private Panel panel9;
         private DataGridView tblShowReports;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private Panel panel10;
         private Label label1;
         private Label label11;
@@ -908,5 +904,9 @@
         private Button button1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
     }
 }

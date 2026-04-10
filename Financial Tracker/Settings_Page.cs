@@ -45,5 +45,12 @@ namespace Financial_Tracker
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Login_Page login = new Login_Page();
+            login.Show();
+        }
     }
 }
