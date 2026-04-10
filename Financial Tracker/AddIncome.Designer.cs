@@ -32,12 +32,12 @@
             label1 = new Label();
             button2 = new Button();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             textBox3 = new TextBox();
             textBox2 = new TextBox();
             textBox1 = new TextBox();
             dtDate = new DateTimePicker();
             button1 = new Button();
-            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             txtIncome = new TextBox();
             label3 = new Label();
@@ -57,9 +57,9 @@
             pictureBox2 = new PictureBox();
             pictureBox6 = new PictureBox();
             panel8 = new Panel();
+            pictureBox7 = new PictureBox();
             label4 = new Label();
             welcome_label = new Label();
-            pictureBox7 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -120,6 +120,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(664, 571);
             panel1.TabIndex = 4;
+            panel1.Paint += panel1_Paint;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(231, -75);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(201, 141);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // textBox3
             // 
@@ -182,17 +194,6 @@
             button1.TextImageRelation = TextImageRelation.TextBeforeImage;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(231, -75);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(201, 141);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 8;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // panel2
             // 
@@ -415,6 +416,16 @@
             panel8.Size = new Size(1158, 137);
             panel8.TabIndex = 6;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
+            pictureBox7.Location = new Point(412, 48);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(201, 141);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 13;
+            pictureBox7.TabStop = false;
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -436,16 +447,6 @@
             welcome_label.Size = new Size(308, 54);
             welcome_label.TabIndex = 0;
             welcome_label.Text = "Welcome back,";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(412, 48);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(201, 141);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 13;
-            pictureBox7.TabStop = false;
             // 
             // AddIncome
             // 
