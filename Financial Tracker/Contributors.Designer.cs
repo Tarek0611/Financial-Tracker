@@ -168,9 +168,9 @@
             label1.ForeColor = Color.White;
             label1.Location = new Point(54, 152);
             label1.Name = "label1";
-            label1.Size = new Size(217, 28);
+            label1.Size = new Size(213, 28);
             label1.TabIndex = 1;
-            label1.Text = "Tarek Osama AlNagar";
+            label1.Text = "Tarek Osama Alnagar";
             // 
             // label2
             // 
