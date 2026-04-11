@@ -1,6 +1,6 @@
 ﻿namespace Financial_Tracker
 {
-    partial class AddIncome
+    partial class AddExpenses
     {
         /// <summary>
         /// Required designer variable.
@@ -149,7 +149,7 @@
             // 
             comboBox1.Anchor = AnchorStyles.Top;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Salary / Wages", "", "Freelance / Contract", "Work", "", "Business Income", "", "Bonuses", "", "Overtime Pay", "", "Dividends", "", "Interest Income", "", "Rental Income", "", "Capital Gains", "", "Pension / Retirement", "", "Government Benefits", "", "Side Hustle Income", "", "Gifts", "", "Selling Items", "", "Refunds / Cashback", "", "", "Other" });
+            comboBox1.Items.AddRange(new object[] { "Rent / Mortgage", "Utilities", "Groceries", "Transportation", "Dining Out", "Entertainment", "Subscriptions", "Healthcare", "Insurance", "Debt Payments", "Education", "Shopping / Retail", "Travel", "Personal Care", "Household Supplies", "Other" });
             comboBox1.Location = new Point(116, 293);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(364, 28);
@@ -210,7 +210,7 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top;
-            pictureBox1.Image = Properties.Resources.profits;
+            pictureBox1.Image = Properties.Resources.expense__1_;
             pictureBox1.Location = new Point(218, 0);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(110, 110);
@@ -218,7 +218,7 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // AddIncome
+            // AddExpenses
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -226,9 +226,8 @@
             ClientSize = new Size(522, 601);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Name = "AddIncome";
+            Name = "AddExpenses";
             Text = "AddIncome";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();

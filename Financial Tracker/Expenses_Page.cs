@@ -68,7 +68,7 @@ namespace Financial_Tracker
         {
             Show_Reports_Page show_Reports_Page = new Show_Reports_Page();
             show_Reports_Page.Show();
-            this.Hide();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -76,6 +76,12 @@ namespace Financial_Tracker
             this.Close();
             Login_Page login = new Login_Page();
             login.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            AddExpenses expenses = new AddExpenses();
+            expenses.Show();
         }
     }
 }

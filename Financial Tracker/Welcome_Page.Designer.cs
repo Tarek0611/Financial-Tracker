@@ -40,6 +40,7 @@
             // 
             // panel1
             // 
+            panel1.Anchor = AnchorStyles.Top;
             panel1.BackColor = Color.FromArgb(26, 37, 71);
             panel1.Controls.Add(btnGo);
             panel1.Controls.Add(label2);
@@ -51,6 +52,7 @@
             // 
             // btnGo
             // 
+            btnGo.Anchor = AnchorStyles.Top;
             btnGo.BackColor = Color.FromArgb(26, 37, 71);
             btnGo.BackgroundImage = Properties.Resources.next_button;
             btnGo.BackgroundImageLayout = ImageLayout.Zoom;
@@ -65,6 +67,7 @@
             // 
             // label2
             // 
+            label2.Anchor = AnchorStyles.Top;
             label2.AutoSize = true;
             label2.BackColor = Color.FromArgb(26, 37, 71);
             label2.Font = new Font("Impact", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -77,6 +80,7 @@
             // 
             // label1
             // 
+            label1.Anchor = AnchorStyles.Top;
             label1.AutoSize = true;
             label1.BackColor = Color.FromArgb(26, 37, 71);
             label1.Font = new Font("Impact", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
@@ -89,6 +93,7 @@
             // 
             // btnContributers
             // 
+            btnContributers.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             btnContributers.BackColor = Color.FromArgb(10, 15, 30);
             btnContributers.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btnContributers.ForeColor = Color.White;
@@ -102,6 +107,7 @@
             // 
             // button3
             // 
+            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button3.BackColor = Color.FromArgb(10, 15, 30);
             button3.BackgroundImageLayout = ImageLayout.Stretch;
             button3.FlatAppearance.BorderSize = 0;
@@ -114,6 +120,7 @@
             // 
             // button4
             // 
+            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             button4.BackColor = Color.Transparent;
             button4.BackgroundImage = Properties.Resources.WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview;
             button4.BackgroundImageLayout = ImageLayout.Zoom;

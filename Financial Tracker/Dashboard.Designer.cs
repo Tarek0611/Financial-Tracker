@@ -47,6 +47,11 @@
             label3 = new Label();
             welcome_label = new Label();
             panel3 = new Panel();
+            dataGridView1 = new DataGridView();
+            Column1 = new DataGridViewTextBoxColumn();
+            Column2 = new DataGridViewTextBoxColumn();
+            Column3 = new DataGridViewTextBoxColumn();
+            label7 = new Label();
             panel11 = new Panel();
             pictureBox9 = new PictureBox();
             label2 = new Label();
@@ -56,11 +61,6 @@
             panel9 = new Panel();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
-            label7 = new Label();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -73,13 +73,13 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -299,6 +299,49 @@
             panel3.Size = new Size(1159, 655);
             panel3.TabIndex = 2;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.Anchor = AnchorStyles.Top;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
+            dataGridView1.Location = new Point(95, 198);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(1013, 413);
+            dataGridView1.TabIndex = 7;
+            // 
+            // Column1
+            // 
+            Column1.HeaderText = "Date";
+            Column1.MinimumWidth = 6;
+            Column1.Name = "Column1";
+            Column1.Width = 320;
+            // 
+            // Column2
+            // 
+            Column2.HeaderText = "Amount";
+            Column2.MinimumWidth = 6;
+            Column2.Name = "Column2";
+            Column2.Width = 320;
+            // 
+            // Column3
+            // 
+            Column3.HeaderText = "Type";
+            Column3.MinimumWidth = 6;
+            Column3.Name = "Column3";
+            Column3.Width = 320;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label7.ForeColor = SystemColors.AppWorkspace;
+            label7.Location = new Point(61, 148);
+            label7.Name = "label7";
+            label7.Size = new Size(164, 28);
+            label7.TabIndex = 6;
+            label7.Text = "TRANSACTIONS";
+            // 
             // panel11
             // 
             panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
@@ -399,48 +442,6 @@
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
             // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = SystemColors.AppWorkspace;
-            label7.Location = new Point(61, 148);
-            label7.Name = "label7";
-            label7.Size = new Size(164, 28);
-            label7.TabIndex = 6;
-            label7.Text = "TRANSACTIONS";
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(95, 198);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1013, 413);
-            dataGridView1.TabIndex = 7;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Date";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 320;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Amount";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 320;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Type";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 320;
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -466,6 +467,7 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -475,7 +477,6 @@
             panel9.ResumeLayout(false);
             panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 

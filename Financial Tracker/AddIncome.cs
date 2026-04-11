@@ -25,43 +25,12 @@ namespace Financial_Tracker
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            if (double.TryParse(txtIncome.Text, out double income))
-            {
-                if (income >= 0)
-                {
-                    MessageBox.Show("Income added successfully: " + income, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Please enter a positive number.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid numeric value.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(txtIncome.Text, out double income))
-            {
-                if (income >= 0)
-                {
-                    MessageBox.Show("Income added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Income cannot be negative. Please enter a positive value.", "Invalid Input", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid numeric amount.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -83,6 +52,13 @@ namespace Financial_Tracker
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Login_Page login = new Login_Page();
+            login.Show();
         }
     }
 }
