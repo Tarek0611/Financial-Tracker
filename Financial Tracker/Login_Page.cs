@@ -23,9 +23,13 @@ namespace Financial_Tracker
             Dashboard dashboard = new Dashboard();
             this.Hide();
             dashboard.Show();
-           
+
         }
 
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }

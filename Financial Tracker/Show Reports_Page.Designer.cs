@@ -28,11 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             panel3 = new Panel();
+            panel9 = new Panel();
+            tblShowReports = new DataGridView();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            panel10 = new Panel();
+            label1 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            panel16 = new Panel();
+            panel17 = new Panel();
+            pictureBox7 = new PictureBox();
+            label16 = new Label();
+            label17 = new Label();
+            label18 = new Label();
+            panel18 = new Panel();
+            label19 = new Label();
             panel11 = new Panel();
             panel8 = new Panel();
             tblReport = new DataGridView();
@@ -55,39 +76,18 @@
             label5 = new Label();
             pictureBox9 = new PictureBox();
             label2 = new Label();
-            panel18 = new Panel();
-            label19 = new Label();
-            panel10 = new Panel();
-            label18 = new Label();
-            label17 = new Label();
-            label16 = new Label();
-            pictureBox7 = new PictureBox();
-            panel17 = new Panel();
-            panel16 = new Panel();
-            label15 = new Label();
-            label14 = new Label();
-            label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label1 = new Label();
-            tblShowReports = new DataGridView();
-            panel9 = new Panel();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             panel3.SuspendLayout();
+            panel9.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)tblShowReports).BeginInit();
+            panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            panel18.SuspendLayout();
             panel11.SuspendLayout();
             panel8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)tblReport).BeginInit();
             panel13.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            panel18.SuspendLayout();
-            panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)tblShowReports).BeginInit();
-            panel9.SuspendLayout();
             SuspendLayout();
             // 
             // panel3
@@ -97,8 +97,246 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(0, 0);
             panel3.Name = "panel3";
-            panel3.Size = new Size(925, 939);
+            panel3.Size = new Size(941, 939);
             panel3.TabIndex = 5;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.FromArgb(10, 15, 30);
+            panel9.Controls.Add(tblShowReports);
+            panel9.Controls.Add(panel10);
+            panel9.Controls.Add(panel18);
+            panel9.Dock = DockStyle.Fill;
+            panel9.Location = new Point(0, 0);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(941, 939);
+            panel9.TabIndex = 6;
+            panel9.Paint += panel9_Paint;
+            // 
+            // tblShowReports
+            // 
+            tblShowReports.BackgroundColor = Color.FromArgb(64, 64, 64);
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.WindowFrame;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.WindowFrame;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            tblShowReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            tblShowReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            tblShowReports.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
+            tblShowReports.EnableHeadersVisualStyles = false;
+            tblShowReports.GridColor = Color.FromArgb(64, 64, 64);
+            tblShowReports.Location = new Point(13, 260);
+            tblShowReports.Name = "tblShowReports";
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            tblShowReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            tblShowReports.RowHeadersVisible = false;
+            tblShowReports.RowHeadersWidth = 100;
+            tblShowReports.Size = new Size(900, 667);
+            tblShowReports.TabIndex = 4;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.HeaderText = "Amount";
+            dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Width = 225;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.HeaderText = "Desription";
+            dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.Width = 225;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.HeaderText = "Date";
+            dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.Width = 225;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.HeaderText = "Action";
+            dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            dataGridViewTextBoxColumn4.Width = 225;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(189, 215, 238);
+            panel10.Controls.Add(label1);
+            panel10.Controls.Add(label11);
+            panel10.Controls.Add(label12);
+            panel10.Controls.Add(label13);
+            panel10.Controls.Add(label14);
+            panel10.Controls.Add(label15);
+            panel10.Controls.Add(panel16);
+            panel10.Controls.Add(panel17);
+            panel10.Controls.Add(pictureBox7);
+            panel10.Controls.Add(label16);
+            panel10.Controls.Add(label17);
+            panel10.Controls.Add(label18);
+            panel10.Location = new Point(13, 10);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(900, 428);
+            panel10.TabIndex = 3;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.FromArgb(10, 15, 30);
+            label1.Location = new Point(362, 103);
+            label1.Name = "label1";
+            label1.Size = new Size(27, 31);
+            label1.TabIndex = 11;
+            label1.Text = "$";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.FromArgb(10, 15, 30);
+            label11.Location = new Point(362, 152);
+            label11.Name = "label11";
+            label11.Size = new Size(27, 31);
+            label11.TabIndex = 10;
+            label11.Text = "$";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.FromArgb(10, 15, 30);
+            label12.Location = new Point(362, 32);
+            label12.Name = "label12";
+            label12.Size = new Size(27, 31);
+            label12.TabIndex = 9;
+            label12.Text = "$";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label13.ForeColor = Color.FromArgb(10, 15, 30);
+            label13.Location = new Point(386, 151);
+            label13.Name = "label13";
+            label13.Size = new Size(130, 31);
+            label13.TabIndex = 8;
+            label13.Text = "123,154,22";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label14.ForeColor = Color.FromArgb(10, 15, 30);
+            label14.Location = new Point(386, 103);
+            label14.Name = "label14";
+            label14.Size = new Size(130, 31);
+            label14.TabIndex = 7;
+            label14.Text = "123,512,15";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label15.ForeColor = Color.FromArgb(10, 15, 30);
+            label15.Location = new Point(386, 31);
+            label15.Name = "label15";
+            label15.Size = new Size(130, 31);
+            label15.TabIndex = 6;
+            label15.Text = "564,216,25";
+            // 
+            // panel16
+            // 
+            panel16.BackColor = Color.Black;
+            panel16.Location = new Point(52, 137);
+            panel16.Name = "panel16";
+            panel16.Size = new Size(497, 3);
+            panel16.TabIndex = 5;
+            // 
+            // panel17
+            // 
+            panel17.BackColor = Color.Black;
+            panel17.Location = new Point(52, 66);
+            panel17.Name = "panel17";
+            panel17.Size = new Size(491, 3);
+            panel17.TabIndex = 4;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.Screenshot_2026_04_10_153210;
+            pictureBox7.Location = new Point(603, 14);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(233, 218);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox7.TabIndex = 3;
+            pictureBox7.TabStop = false;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label16.ForeColor = Color.FromArgb(10, 15, 30);
+            label16.Location = new Point(52, 152);
+            label16.Name = "label16";
+            label16.Size = new Size(142, 31);
+            label16.TabIndex = 2;
+            label16.Text = "Net Balance";
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label17.ForeColor = Color.FromArgb(10, 15, 30);
+            label17.Location = new Point(52, 92);
+            label17.Name = "label17";
+            label17.Size = new Size(170, 31);
+            label17.TabIndex = 1;
+            label17.Text = "Total Expenses";
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label18.ForeColor = Color.FromArgb(10, 15, 30);
+            label18.Location = new Point(52, 28);
+            label18.Name = "label18";
+            label18.Size = new Size(152, 31);
+            label18.TabIndex = 0;
+            label18.Text = "Total Income";
+            // 
+            // panel18
+            // 
+            panel18.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            panel18.BackColor = Color.FromArgb(35, 45, 63);
+            panel18.Controls.Add(label19);
+            panel18.Cursor = Cursors.Hand;
+            panel18.Location = new Point(3465, 30);
+            panel18.Name = "panel18";
+            panel18.Size = new Size(316, 98);
+            panel18.TabIndex = 2;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label19.ForeColor = SystemColors.AppWorkspace;
+            label19.Location = new Point(84, 15);
+            label19.Name = "label19";
+            label19.Size = new Size(174, 28);
+            label19.TabIndex = 0;
+            label19.Text = "TOTAL EXPENSES";
             // 
             // panel11
             // 
@@ -108,7 +346,7 @@
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(label2);
             panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(1531, 30);
+            panel11.Location = new Point(1547, 30);
             panel11.Name = "panel11";
             panel11.Size = new Size(316, 98);
             panel11.TabIndex = 2;
@@ -349,253 +587,22 @@
             label2.TabIndex = 0;
             label2.Text = "TOTAL EXPENSES";
             // 
-            // panel18
-            // 
-            panel18.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            panel18.BackColor = Color.FromArgb(35, 45, 63);
-            panel18.Controls.Add(label19);
-            panel18.Cursor = Cursors.Hand;
-            panel18.Location = new Point(3449, 30);
-            panel18.Name = "panel18";
-            panel18.Size = new Size(316, 98);
-            panel18.TabIndex = 2;
-            // 
-            // label19
-            // 
-            label19.AutoSize = true;
-            label19.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label19.ForeColor = SystemColors.AppWorkspace;
-            label19.Location = new Point(84, 15);
-            label19.Name = "label19";
-            label19.Size = new Size(174, 28);
-            label19.TabIndex = 0;
-            label19.Text = "TOTAL EXPENSES";
-            // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(189, 215, 238);
-            panel10.Controls.Add(label1);
-            panel10.Controls.Add(label11);
-            panel10.Controls.Add(label12);
-            panel10.Controls.Add(label13);
-            panel10.Controls.Add(label14);
-            panel10.Controls.Add(label15);
-            panel10.Controls.Add(panel16);
-            panel10.Controls.Add(panel17);
-            panel10.Controls.Add(pictureBox7);
-            panel10.Controls.Add(label16);
-            panel10.Controls.Add(label17);
-            panel10.Controls.Add(label18);
-            panel10.Location = new Point(13, 10);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(900, 428);
-            panel10.TabIndex = 3;
-            // 
-            // label18
-            // 
-            label18.AutoSize = true;
-            label18.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label18.ForeColor = Color.FromArgb(10, 15, 30);
-            label18.Location = new Point(52, 28);
-            label18.Name = "label18";
-            label18.Size = new Size(152, 31);
-            label18.TabIndex = 0;
-            label18.Text = "Total Income";
-            // 
-            // label17
-            // 
-            label17.AutoSize = true;
-            label17.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label17.ForeColor = Color.FromArgb(10, 15, 30);
-            label17.Location = new Point(52, 92);
-            label17.Name = "label17";
-            label17.Size = new Size(170, 31);
-            label17.TabIndex = 1;
-            label17.Text = "Total Expenses";
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label16.ForeColor = Color.FromArgb(10, 15, 30);
-            label16.Location = new Point(52, 152);
-            label16.Name = "label16";
-            label16.Size = new Size(142, 31);
-            label16.TabIndex = 2;
-            label16.Text = "Net Balance";
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.Screenshot_2026_04_10_153210;
-            pictureBox7.Location = new Point(603, 14);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(233, 218);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 3;
-            pictureBox7.TabStop = false;
-            // 
-            // panel17
-            // 
-            panel17.BackColor = Color.Black;
-            panel17.Location = new Point(52, 66);
-            panel17.Name = "panel17";
-            panel17.Size = new Size(491, 3);
-            panel17.TabIndex = 4;
-            // 
-            // panel16
-            // 
-            panel16.BackColor = Color.Black;
-            panel16.Location = new Point(52, 137);
-            panel16.Name = "panel16";
-            panel16.Size = new Size(497, 3);
-            panel16.TabIndex = 5;
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.FromArgb(10, 15, 30);
-            label15.Location = new Point(386, 31);
-            label15.Name = "label15";
-            label15.Size = new Size(130, 31);
-            label15.TabIndex = 6;
-            label15.Text = "564,216,25";
-            // 
-            // label14
-            // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.FromArgb(10, 15, 30);
-            label14.Location = new Point(386, 103);
-            label14.Name = "label14";
-            label14.Size = new Size(130, 31);
-            label14.TabIndex = 7;
-            label14.Text = "123,512,15";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.FromArgb(10, 15, 30);
-            label13.Location = new Point(386, 151);
-            label13.Name = "label13";
-            label13.Size = new Size(130, 31);
-            label13.TabIndex = 8;
-            label13.Text = "123,154,22";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.FromArgb(10, 15, 30);
-            label12.Location = new Point(362, 32);
-            label12.Name = "label12";
-            label12.Size = new Size(27, 31);
-            label12.TabIndex = 9;
-            label12.Text = "$";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(10, 15, 30);
-            label11.Location = new Point(362, 152);
-            label11.Name = "label11";
-            label11.Size = new Size(27, 31);
-            label11.TabIndex = 10;
-            label11.Text = "$";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(10, 15, 30);
-            label1.Location = new Point(362, 103);
-            label1.Name = "label1";
-            label1.Size = new Size(27, 31);
-            label1.TabIndex = 11;
-            label1.Text = "$";
-            // 
-            // tblShowReports
-            // 
-            tblShowReports.BackgroundColor = Color.FromArgb(64, 64, 64);
-            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = SystemColors.WindowFrame;
-            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = SystemColors.WindowFrame;
-            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
-            tblShowReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            tblShowReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tblShowReports.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
-            tblShowReports.EnableHeadersVisualStyles = false;
-            tblShowReports.GridColor = Color.FromArgb(64, 64, 64);
-            tblShowReports.Location = new Point(13, 260);
-            tblShowReports.Name = "tblShowReports";
-            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = SystemColors.ActiveCaption;
-            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
-            tblShowReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            tblShowReports.RowHeadersVisible = false;
-            tblShowReports.RowHeadersWidth = 100;
-            tblShowReports.Size = new Size(900, 667);
-            tblShowReports.TabIndex = 4;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(10, 15, 30);
-            panel9.Controls.Add(tblShowReports);
-            panel9.Controls.Add(panel10);
-            panel9.Controls.Add(panel18);
-            panel9.Dock = DockStyle.Fill;
-            panel9.Location = new Point(0, 0);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(925, 939);
-            panel9.TabIndex = 6;
-            panel9.Paint += panel9_Paint;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Amount";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Desription";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.HeaderText = "Date";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewTextBoxColumn4.HeaderText = "Action";
-            dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.Width = 225;
-            // 
             // Show_Reports_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(925, 939);
+            ClientSize = new Size(941, 939);
             Controls.Add(panel3);
             Name = "Show_Reports_Page";
             Text = "Show_Reports_Page";
             panel3.ResumeLayout(false);
+            panel9.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)tblShowReports).EndInit();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            panel18.ResumeLayout(false);
+            panel18.PerformLayout();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             panel8.ResumeLayout(false);
@@ -604,13 +611,6 @@
             panel13.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            panel18.ResumeLayout(false);
-            panel18.PerformLayout();
-            panel10.ResumeLayout(false);
-            panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)tblShowReports).EndInit();
-            panel9.ResumeLayout(false);
             ResumeLayout(false);
         }
 

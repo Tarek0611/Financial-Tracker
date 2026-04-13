@@ -34,13 +34,13 @@
             btnSaveChanges = new Button();
             btnDiscardProfile = new Button();
             label5 = new Label();
-            textBox2 = new TextBox();
-            comboBox1 = new ComboBox();
+            txtDescription = new TextBox();
+            cmbCategory = new ComboBox();
             label3 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            dtpDate = new DateTimePicker();
             label2 = new Label();
             label1 = new Label();
-            textBox1 = new TextBox();
+            txtAmount = new TextBox();
             pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel1.SuspendLayout();
@@ -79,13 +79,13 @@
             panel1.Controls.Add(btnSaveChanges);
             panel1.Controls.Add(btnDiscardProfile);
             panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(comboBox1);
+            panel1.Controls.Add(txtDescription);
+            panel1.Controls.Add(cmbCategory);
             panel1.Controls.Add(label3);
-            panel1.Controls.Add(dateTimePicker1);
+            panel1.Controls.Add(dtpDate);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox1);
+            panel1.Controls.Add(txtAmount);
             panel1.Controls.Add(pictureBox1);
             panel1.Location = new Point(-7, 2);
             panel1.Name = "panel1";
@@ -107,6 +107,7 @@
             btnSaveChanges.Size = new Size(64, 64);
             btnSaveChanges.TabIndex = 12;
             btnSaveChanges.UseVisualStyleBackColor = false;
+            btnSaveChanges.Click += btnSaveChanges_Click;
             // 
             // btnDiscardProfile
             // 
@@ -123,6 +124,7 @@
             btnDiscardProfile.Size = new Size(64, 64);
             btnDiscardProfile.TabIndex = 13;
             btnDiscardProfile.UseVisualStyleBackColor = false;
+            btnDiscardProfile.Click += btnDiscardProfile_Click;
             // 
             // label5
             // 
@@ -136,24 +138,24 @@
             label5.TabIndex = 8;
             label5.Text = "Description";
             // 
-            // textBox2
+            // txtDescription
             // 
-            textBox2.Anchor = AnchorStyles.Top;
-            textBox2.Location = new Point(116, 368);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(364, 133);
-            textBox2.TabIndex = 7;
+            txtDescription.Anchor = AnchorStyles.Top;
+            txtDescription.Location = new Point(116, 368);
+            txtDescription.Multiline = true;
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(364, 133);
+            txtDescription.TabIndex = 7;
             // 
-            // comboBox1
+            // cmbCategory
             // 
-            comboBox1.Anchor = AnchorStyles.Top;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Salary / Wages", "", "Freelance / Contract", "Work", "", "Business Income", "", "Bonuses", "", "Overtime Pay", "", "Dividends", "", "Interest Income", "", "Rental Income", "", "Capital Gains", "", "Pension / Retirement", "", "Government Benefits", "", "Side Hustle Income", "", "Gifts", "", "Selling Items", "", "Refunds / Cashback", "", "", "Other" });
-            comboBox1.Location = new Point(116, 293);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(364, 28);
-            comboBox1.TabIndex = 6;
+            cmbCategory.Anchor = AnchorStyles.Top;
+            cmbCategory.FormattingEnabled = true;
+            cmbCategory.Items.AddRange(new object[] { "Salary / Wages", "", "Freelance / Contract", "Work", "", "Business Income", "", "Bonuses", "", "Overtime Pay", "", "Dividends", "", "Interest Income", "", "Rental Income", "", "Capital Gains", "", "Pension / Retirement", "", "Government Benefits", "", "Side Hustle Income", "", "Gifts", "", "Selling Items", "", "Refunds / Cashback", "", "", "Other" });
+            cmbCategory.Location = new Point(116, 293);
+            cmbCategory.Name = "cmbCategory";
+            cmbCategory.Size = new Size(364, 28);
+            cmbCategory.TabIndex = 6;
             // 
             // label3
             // 
@@ -167,13 +169,13 @@
             label3.TabIndex = 5;
             label3.Text = "Category";
             // 
-            // dateTimePicker1
+            // dtpDate
             // 
-            dateTimePicker1.Anchor = AnchorStyles.Top;
-            dateTimePicker1.Location = new Point(116, 222);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(364, 27);
-            dateTimePicker1.TabIndex = 4;
+            dtpDate.Anchor = AnchorStyles.Top;
+            dtpDate.Location = new Point(116, 222);
+            dtpDate.Name = "dtpDate";
+            dtpDate.Size = new Size(364, 27);
+            dtpDate.TabIndex = 4;
             // 
             // label2
             // 
@@ -199,13 +201,13 @@
             label1.TabIndex = 2;
             label1.Text = "Amount";
             // 
-            // textBox1
+            // txtAmount
             // 
-            textBox1.Anchor = AnchorStyles.Top;
-            textBox1.Location = new Point(116, 156);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(364, 27);
-            textBox1.TabIndex = 1;
+            txtAmount.Anchor = AnchorStyles.Top;
+            txtAmount.Location = new Point(116, 156);
+            txtAmount.Name = "txtAmount";
+            txtAmount.Size = new Size(364, 27);
+            txtAmount.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -217,6 +219,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // AddIncome
             // 
@@ -228,7 +231,6 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "AddIncome";
             Text = "AddIncome";
-            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
@@ -243,12 +245,12 @@
         private PictureBox pictureBox1;
         private Label label2;
         private Label label1;
-        private TextBox textBox1;
-        private ComboBox comboBox1;
+        private TextBox txtAmount;
+        private ComboBox cmbCategory;
         private Label label3;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpDate;
         private Label label5;
-        private TextBox textBox2;
+        private TextBox txtDescription;
         private Button btnSaveChanges;
         private Button btnDiscardProfile;
     }

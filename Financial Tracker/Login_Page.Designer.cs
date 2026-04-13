@@ -75,7 +75,6 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(192, 27);
             txtUserName.TabIndex = 3;
-            
             // 
             // txtPassword
             // 
@@ -86,7 +85,6 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(192, 27);
             txtPassword.TabIndex = 4;
-            
             // 
             // btnLogIn
             // 
@@ -164,6 +162,7 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // Login_Page
             // 

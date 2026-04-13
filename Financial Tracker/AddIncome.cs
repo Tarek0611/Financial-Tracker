@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Financial_Tracker.FinanceLogic;
 
 namespace Financial_Tracker
 {
@@ -17,48 +18,63 @@ namespace Financial_Tracker
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
+
+        private void AddIncome_Load(object sender, EventArgs e)
+        {
+            // اكتب هنا الكود اللي عايزه يتنفذ لما الشاشة تفتح
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+
+        private void btnSaveChanges_Click(object sender, EventArgs e)
         {
+            try
+            {
+                // 1. التحقق إن الحقول مش فاضية (لازم يختار من القائمة)
+                if (string.IsNullOrWhiteSpace(txtAmount.Text) || cmbCategory.SelectedIndex == -1)
+                {
+                    MessageBox.Show("Please fill in the amount and select a category! ⚠️", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                if (!decimal.TryParse(txtAmount.Text, out decimal amountValue) || amountValue <= 0)
+                {
+                    MessageBox.Show("Please enter a valid amount!");
+                    return;
+                }
 
+                // عمل Object من نوع Income
+                var newIncome = new FinanceLogic.Income()
+                {
+                    Amount = amountValue,
+                    Date = dtpDate.Value,
+                    Category = (FinanceLogic.Category)cmbCategory.SelectedIndex,
+                    Description = txtDescription.Text
+                };
 
+                // الحفظ
+                FinanceLogic.FinanceManager.AddTransaction(newIncome);
+                FinanceLogic.FinanceManager.SaveToFile();
+
+                MessageBox.Show("Income added successfully! 💰");
+
+                txtAmount.Clear();
+                txtDescription.Clear();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnDiscardProfile_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            // This closes the AddIncome form and returns focus to the Dashboard
             this.Close();
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
-        }
-        // anything
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-            Login_Page login = new Login_Page();
-            login.Show();
         }
     }
 }
