@@ -288,11 +288,11 @@
             label12.AutoSize = true;
             label12.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label12.ForeColor = Color.White;
-            label12.Location = new Point(30, 158);
+            label12.Location = new Point(12, 158);
             label12.Name = "label12";
-            label12.Size = new Size(249, 28);
+            label12.Size = new Size(280, 28);
             label12.TabIndex = 10;
-            label12.Text = "Reem mohamed ebrahim";
+            label12.Text = "Reem Mohamed Abdelkader";
             // 
             // panel5
             // 
