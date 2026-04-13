@@ -75,7 +75,7 @@
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(192, 27);
             txtUserName.TabIndex = 3;
-            txtUserName.TextChanged += txtUserName_TextChanged;
+            
             // 
             // txtPassword
             // 
@@ -86,7 +86,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.Size = new Size(192, 27);
             txtPassword.TabIndex = 4;
-            txtPassword.TextChanged += txtUserPassword_TextChanged;
+            
             // 
             // btnLogIn
             // 
