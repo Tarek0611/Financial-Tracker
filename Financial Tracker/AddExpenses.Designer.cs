@@ -87,7 +87,7 @@
             panel1.Controls.Add(label1);
             panel1.Controls.Add(txtAmount);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(265, 0);
+            panel1.Location = new Point(1, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(539, 599);
             panel1.TabIndex = 7;
@@ -226,7 +226,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1059, 601);
+            ClientSize = new Size(531, 601);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "AddExpenses";
