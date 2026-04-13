@@ -19,11 +19,30 @@ namespace Financial_Tracker
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
+            //  نسحب البيانات من التكست بوكس  
+            string username = txtUserName.Text;
+            string password = txtPassword.Text;
 
-            Dashboard dashboard = new Dashboard();
-            this.Hide();
-            dashboard.Show();
+            //  التحقق من البيانات
+            if (username == "admin" && password == "123")
+            {
+                MessageBox.Show("أهلاً بك! جاري الدخول...");
 
+                // 3. فتح الـ Dashboard وإخفاء صفحة الدخول
+                Dashboard dashboard = new Dashboard();
+                dashboard.Show();
+                this.Hide();
+            }
+            else
+            {
+                // 4. في حالة الخطأ
+                MessageBox.Show("خطأ في الاسم أو كلمة السر.. حاول تاني!");
+
+                // تنظيف الخانات للتحضير لمحاولة جديدة
+                txtUserName.Clear();
+                txtPassword.Clear();
+                txtUserName.Focus(); // وضع المؤشر في خانة الاسم
+            }
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -31,5 +50,4 @@ namespace Financial_Tracker
 
         }
     }
-
 }

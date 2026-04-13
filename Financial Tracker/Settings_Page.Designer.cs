@@ -1,17 +1,18 @@
-﻿namespace Financial_Tracker
+﻿
+namespace Financial_Tracker
 {
     partial class Settings_Page
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
             {
@@ -20,13 +21,13 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
-        private void InitializeComponent()
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
         {
             panel3 = new Panel();
             panel8 = new Panel();
@@ -34,16 +35,14 @@
             pictureBox9 = new PictureBox();
             txtBudgetProfile = new TextBox();
             panel11 = new Panel();
-            comboBox1 = new ComboBox();
+            cmb_Currency = new ComboBox();
             pictureBox8 = new PictureBox();
             panel10 = new Panel();
             pictureBox7 = new PictureBox();
-            textBox1 = new TextBox();
+            txt_Email = new TextBox();
             panel9 = new Panel();
             pictureBox6 = new PictureBox();
             txtUserProfile = new TextBox();
-            lbluserProfile = new Label();
-            lblProfile = new Label();
             panel13 = new Panel();
             btnSaveChanges = new Button();
             lblBudgetProfile = new Label();
@@ -51,6 +50,8 @@
             lblEmailProfile = new Label();
             lblReferences = new Label();
             lblCurrency = new Label();
+            lblProfile = new Label();
+            lbluserProfile = new Label();
             panel2 = new Panel();
             label3 = new Label();
             welcome_label = new Label();
@@ -91,19 +92,20 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // panel3
-            // 
-            panel3.Controls.Add(panel8);
+            // 
+            // panel3
+            // 
+            panel3.Controls.Add(panel8);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(220, 0);
+            panel3.Location = new Point(192, 0);
+            panel3.Margin = new Padding(3, 2, 3, 2);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1217, 844);
+            panel3.Size = new Size(1065, 633);
             panel3.TabIndex = 5;
-            // 
-            // panel8
-            // 
-            panel8.BackColor = Color.FromArgb(10, 15, 30);
+            // 
+            // panel8
+            // 
+            panel8.BackColor = Color.FromArgb(10, 15, 30);
             panel8.Controls.Add(panel12);
             panel8.Controls.Add(panel11);
             panel8.Controls.Add(panel10);
@@ -111,157 +113,152 @@
             panel8.Controls.Add(panel13);
             panel8.Dock = DockStyle.Fill;
             panel8.Location = new Point(0, 0);
+            panel8.Margin = new Padding(3, 2, 3, 2);
             panel8.Name = "panel8";
-            panel8.Size = new Size(1217, 844);
+            panel8.Size = new Size(1065, 633);
             panel8.TabIndex = 3;
             panel8.Paint += panel8_Paint;
-            // 
-            // panel12
-            // 
-            panel12.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // panel12
+            // 
+            panel12.BackColor = Color.FromArgb(35, 45, 63);
             panel12.Controls.Add(pictureBox9);
             panel12.Controls.Add(txtBudgetProfile);
-            panel12.Location = new Point(677, 273);
+            panel12.Location = new Point(592, 205);
+            panel12.Margin = new Padding(3, 2, 3, 2);
             panel12.Name = "panel12";
-            panel12.Size = new Size(280, 36);
+            panel12.Size = new Size(245, 27);
             panel12.TabIndex = 9;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.Image = Properties.Resources.budget__1_;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.Image = Properties.Resources.budget__1_;
             pictureBox9.Location = new Point(4, 0);
+            pictureBox9.Margin = new Padding(3, 2, 3, 2);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(35, 35);
+            pictureBox9.Size = new Size(31, 26);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
-            // 
-            // txtBudgetProfile
-            // 
-            txtBudgetProfile.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // txtBudgetProfile
+            // 
+            txtBudgetProfile.BackColor = Color.FromArgb(35, 45, 63);
             txtBudgetProfile.BorderStyle = BorderStyle.None;
             txtBudgetProfile.ForeColor = Color.White;
-            txtBudgetProfile.Location = new Point(66, 8);
+            txtBudgetProfile.Location = new Point(58, 6);
+            txtBudgetProfile.Margin = new Padding(3, 2, 3, 2);
             txtBudgetProfile.Name = "txtBudgetProfile";
-            txtBudgetProfile.Size = new Size(205, 20);
+            txtBudgetProfile.Size = new Size(179, 16);
             txtBudgetProfile.TabIndex = 0;
-            // 
-            // panel11
-            // 
-            panel11.BackColor = Color.FromArgb(35, 45, 63);
-            panel11.Controls.Add(comboBox1);
+            txtBudgetProfile.TextChanged += txtBudgetProfile_TextChanged;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(35, 45, 63);
+            panel11.Controls.Add(cmb_Currency);
             panel11.Controls.Add(pictureBox8);
-            panel11.Location = new Point(207, 274);
+            panel11.Location = new Point(181, 206);
+            panel11.Margin = new Padding(3, 2, 3, 2);
             panel11.Name = "panel11";
-            panel11.Size = new Size(280, 36);
+            panel11.Size = new Size(245, 27);
             panel11.TabIndex = 6;
-            // 
-            // comboBox1
-            // 
-            comboBox1.BackColor = Color.FromArgb(35, 45, 63);
-            comboBox1.FlatStyle = FlatStyle.Flat;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "EUR", "USD", "EGP" });
-            comboBox1.Location = new Point(63, 5);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(205, 28);
-            comboBox1.TabIndex = 8;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.Image = Properties.Resources.exchange1;
+            // 
+            // cmb_Currency
+            // 
+            cmb_Currency.BackColor = Color.FromArgb(35, 45, 63);
+            cmb_Currency.FlatStyle = FlatStyle.Flat;
+            cmb_Currency.FormattingEnabled = true;
+            cmb_Currency.Items.AddRange(new object[] { "EUR", "USD", "EGP" });
+            cmb_Currency.Location = new Point(55, 4);
+            cmb_Currency.Margin = new Padding(3, 2, 3, 2);
+            cmb_Currency.Name = "cmb_Currency";
+            cmb_Currency.Size = new Size(180, 23);
+            cmb_Currency.TabIndex = 8;
+            cmb_Currency.SelectedIndexChanged += cmb_Currency_SelectedIndexChanged;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Properties.Resources.exchange1;
             pictureBox8.Location = new Point(3, 0);
+            pictureBox8.Margin = new Padding(3, 2, 3, 2);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(35, 35);
+            pictureBox8.Size = new Size(31, 26);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
-            // 
-            // panel10
-            // 
-            panel10.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(35, 45, 63);
             panel10.Controls.Add(pictureBox7);
-            panel10.Controls.Add(textBox1);
-            panel10.Location = new Point(677, 89);
+            panel10.Controls.Add(txt_Email);
+            panel10.Location = new Point(592, 67);
+            panel10.Margin = new Padding(3, 2, 3, 2);
             panel10.Name = "panel10";
-            panel10.Size = new Size(280, 36);
+            panel10.Size = new Size(245, 27);
             panel10.TabIndex = 4;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Properties.Resources.mail;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Properties.Resources.mail;
             pictureBox7.Location = new Point(3, 1);
+            pictureBox7.Margin = new Padding(3, 2, 3, 2);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(35, 35);
+            pictureBox7.Size = new Size(31, 26);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
-            // 
-            // textBox1
-            // 
-            textBox1.BackColor = Color.FromArgb(35, 45, 63);
-            textBox1.BorderStyle = BorderStyle.None;
-            textBox1.ForeColor = Color.White;
-            textBox1.Location = new Point(63, 8);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(205, 20);
-            textBox1.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            panel9.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // txt_Email
+            // 
+            txt_Email.BackColor = Color.FromArgb(35, 45, 63);
+            txt_Email.BorderStyle = BorderStyle.None;
+            txt_Email.ForeColor = Color.White;
+            txt_Email.Location = new Point(55, 6);
+            txt_Email.Margin = new Padding(3, 2, 3, 2);
+            txt_Email.Name = "txt_Email";
+            txt_Email.Size = new Size(179, 16);
+            txt_Email.TabIndex = 0;
+            txt_Email.TextChanged += txt_Email_TextChanged;
+            // 
+            // panel9
+            // 
+            panel9.BackColor = Color.FromArgb(35, 45, 63);
             panel9.Controls.Add(pictureBox6);
             panel9.Controls.Add(txtUserProfile);
-            panel9.Location = new Point(204, 98);
+            panel9.Location = new Point(178, 74);
+            panel9.Margin = new Padding(3, 2, 3, 2);
             panel9.Name = "panel9";
-            panel9.Size = new Size(280, 36);
+            panel9.Size = new Size(245, 27);
             panel9.TabIndex = 2;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.Image = Properties.Resources.user;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Image = Properties.Resources.user;
             pictureBox6.Location = new Point(3, 0);
+            pictureBox6.Margin = new Padding(3, 2, 3, 2);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(35, 35);
+            pictureBox6.Size = new Size(31, 26);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
-            // 
-            // txtUserProfile
-            // 
-            txtUserProfile.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // txtUserProfile
+            // 
+            txtUserProfile.BackColor = Color.FromArgb(35, 45, 63);
             txtUserProfile.BorderStyle = BorderStyle.None;
             txtUserProfile.ForeColor = Color.White;
-            txtUserProfile.Location = new Point(66, 8);
+            txtUserProfile.Location = new Point(58, 6);
+            txtUserProfile.Margin = new Padding(3, 2, 3, 2);
             txtUserProfile.Name = "txtUserProfile";
-            txtUserProfile.Size = new Size(205, 20);
+            txtUserProfile.Size = new Size(179, 16);
             txtUserProfile.TabIndex = 0;
-            // 
-            // lbluserProfile
-            // 
-            lbluserProfile.AutoSize = true;
-            lbluserProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lbluserProfile.ForeColor = Color.White;
-            lbluserProfile.Location = new Point(60, 52);
-            lbluserProfile.Name = "lbluserProfile";
-            lbluserProfile.Size = new Size(91, 25);
-            lbluserProfile.TabIndex = 1;
-            lbluserProfile.Text = "Username";
-            // 
-            // lblProfile
-            // 
-            lblProfile.AutoSize = true;
-            lblProfile.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblProfile.ForeColor = Color.Silver;
-            lblProfile.Location = new Point(3, 3);
-            lblProfile.Name = "lblProfile";
-            lblProfile.Size = new Size(103, 31);
-            lblProfile.TabIndex = 0;
-            lblProfile.Text = "PROFILE";
-            // 
-            // panel13
-            // 
-            panel13.BackColor = Color.FromArgb(25, 35, 55);
+            txtUserProfile.TextChanged += txtUserProfile_TextChanged;
+            // 
+            // panel13
+            // 
+            panel13.BackColor = Color.FromArgb(25, 35, 55);
             panel13.Controls.Add(btnSaveChanges);
             panel13.Controls.Add(lblBudgetProfile);
             panel13.Controls.Add(btnDiscardProfile);
@@ -270,14 +267,15 @@
             panel13.Controls.Add(lblCurrency);
             panel13.Controls.Add(lblProfile);
             panel13.Controls.Add(lbluserProfile);
-            panel13.Location = new Point(144, 18);
+            panel13.Location = new Point(117, 14);
+            panel13.Margin = new Padding(3, 2, 3, 2);
             panel13.Name = "panel13";
-            panel13.Size = new Size(911, 534);
+            panel13.Size = new Size(797, 400);
             panel13.TabIndex = 12;
-            // 
-            // btnSaveChanges
-            // 
-            btnSaveChanges.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            // 
+            // btnSaveChanges
+            // 
+            btnSaveChanges.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSaveChanges.BackColor = Color.FromArgb(25, 35, 55);
             btnSaveChanges.BackgroundImage = Properties.Resources.check;
             btnSaveChanges.BackgroundImageLayout = ImageLayout.Stretch;
@@ -285,26 +283,28 @@
             btnSaveChanges.FlatStyle = FlatStyle.Flat;
             btnSaveChanges.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSaveChanges.ForeColor = Color.White;
-            btnSaveChanges.Location = new Point(360, 433);
+            btnSaveChanges.Location = new Point(315, 325);
+            btnSaveChanges.Margin = new Padding(3, 2, 3, 2);
             btnSaveChanges.Name = "btnSaveChanges";
-            btnSaveChanges.Size = new Size(64, 64);
+            btnSaveChanges.Size = new Size(56, 48);
             btnSaveChanges.TabIndex = 10;
             btnSaveChanges.UseVisualStyleBackColor = false;
-            // 
-            // lblBudgetProfile
-            // 
-            lblBudgetProfile.AutoSize = true;
+            btnSaveChanges.Click += btnSaveChanges_Click;
+            // 
+            // lblBudgetProfile
+            // 
+            lblBudgetProfile.AutoSize = true;
             lblBudgetProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBudgetProfile.ForeColor = Color.White;
-            lblBudgetProfile.Location = new Point(529, 227);
+            lblBudgetProfile.Location = new Point(463, 170);
             lblBudgetProfile.Name = "lblBudgetProfile";
-            lblBudgetProfile.Size = new Size(112, 25);
+            lblBudgetProfile.Size = new Size(94, 20);
             lblBudgetProfile.TabIndex = 8;
             lblBudgetProfile.Text = "Budget Limit";
-            // 
-            // btnDiscardProfile
-            // 
-            btnDiscardProfile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            // 
+            // btnDiscardProfile
+            // 
+            btnDiscardProfile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnDiscardProfile.BackColor = Color.FromArgb(25, 35, 55);
             btnDiscardProfile.BackgroundImage = Properties.Resources.no;
             btnDiscardProfile.BackgroundImageLayout = ImageLayout.Stretch;
@@ -312,82 +312,106 @@
             btnDiscardProfile.FlatStyle = FlatStyle.Flat;
             btnDiscardProfile.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnDiscardProfile.ForeColor = Color.White;
-            btnDiscardProfile.Location = new Point(472, 433);
+            btnDiscardProfile.Location = new Point(413, 325);
+            btnDiscardProfile.Margin = new Padding(3, 2, 3, 2);
             btnDiscardProfile.Name = "btnDiscardProfile";
-            btnDiscardProfile.Size = new Size(64, 64);
+            btnDiscardProfile.Size = new Size(56, 48);
             btnDiscardProfile.TabIndex = 11;
             btnDiscardProfile.UseVisualStyleBackColor = false;
-            // 
-            // lblEmailProfile
-            // 
-            lblEmailProfile.AutoSize = true;
+            // 
+            // lblEmailProfile
+            // 
+            lblEmailProfile.AutoSize = true;
             lblEmailProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmailProfile.ForeColor = Color.White;
-            lblEmailProfile.Location = new Point(531, 43);
+            lblEmailProfile.Location = new Point(465, 32);
             lblEmailProfile.Name = "lblEmailProfile";
-            lblEmailProfile.Size = new Size(124, 25);
+            lblEmailProfile.Size = new Size(103, 20);
             lblEmailProfile.TabIndex = 3;
             lblEmailProfile.Text = "Email Address";
             lblEmailProfile.Click += lblEmailProfile_Click;
-            // 
-            // lblReferences
-            // 
-            lblReferences.AutoSize = true;
+            // 
+            // lblReferences
+            // 
+            lblReferences.AutoSize = true;
             lblReferences.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblReferences.ForeColor = Color.Silver;
-            lblReferences.Location = new Point(60, 185);
+            lblReferences.Location = new Point(52, 139);
             lblReferences.Name = "lblReferences";
-            lblReferences.Size = new Size(163, 31);
+            lblReferences.Size = new Size(136, 25);
             lblReferences.TabIndex = 7;
             lblReferences.Text = "PREFERENCES";
-            // 
-            // lblCurrency
-            // 
-            lblCurrency.AutoSize = true;
+            // 
+            // lblCurrency
+            // 
+            lblCurrency.AutoSize = true;
             lblCurrency.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCurrency.ForeColor = Color.White;
-            lblCurrency.Location = new Point(62, 228);
+            lblCurrency.Location = new Point(54, 171);
             lblCurrency.Name = "lblCurrency";
-            lblCurrency.Size = new Size(81, 25);
+            lblCurrency.Size = new Size(66, 20);
             lblCurrency.TabIndex = 5;
             lblCurrency.Text = "Currency";
             lblCurrency.Click += lblCurrency_Click;
-            // 
-            // panel2
-            // 
-            panel2.BackColor = Color.FromArgb(35, 45, 65);
+            // 
+            // lblProfile
+            // 
+            lblProfile.AutoSize = true;
+            lblProfile.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblProfile.ForeColor = Color.Silver;
+            lblProfile.Location = new Point(3, 2);
+            lblProfile.Name = "lblProfile";
+            lblProfile.Size = new Size(86, 25);
+            lblProfile.TabIndex = 0;
+            lblProfile.Text = "PROFILE";
+            // 
+            // lbluserProfile
+            // 
+            lbluserProfile.AutoSize = true;
+            lbluserProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lbluserProfile.ForeColor = Color.White;
+            lbluserProfile.Location = new Point(52, 39);
+            lbluserProfile.Name = "lbluserProfile";
+            lbluserProfile.Size = new Size(75, 20);
+            lbluserProfile.TabIndex = 1;
+            lbluserProfile.Text = "Username";
+            // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(35, 45, 65);
             panel2.Controls.Add(label3);
             panel2.Controls.Add(welcome_label);
-            panel2.Location = new Point(220, 0);
+            panel2.Location = new Point(192, 0);
+            panel2.Margin = new Padding(3, 2, 3, 2);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1217, 125);
+            panel2.Size = new Size(1065, 94);
             panel2.TabIndex = 4;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
             label3.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(62, 83);
+            label3.Location = new Point(54, 62);
             label3.Name = "label3";
-            label3.Size = new Size(224, 22);
+            label3.Size = new Size(197, 19);
             label3.TabIndex = 1;
             label3.Text = "Enjoy managing your finances";
-            // 
-            // welcome_label
-            // 
-            welcome_label.AutoSize = true;
+            // 
+            // welcome_label
+            // 
+            welcome_label.AutoSize = true;
             welcome_label.Font = new Font("Impact", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             welcome_label.ForeColor = Color.White;
-            welcome_label.Location = new Point(35, 12);
+            welcome_label.Location = new Point(31, 9);
             welcome_label.Name = "welcome_label";
-            welcome_label.Size = new Size(308, 54);
+            welcome_label.Size = new Size(250, 43);
             welcome_label.TabIndex = 0;
             welcome_label.Text = "Welcome back,";
-            // 
-            // panel1
-            // 
-            panel1.BackColor = Color.FromArgb(25, 35, 55);
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.FromArgb(25, 35, 55);
             panel1.Controls.Add(panel7);
             panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
@@ -395,176 +419,191 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(220, 844);
+            panel1.Size = new Size(192, 633);
             panel1.TabIndex = 3;
-            // 
-            // panel7
-            // 
-            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            // 
+            // panel7
+            // 
+            panel7.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(button4);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 766);
+            panel7.Location = new Point(0, 574);
+            panel7.Margin = new Padding(3, 2, 3, 2);
             panel7.Name = "panel7";
-            panel7.Size = new Size(150, 45);
+            panel7.Size = new Size(131, 34);
             panel7.TabIndex = 6;
-            // 
-            // button4
-            // 
-            button4.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.FromArgb(35, 45, 63);
             button4.FlatAppearance.BorderSize = 0;
             button4.FlatStyle = FlatStyle.Flat;
             button4.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button4.ForeColor = Color.White;
-            button4.Location = new Point(47, 0);
+            button4.Location = new Point(41, 0);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(103, 45);
+            button4.Size = new Size(90, 34);
             button4.TabIndex = 7;
             button4.Text = "Log out";
             button4.TextAlign = ContentAlignment.MiddleLeft;
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = Properties.Resources.logout;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Image = Properties.Resources.logout;
             pictureBox5.Location = new Point(3, 0);
+            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(43, 42);
+            pictureBox5.Size = new Size(38, 32);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
-            // 
-            // panel6
-            // 
-            panel6.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // panel6
+            // 
+            panel6.BackColor = Color.FromArgb(35, 45, 63);
             panel6.Controls.Add(button3);
             panel6.Controls.Add(pictureBox4);
-            panel6.Location = new Point(0, 343);
+            panel6.Location = new Point(0, 257);
+            panel6.Margin = new Padding(3, 2, 3, 2);
             panel6.Name = "panel6";
-            panel6.Size = new Size(220, 60);
+            panel6.Size = new Size(192, 45);
             panel6.TabIndex = 5;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // button3
+            // 
+            button3.BackColor = Color.FromArgb(35, 45, 63);
             button3.FlatAppearance.BorderSize = 0;
             button3.FlatStyle = FlatStyle.Flat;
             button3.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(65, 3);
+            button3.Location = new Point(57, 2);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(151, 55);
+            button3.Size = new Size(132, 41);
             button3.TabIndex = 6;
             button3.Text = "Settings";
             button3.TextAlign = ContentAlignment.MiddleLeft;
             button3.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Image = Properties.Resources.cogwheel;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = Properties.Resources.cogwheel;
             pictureBox4.Location = new Point(3, 0);
+            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(62, 60);
+            pictureBox4.Size = new Size(54, 45);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
-            // 
-            // panel5
-            // 
-            panel5.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // panel5
+            // 
+            panel5.BackColor = Color.FromArgb(35, 45, 63);
             panel5.Controls.Add(button2);
             panel5.Controls.Add(pictureBox3);
-            panel5.Location = new Point(0, 264);
+            panel5.Location = new Point(0, 198);
+            panel5.Margin = new Padding(3, 2, 3, 2);
             panel5.Name = "panel5";
-            panel5.Size = new Size(220, 60);
+            panel5.Size = new Size(192, 45);
             panel5.TabIndex = 4;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(35, 45, 63);
             button2.FlatAppearance.BorderSize = 0;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(65, 4);
+            button2.Location = new Point(57, 3);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(151, 55);
+            button2.Size = new Size(132, 41);
             button2.TabIndex = 6;
             button2.Text = "Expenses";
             button2.TextAlign = ContentAlignment.MiddleLeft;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Properties.Resources.budget;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Properties.Resources.budget;
             pictureBox3.Location = new Point(3, 0);
+            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(62, 60);
+            pictureBox3.Size = new Size(54, 45);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
             pictureBox3.Click += button2_Click;
-            // 
-            // panel4
-            // 
-            panel4.BackColor = Color.FromArgb(35, 45, 63);
+            // 
+            // panel4
+            // 
+            panel4.BackColor = Color.FromArgb(35, 45, 63);
             panel4.Controls.Add(button1);
             panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(0, 170);
+            panel4.Location = new Point(0, 128);
+            panel4.Margin = new Padding(3, 2, 3, 2);
             panel4.Name = "panel4";
-            panel4.Size = new Size(220, 60);
+            panel4.Size = new Size(192, 45);
             panel4.TabIndex = 3;
-            // 
-            // button1
-            // 
-            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            // 
+            // button1
+            // 
+            button1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             button1.BackColor = Color.FromArgb(35, 45, 63);
             button1.FlatAppearance.BorderSize = 0;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(63, 2);
+            button1.Location = new Point(55, 2);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(151, 55);
+            button1.Size = new Size(132, 41);
             button1.TabIndex = 3;
             button1.Text = "Dashboard";
             button1.TextAlign = ContentAlignment.MiddleLeft;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
-            // 
-            // pictureBox2
-            // 
-            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left;
             pictureBox2.Image = Properties.Resources.dashboard__1_;
             pictureBox2.Location = new Point(3, 0);
+            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(62, 60);
+            pictureBox2.Size = new Size(54, 45);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
             pictureBox2.Click += button1_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.dashboard;
-            pictureBox1.Location = new Point(18, 12);
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.dashboard;
+            pictureBox1.Location = new Point(16, 9);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 125);
+            pictureBox1.Size = new Size(109, 94);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            // 
-            // Settings_Page
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            // 
+            // Settings_Page
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1437, 844);
+            ClientSize = new Size(1257, 633);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Settings_Page";
             Text = "Settings_Page";
             panel3.ResumeLayout(false);
@@ -597,6 +636,11 @@
             ResumeLayout(false);
         }
 
+        private void Panel8_Paint(object sender, PaintEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private Panel panel3;
@@ -625,14 +669,14 @@
         private PictureBox pictureBox6;
         private Panel panel10;
         private PictureBox pictureBox7;
-        private TextBox textBox1;
+        private TextBox txt_Email;
         private Label lblEmailProfile;
         private Label lblReferences;
         private Panel panel11;
         private PictureBox pictureBox8;
         private TextBox textBox2;
         private Label lblCurrency;
-        private ComboBox comboBox1;
+        private ComboBox cmb_Currency;
         private Button btnSaveChanges;
         private Panel panel12;
         private PictureBox pictureBox9;
