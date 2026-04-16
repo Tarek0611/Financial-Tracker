@@ -105,7 +105,8 @@ namespace Financial_Tracker
                     totalExpenses += t.Amount;
             }
 
-            tblShowReports.DataSource = dt;
+            tblShowReports.Columns.Clear();   
+            tblShowReports.DataSource = dt; 
 
             lblTotalIncome.Text = totalIncome.ToString();
             lblTotalExpenses.Text = totalExpenses.ToString();
