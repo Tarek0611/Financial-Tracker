@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using static Financial_Tracker.FinanceLogic;
 namespace Financial_Tracker
 {
     public partial class Show_Reports_Page : Form
@@ -64,6 +64,52 @@ namespace Financial_Tracker
             this.Close();
             Login_Page login = new Login_Page();
             login.Show();
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Show_Reports_Page_Load(object sender, EventArgs e)
+        {
+            FinanceManager.LoadFromFile();
+            LoadReportData();
+        }
+        private void LoadReportData()
+        {
+            DataTable dt = new DataTable();
+
+            dt.Columns.Add("Type");
+            dt.Columns.Add("Amount");
+            dt.Columns.Add("Date");
+            dt.Columns.Add("Category");
+            dt.Columns.Add("Description");
+
+            decimal totalIncome = 0;
+            decimal totalExpenses = 0;
+
+            foreach (var t in FinanceManager.Transactions)
+            {
+                dt.Rows.Add(
+                    t.TType.ToString(),
+                    t.Amount,
+                    t.Date.ToShortDateString(),
+                    t.Category.ToString(),
+                    t.Description
+                );
+
+                if (t.TType == TransactionType.Income)
+                    totalIncome += t.Amount;
+                else
+                    totalExpenses += t.Amount;
+            }
+
+            tblShowReports.DataSource = dt;
+
+            lblTotalIncome.Text = totalIncome.ToString();
+            lblTotalExpenses.Text = totalExpenses.ToString();
+            lblTotal.Text = (totalIncome - totalExpenses).ToString();
         }
     }
 }
