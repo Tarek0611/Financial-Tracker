@@ -80,7 +80,6 @@
             panel8.Name = "panel8";
             panel8.Size = new Size(1154, 644);
             panel8.TabIndex = 5;
-            panel8.Paint += panel8_Paint;
             // 
             // label4
             // 

@@ -16,41 +16,41 @@ namespace Financial_Tracker
         public enum Category { Food, Transport, Salary, Shopping, Others }
 
         // 2. Class Definitions & Inheritance:
-        public abstract class Transaction // abstract عشان محدش يعمل منه object مباشرة
+        public abstract class Transaction // abstract so that no one can create an object directly from it
         {
             public decimal Amount { get; set; }
             public DateTime Date { get; set; }
             public Category Category { get; set; }
             public string Description { get; set; }
-            public abstract TransactionType TType { get; } // Property لازم تتنفذ في الوراثة
+            public abstract TransactionType TType { get; }
         }
 
-        // الوراثة لعمليات الصرف
+        // Genetics of exchange operations
         public class Expense : Transaction
         {
             public override TransactionType TType => TransactionType.Expense;
         }
 
-        // الوراثة لعمليات الدخل
+        // Inheritance of income processes
         public class Income : Transaction
         {
             public override TransactionType TType => TransactionType.Income;
         }
 
-        // 3. المحرك الأساسي (File Handling & Arrays)
+        //Core Engine (File Handling & Arrays)
         public static class FinanceManager
         {
-            // استخدام List (وهي Dynamic Array) لتخزين الكائنات
+            //Use List (which is a Dynamic Array) to store objects
             public static List<Transaction> Transactions = new List<Transaction>();
             private static string filePath = "my_data.txt";
 
-            // ميثود لإضافة عملية جديدة
+            // Method to add a new process
             public static void AddTransaction(Transaction t)
             {
                 Transactions.Add(t);
             }
 
-            // 4. File Handling: حفظ البيانات في ملف
+            //File Handling: Save data to a file
             public static void SaveToFile()
             {
                 try
@@ -59,7 +59,6 @@ namespace Financial_Tracker
                     {
                         foreach (var t in Transactions)
                         {
-                            // بنسجل الداتا كسطر واحد وبنفصل بينهم بـ علامة |
                             writer.WriteLine($"{t.TType}|{t.Amount}|{t.Date:yyyy-MM-dd}|{t.Category}|{t.Description}");
                         }
                     }
@@ -70,12 +69,12 @@ namespace Financial_Tracker
                 }
             }
 
-            // 5. File Handling: قراءة البيانات من الملف
+            //File Handling: Reading data from a file
             public static void LoadFromFile()
             {
                 if (!File.Exists(filePath)) return;
 
-                Transactions.Clear(); // نمسح الموجود عشان ميتكررش
+                Transactions.Clear(); // We delete what's there so it doesn't happen again
                 string[] lines = File.ReadAllLines(filePath);
 
                 foreach (string line in lines)
@@ -83,7 +82,7 @@ namespace Financial_Tracker
                     string[] p = line.Split('|');
                     Transaction t;
 
-                    // بنشوف النوع عشان نكريت Object من الكلاس الصح (Polymorphism)
+                    // We look at the type to deny Object from the correct class (Polymorphism)
                     if (p[0] == "Expense") t = new Expense();
                     else t = new Income();
 

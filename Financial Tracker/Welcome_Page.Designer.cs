@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome_Page));
             panel1 = new Panel();
             btnGo = new Button();
             label2 = new Label();
             label1 = new Label();
             btnContributers = new Button();
-            button3 = new Button();
-            button4 = new Button();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -105,43 +104,15 @@
             btnContributers.UseVisualStyleBackColor = false;
             btnContributers.Click += btnContributers_Click;
             // 
-            // button3
-            // 
-            button3.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button3.BackColor = Color.FromArgb(10, 15, 30);
-            button3.BackgroundImageLayout = ImageLayout.Stretch;
-            button3.FlatAppearance.BorderSize = 0;
-            button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(1070, 30);
-            button3.Name = "button3";
-            button3.Size = new Size(68, 66);
-            button3.TabIndex = 2;
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            button4.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            button4.BackColor = Color.Transparent;
-            button4.BackgroundImage = Properties.Resources.WhatsApp_Image_2026_04_07_at_4_41_24_PM_removebg_preview;
-            button4.BackgroundImageLayout = ImageLayout.Zoom;
-            button4.FlatAppearance.BorderSize = 0;
-            button4.FlatStyle = FlatStyle.Flat;
-            button4.Location = new Point(1081, 12);
-            button4.Name = "button4";
-            button4.Size = new Size(67, 68);
-            button4.TabIndex = 7;
-            button4.UseVisualStyleBackColor = false;
-            // 
             // Welcome_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
             ClientSize = new Size(1175, 659);
-            Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(btnContributers);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Welcome_Page";
             Text = "Welcome Page";
             panel1.ResumeLayout(false);
@@ -156,7 +127,5 @@
         private Label label1;
         private Button btnGo;
         private Button btnContributers;
-        private Button button3;
-        private Button button4;
     }
 }

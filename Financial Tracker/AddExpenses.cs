@@ -22,24 +22,19 @@ namespace Financial_Tracker
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
 
-
-
             try
             {
-                // 1. التحقق إن الحقول مش فاضية (لازم يختار من القائمة)
                 if (string.IsNullOrWhiteSpace(txtAmount.Text) || cmbCategory.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please fill in the amount and select a category! ⚠️", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                // التأكد من المدخلات
                 if (!decimal.TryParse(txtAmount.Text, out decimal amountValue) || amountValue <= 0)
                 {
                     MessageBox.Show("Please enter a valid amount!");
                     return;
                 }
-
-                // عمل Object من نوع Expense (اللي هو ابن للـ Transaction)
+                // Create an object of type Expense (which is a child of Transaction)
                 var newExpense = new FinanceLogic.Expense()
                 {
                     Amount = amountValue,
@@ -48,13 +43,11 @@ namespace Financial_Tracker
                     Description = txtDescription.Text
                 };
 
-                // استدعاء الميثودز من الـ FinanceManager
-                FinanceLogic.FinanceManager.AddTransaction(newExpense);
-                FinanceLogic.FinanceManager.SaveToFile();
+                FinanceManager.AddTransaction(newExpense);
+                FinanceManager.SaveToFile();
 
                 MessageBox.Show("Expense added successfully! ✅");
 
-                // تنظيف الخانات
                 txtAmount.Clear();
                 txtDescription.Clear();
             }
@@ -62,11 +55,6 @@ namespace Financial_Tracker
             {
                 MessageBox.Show("Error: " + ex.Message);
             }
-        }
-
-        private void txtAmount_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btnDiscardProfile_Click(object sender, EventArgs e)

@@ -260,7 +260,6 @@
             label10.Size = new Size(78, 20);
             label10.TabIndex = 12;
             label10.Text = "Group : 18";
-            label10.Click += label10_Click;
             // 
             // pictureBox5
             // 
@@ -416,6 +415,7 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Contributors";
             Text = "Contributorscs";
             panel1.ResumeLayout(false);

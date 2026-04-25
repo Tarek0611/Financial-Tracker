@@ -16,14 +16,14 @@ namespace Financial_Tracker
             InitializeComponent();
         }
 
-        //  زرار الحفظ 
+        //  Button to save changes
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
             try
             {
                 if (txtUserProfile.Text == "" || txt_Email.Text == "")
                 {
-                    MessageBox.Show("من فضلك املأ كل البيانات");
+                    MessageBox.Show("Please fill out all the information");
                     return;
                 }
 
@@ -37,7 +37,7 @@ namespace Financial_Tracker
                 else
                     Currency = "EGP";
 
-                MessageBox.Show("تم حفظ الإعدادات بنجاح!");
+                MessageBox.Show("Settings saved successfully!");
 
                 Dashboard dashboard = new Dashboard();
                 dashboard.Show();
@@ -45,18 +45,18 @@ namespace Financial_Tracker
             }
             catch (Exception)
             {
-                MessageBox.Show("حصل خطأ!");
+                MessageBox.Show("An error occurred!");
             }
         }
 
-        //  دالة تحذير الميزانية
+        //  Budget warning function
         public static void CheckBudget(double totalSpent)
         {
             if (BudgetLimit > 0 && totalSpent > BudgetLimit)
             {
                 MessageBox.Show(
-                    $"⚠️ تخطيت الميزانية ({BudgetLimit} {Currency})\nإجمالي المصاريف: {totalSpent}",
-                    "تحذير",
+                    $"⚠️ Over budget ({BudgetLimit} {Currency})\nTotal expenses: {totalSpent}",
+                    "warning",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning
                 );
@@ -64,25 +64,6 @@ namespace Financial_Tracker
         }
 
        
-
-        private void panel8_Paint(object sender, PaintEventArgs e) { }
-
-        private void lblCurrency_Click(object sender, EventArgs e) { }
-
-        private void lblEmailProfile_Click(object sender, EventArgs e) { }
-
-        private void txtUserProfile_TextChanged(object sender, EventArgs e) { }
-
-        private void txt_Email_TextChanged(object sender, EventArgs e) { }
-
-        private void cmb_Currency_SelectedIndexChanged(object sender, EventArgs e) { }
-
-        private void txtBudgetProfile_TextChanged(object sender, EventArgs e) { }
-
-        
-        // التنقل بين الصفحات )
-        
-
         private void button2_Click(object sender, EventArgs e)
         {
             Expenses_Page expenses_ = new Expenses_Page();

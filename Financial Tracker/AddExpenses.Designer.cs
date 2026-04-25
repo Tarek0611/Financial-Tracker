@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddExpenses));
             button4 = new Button();
             pictureBox5 = new PictureBox();
             panel1 = new Panel();
@@ -208,7 +209,6 @@
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(364, 27);
             txtAmount.TabIndex = 1;
-            txtAmount.TextChanged += txtAmount_TextChanged;
             // 
             // pictureBox1
             // 
@@ -229,6 +229,7 @@
             ClientSize = new Size(531, 601);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddExpenses";
             Text = "AddIncome";
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

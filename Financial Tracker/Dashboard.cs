@@ -19,8 +19,8 @@ namespace Financial_Tracker
 
         public Dashboard()
         {
-            InitializeComponent();
-            // استدعاء الحسابات أول ما الصفحة تفتح
+            InitializeComponent();            
+            // Call accounts
             CalculateFinancials();
         }
 
@@ -31,48 +31,22 @@ namespace Financial_Tracker
 
 
 
-        private void button5_Click(object sender, EventArgs e) // زرار Balance
+        private void button5_Click(object sender, EventArgs e) // Balance button
         {
             double balance = income - totalExpenses;
             MessageBox.Show("Your total balance is: " + balance + " EGP", "Financial Summary");
         }
 
-        private void button6_Click(object sender, EventArgs e) // زرار Income
+        private void button6_Click(object sender, EventArgs e) // Income button
         {
             MessageBox.Show("Total Income: " + income + " EGP", "Income Details");
         }
 
-        private void button7_Click(object sender, EventArgs e) // زرار Expenses
+        private void button7_Click(object sender, EventArgs e) // Expenses button
         {
             MessageBox.Show("Total Expenses: " + totalExpenses + " EGP", "Expense Details");
         }
 
-
-
-
-        private void btnDashboard_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void lblUser_Click(object sender, EventArgs e)
-        {
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-        }
 
         private void btn_Settings_Click(object sender, EventArgs e)
         {
@@ -81,19 +55,6 @@ namespace Financial_Tracker
             this.Hide();
         }
 
-        private void panel6_Click(object sender, EventArgs e)
-        {
-            Settings_Page setting_Page = new Settings_Page();
-            setting_Page.Show();
-            this.Hide();
-        }
-
-        private void btn_Setting_Click(object sender, EventArgs e)
-        {
-            Settings_Page setting_Page = new Settings_Page();
-            setting_Page.Show();
-            this.Hide();
-        }
 
         private void btn_Expenses_Click(object sender, EventArgs e)
         {
@@ -109,15 +70,8 @@ namespace Financial_Tracker
             login.Show();
         }
 
-        private void btn_Dashboard_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btn_ShowTotalExpenses_Click(object sender, EventArgs e)
-
-
         {
-           
             MessageBox.Show("Total Expenses is 180 EGP", "Expense Details");
         }
 
@@ -137,7 +91,7 @@ namespace Financial_Tracker
     }
 
 
-   
+
     public enum ExpenseType { Food, Transport, Shopping, Entertainment, Health }
     public class Expense
     {

@@ -95,9 +95,8 @@
             panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Left;
             panel1.Location = new Point(0, 0);
-            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(192, 585);
+            panel1.Size = new Size(219, 780);
             panel1.TabIndex = 0;
             // 
             // panel7
@@ -106,10 +105,9 @@
             panel7.BackColor = Color.FromArgb(35, 45, 63);
             panel7.Controls.Add(btn_Logout);
             panel7.Controls.Add(pictureBox5);
-            panel7.Location = new Point(0, 536);
-            panel7.Margin = new Padding(3, 2, 3, 2);
+            panel7.Location = new Point(0, 715);
             panel7.Name = "panel7";
-            panel7.Size = new Size(131, 34);
+            panel7.Size = new Size(150, 45);
             panel7.TabIndex = 6;
             // 
             // btn_Logout
@@ -119,10 +117,9 @@
             btn_Logout.FlatStyle = FlatStyle.Flat;
             btn_Logout.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_Logout.ForeColor = Color.White;
-            btn_Logout.Location = new Point(41, 0);
-            btn_Logout.Margin = new Padding(3, 2, 3, 2);
+            btn_Logout.Location = new Point(47, 0);
             btn_Logout.Name = "btn_Logout";
-            btn_Logout.Size = new Size(90, 34);
+            btn_Logout.Size = new Size(103, 45);
             btn_Logout.TabIndex = 7;
             btn_Logout.Text = "Log out";
             btn_Logout.TextAlign = ContentAlignment.MiddleLeft;
@@ -133,9 +130,8 @@
             // 
             pictureBox5.Image = Properties.Resources.logout;
             pictureBox5.Location = new Point(3, 0);
-            pictureBox5.Margin = new Padding(3, 2, 3, 2);
             pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(38, 32);
+            pictureBox5.Size = new Size(43, 43);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox5.TabIndex = 6;
             pictureBox5.TabStop = false;
@@ -145,12 +141,10 @@
             panel6.BackColor = Color.FromArgb(35, 45, 63);
             panel6.Controls.Add(btn_Setting);
             panel6.Controls.Add(pictureBox4);
-            panel6.Location = new Point(0, 263);
-            panel6.Margin = new Padding(3, 2, 3, 2);
+            panel6.Location = new Point(0, 351);
             panel6.Name = "panel6";
-            panel6.Size = new Size(192, 45);
+            panel6.Size = new Size(219, 60);
             panel6.TabIndex = 5;
-            panel6.Click += panel6_Click;
             // 
             // btn_Setting
             // 
@@ -159,10 +153,9 @@
             btn_Setting.FlatStyle = FlatStyle.Flat;
             btn_Setting.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_Setting.ForeColor = Color.White;
-            btn_Setting.Location = new Point(57, 2);
-            btn_Setting.Margin = new Padding(3, 2, 3, 2);
+            btn_Setting.Location = new Point(65, 3);
             btn_Setting.Name = "btn_Setting";
-            btn_Setting.Size = new Size(132, 41);
+            btn_Setting.Size = new Size(151, 55);
             btn_Setting.TabIndex = 6;
             btn_Setting.Text = "Settings";
             btn_Setting.TextAlign = ContentAlignment.MiddleLeft;
@@ -173,9 +166,8 @@
             // 
             pictureBox4.Image = Properties.Resources.cogwheel;
             pictureBox4.Location = new Point(3, 0);
-            pictureBox4.Margin = new Padding(3, 2, 3, 2);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(54, 45);
+            pictureBox4.Size = new Size(62, 60);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox4.TabIndex = 5;
             pictureBox4.TabStop = false;
@@ -186,10 +178,9 @@
             panel5.BackColor = Color.FromArgb(35, 45, 63);
             panel5.Controls.Add(btn_Expenses);
             panel5.Controls.Add(pictureBox3);
-            panel5.Location = new Point(0, 198);
-            panel5.Margin = new Padding(3, 2, 3, 2);
+            panel5.Location = new Point(0, 264);
             panel5.Name = "panel5";
-            panel5.Size = new Size(192, 45);
+            panel5.Size = new Size(219, 60);
             panel5.TabIndex = 4;
             // 
             // btn_Expenses
@@ -199,10 +190,9 @@
             btn_Expenses.FlatStyle = FlatStyle.Flat;
             btn_Expenses.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_Expenses.ForeColor = Color.White;
-            btn_Expenses.Location = new Point(57, 3);
-            btn_Expenses.Margin = new Padding(3, 2, 3, 2);
+            btn_Expenses.Location = new Point(65, 4);
             btn_Expenses.Name = "btn_Expenses";
-            btn_Expenses.Size = new Size(132, 41);
+            btn_Expenses.Size = new Size(151, 55);
             btn_Expenses.TabIndex = 6;
             btn_Expenses.Text = "Expenses";
             btn_Expenses.TextAlign = ContentAlignment.MiddleLeft;
@@ -213,9 +203,8 @@
             // 
             pictureBox3.Image = Properties.Resources.budget;
             pictureBox3.Location = new Point(3, 0);
-            pictureBox3.Margin = new Padding(3, 2, 3, 2);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(54, 45);
+            pictureBox3.Size = new Size(62, 60);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox3.TabIndex = 5;
             pictureBox3.TabStop = false;
@@ -226,10 +215,9 @@
             panel4.BackColor = Color.FromArgb(35, 45, 63);
             panel4.Controls.Add(btn_Dashboard);
             panel4.Controls.Add(pictureBox2);
-            panel4.Location = new Point(0, 128);
-            panel4.Margin = new Padding(3, 2, 3, 2);
+            panel4.Location = new Point(0, 171);
             panel4.Name = "panel4";
-            panel4.Size = new Size(192, 45);
+            panel4.Size = new Size(219, 60);
             panel4.TabIndex = 3;
             // 
             // btn_Dashboard
@@ -239,23 +227,20 @@
             btn_Dashboard.FlatStyle = FlatStyle.Flat;
             btn_Dashboard.Font = new Font("Impact", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             btn_Dashboard.ForeColor = Color.White;
-            btn_Dashboard.Location = new Point(55, 2);
-            btn_Dashboard.Margin = new Padding(3, 2, 3, 2);
+            btn_Dashboard.Location = new Point(63, 3);
             btn_Dashboard.Name = "btn_Dashboard";
-            btn_Dashboard.Size = new Size(132, 41);
+            btn_Dashboard.Size = new Size(151, 55);
             btn_Dashboard.TabIndex = 3;
             btn_Dashboard.Text = "Dashboard";
             btn_Dashboard.TextAlign = ContentAlignment.MiddleLeft;
             btn_Dashboard.UseVisualStyleBackColor = false;
-            btn_Dashboard.Click += btn_Dashboard_Click;
             // 
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.dashboard__1_;
             pictureBox2.Location = new Point(3, 0);
-            pictureBox2.Margin = new Padding(3, 2, 3, 2);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(54, 45);
+            pictureBox2.Size = new Size(62, 60);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 3;
             pictureBox2.TabStop = false;
@@ -263,10 +248,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.dashboard;
-            pictureBox1.Location = new Point(16, 9);
-            pictureBox1.Margin = new Padding(3, 2, 3, 2);
+            pictureBox1.Location = new Point(18, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(109, 94);
+            pictureBox1.Size = new Size(125, 125);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -277,10 +261,9 @@
             panel2.Controls.Add(label3);
             panel2.Controls.Add(welcome_label);
             panel2.Dock = DockStyle.Top;
-            panel2.Location = new Point(192, 0);
-            panel2.Margin = new Padding(3, 2, 3, 2);
+            panel2.Location = new Point(219, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1015, 94);
+            panel2.Size = new Size(1160, 125);
             panel2.TabIndex = 1;
             // 
             // label3
@@ -288,9 +271,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Transparent;
-            label3.Location = new Point(54, 62);
+            label3.Location = new Point(62, 83);
             label3.Name = "label3";
-            label3.Size = new Size(197, 19);
+            label3.Size = new Size(224, 22);
             label3.TabIndex = 1;
             label3.Text = "Enjoy managing your finances";
             // 
@@ -299,9 +282,9 @@
             welcome_label.AutoSize = true;
             welcome_label.Font = new Font("Impact", 25.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
             welcome_label.ForeColor = Color.White;
-            welcome_label.Location = new Point(31, 9);
+            welcome_label.Location = new Point(35, 12);
             welcome_label.Name = "welcome_label";
-            welcome_label.Size = new Size(250, 43);
+            welcome_label.Size = new Size(308, 54);
             welcome_label.TabIndex = 0;
             welcome_label.Text = "Welcome back,";
             // 
@@ -313,10 +296,9 @@
             panel3.Controls.Add(panel10);
             panel3.Controls.Add(panel9);
             panel3.Dock = DockStyle.Fill;
-            panel3.Location = new Point(192, 94);
-            panel3.Margin = new Padding(3, 2, 3, 2);
+            panel3.Location = new Point(219, 125);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1015, 491);
+            panel3.Size = new Size(1160, 655);
             panel3.TabIndex = 2;
             // 
             // dataGridView1
@@ -324,11 +306,10 @@
             dataGridView1.Anchor = AnchorStyles.Top;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(83, 148);
-            dataGridView1.Margin = new Padding(3, 2, 3, 2);
+            dataGridView1.Location = new Point(95, 197);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(886, 310);
+            dataGridView1.Size = new Size(1013, 413);
             dataGridView1.TabIndex = 7;
             // 
             // Column1
@@ -357,9 +338,9 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.AppWorkspace;
-            label7.Location = new Point(53, 111);
+            label7.Location = new Point(61, 148);
             label7.Name = "label7";
-            label7.Size = new Size(131, 21);
+            label7.Size = new Size(164, 28);
             label7.TabIndex = 6;
             label7.Text = "TRANSACTIONS";
             // 
@@ -371,17 +352,17 @@
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(lbltotalExpenses);
             panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(706, 22);
-            panel11.Margin = new Padding(3, 2, 3, 2);
+            panel11.Location = new Point(807, 29);
             panel11.Name = "panel11";
-            panel11.Size = new Size(276, 74);
+            panel11.Size = new Size(315, 99);
             panel11.TabIndex = 2;
             // 
             // btn_ShowTotalExpenses
             // 
-            btn_ShowTotalExpenses.Location = new Point(121, 42);
+            btn_ShowTotalExpenses.Location = new Point(138, 56);
+            btn_ShowTotalExpenses.Margin = new Padding(3, 4, 3, 4);
             btn_ShowTotalExpenses.Name = "btn_ShowTotalExpenses";
-            btn_ShowTotalExpenses.Size = new Size(75, 23);
+            btn_ShowTotalExpenses.Size = new Size(86, 31);
             btn_ShowTotalExpenses.TabIndex = 2;
             btn_ShowTotalExpenses.Text = "SHOW";
             btn_ShowTotalExpenses.UseVisualStyleBackColor = true;
@@ -390,10 +371,9 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.spending;
-            pictureBox9.Location = new Point(15, 11);
-            pictureBox9.Margin = new Padding(3, 2, 3, 2);
+            pictureBox9.Location = new Point(17, 15);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(56, 48);
+            pictureBox9.Size = new Size(64, 64);
             pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
@@ -403,12 +383,11 @@
             lbltotalExpenses.AutoSize = true;
             lbltotalExpenses.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbltotalExpenses.ForeColor = SystemColors.AppWorkspace;
-            lbltotalExpenses.Location = new Point(74, 11);
+            lbltotalExpenses.Location = new Point(85, 15);
             lbltotalExpenses.Name = "lbltotalExpenses";
-            lbltotalExpenses.Size = new Size(138, 21);
+            lbltotalExpenses.Size = new Size(174, 28);
             lbltotalExpenses.TabIndex = 0;
             lbltotalExpenses.Text = "TOTAL EXPENSES";
-            lbltotalExpenses.Click += label2_Click;
             // 
             // panel10
             // 
@@ -418,17 +397,17 @@
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(lblTotalIncome);
             panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(373, 22);
-            panel10.Margin = new Padding(3, 2, 3, 2);
+            panel10.Location = new Point(426, 29);
             panel10.Name = "panel10";
-            panel10.Size = new Size(276, 74);
+            panel10.Size = new Size(315, 99);
             panel10.TabIndex = 2;
             // 
             // btn_ShowTotalIncome
             // 
-            btn_ShowTotalIncome.Location = new Point(151, 42);
+            btn_ShowTotalIncome.Location = new Point(173, 56);
+            btn_ShowTotalIncome.Margin = new Padding(3, 4, 3, 4);
             btn_ShowTotalIncome.Name = "btn_ShowTotalIncome";
-            btn_ShowTotalIncome.Size = new Size(75, 23);
+            btn_ShowTotalIncome.Size = new Size(86, 31);
             btn_ShowTotalIncome.TabIndex = 2;
             btn_ShowTotalIncome.Text = "SHOW";
             btn_ShowTotalIncome.UseVisualStyleBackColor = true;
@@ -437,10 +416,9 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.salary;
-            pictureBox8.Location = new Point(15, 11);
-            pictureBox8.Margin = new Padding(3, 2, 3, 2);
+            pictureBox8.Location = new Point(17, 15);
             pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(56, 48);
+            pictureBox8.Size = new Size(64, 64);
             pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox8.TabIndex = 1;
             pictureBox8.TabStop = false;
@@ -450,9 +428,9 @@
             lblTotalIncome.AutoSize = true;
             lblTotalIncome.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalIncome.ForeColor = SystemColors.AppWorkspace;
-            lblTotalIncome.Location = new Point(74, 11);
+            lblTotalIncome.Location = new Point(85, 15);
             lblTotalIncome.Name = "lblTotalIncome";
-            lblTotalIncome.Size = new Size(124, 21);
+            lblTotalIncome.Size = new Size(157, 28);
             lblTotalIncome.TabIndex = 0;
             lblTotalIncome.Text = "TOTAL INCOME";
             // 
@@ -463,18 +441,17 @@
             panel9.Controls.Add(pictureBox7);
             panel9.Controls.Add(lblTotalBalance);
             panel9.Cursor = Cursors.Hand;
-            panel9.Location = new Point(39, 22);
-            panel9.Margin = new Padding(3, 2, 3, 2);
+            panel9.Location = new Point(45, 29);
             panel9.Name = "panel9";
-            panel9.Size = new Size(276, 74);
+            panel9.Size = new Size(315, 99);
             panel9.TabIndex = 0;
-            panel9.Paint += panel9_Paint;
             // 
             // btn_ShowTotalBalance
             // 
-            btn_ShowTotalBalance.Location = new Point(146, 44);
+            btn_ShowTotalBalance.Location = new Point(167, 59);
+            btn_ShowTotalBalance.Margin = new Padding(3, 4, 3, 4);
             btn_ShowTotalBalance.Name = "btn_ShowTotalBalance";
-            btn_ShowTotalBalance.Size = new Size(75, 23);
+            btn_ShowTotalBalance.Size = new Size(86, 31);
             btn_ShowTotalBalance.TabIndex = 2;
             btn_ShowTotalBalance.Text = "SHOW";
             btn_ShowTotalBalance.UseVisualStyleBackColor = true;
@@ -483,10 +460,9 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(15, 11);
-            pictureBox7.Margin = new Padding(3, 2, 3, 2);
+            pictureBox7.Location = new Point(17, 15);
             pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(56, 48);
+            pictureBox7.Size = new Size(64, 64);
             pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
@@ -496,22 +472,22 @@
             lblTotalBalance.AutoSize = true;
             lblTotalBalance.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblTotalBalance.ForeColor = SystemColors.AppWorkspace;
-            lblTotalBalance.Location = new Point(74, 11);
+            lblTotalBalance.Location = new Point(85, 15);
             lblTotalBalance.Name = "lblTotalBalance";
-            lblTotalBalance.Size = new Size(132, 21);
+            lblTotalBalance.Size = new Size(168, 28);
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1207, 585);
+            ClientSize = new Size(1379, 780);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Margin = new Padding(3, 2, 3, 2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Dashboard";
             Text = "Dashboard";
             panel1.ResumeLayout(false);

@@ -10,13 +10,11 @@ using System.Windows.Forms;
 
 namespace Financial_Tracker
 {
-    public partial class Contributors : Form
+    public partial class Add_Income : Form
     {
-        public Contributors()
+        public Add_Income()
         {
             InitializeComponent();
         }
-
-        
     }
 }

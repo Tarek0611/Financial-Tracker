@@ -32,26 +32,6 @@ namespace Financial_Tracker
             tblShowReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
@@ -64,11 +44,6 @@ namespace Financial_Tracker
             this.Close();
             Login_Page login = new Login_Page();
             login.Show();
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void Show_Reports_Page_Load(object sender, EventArgs e)

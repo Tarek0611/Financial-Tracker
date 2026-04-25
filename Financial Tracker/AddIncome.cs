@@ -22,7 +22,6 @@ namespace Financial_Tracker
 
         private void AddIncome_Load(object sender, EventArgs e)
         {
-            // اكتب هنا الكود اللي عايزه يتنفذ لما الشاشة تفتح
         }
 
 
@@ -31,7 +30,7 @@ namespace Financial_Tracker
         {
             try
             {
-                // 1. التحقق إن الحقول مش فاضية (لازم يختار من القائمة)
+                
                 if (string.IsNullOrWhiteSpace(txtAmount.Text) || cmbCategory.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please fill in the amount and select a category! ⚠️", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -43,7 +42,7 @@ namespace Financial_Tracker
                     return;
                 }
 
-                // عمل Object من نوع Income
+                //Make an Object of type Income
                 var newIncome = new FinanceLogic.Income()
                 {
                     Amount = amountValue,
@@ -52,9 +51,9 @@ namespace Financial_Tracker
                     Description = txtDescription.Text
                 };
 
-                // الحفظ
-                FinanceLogic.FinanceManager.AddTransaction(newIncome);
-                FinanceLogic.FinanceManager.SaveToFile();
+                // File handling
+                FinanceManager.AddTransaction(newIncome);
+                FinanceManager.SaveToFile();
 
                 MessageBox.Show("Income added successfully! 💰");
 
@@ -70,11 +69,6 @@ namespace Financial_Tracker
         private void btnDiscardProfile_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

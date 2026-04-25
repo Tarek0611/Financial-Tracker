@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddIncome));
             button4 = new Button();
             pictureBox5 = new PictureBox();
             panel1 = new Panel();
@@ -219,7 +220,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // AddIncome
             // 
@@ -229,6 +229,7 @@
             ClientSize = new Size(522, 601);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "AddIncome";
             Text = "AddIncome";
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

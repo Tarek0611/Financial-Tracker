@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Page));
             lblUserName = new Label();
             lblPassword = new Label();
             txtUserName = new TextBox();
@@ -162,7 +163,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 8;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
             // 
             // Login_Page
             // 
@@ -172,6 +172,7 @@
             ClientSize = new Size(1244, 836);
             Controls.Add(lblErrorLogIn);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login_Page";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Page";
@@ -185,7 +186,6 @@
         #endregion
         private Label lblUserName;
         private Label lblPassword;
-        private TextBox txtUserName;
         private TextBox txtPassword;
         private Button btnLogIn;
         private RadioButton rbFemale;
@@ -193,5 +193,6 @@
         private Label lblErrorLogIn;
         private Panel panel1;
         private PictureBox pictureBox1;
+        public TextBox txtUserName;
     }
 }

@@ -14,23 +14,16 @@ namespace Financial_Tracker
             Login_Page login = new Login_Page(); // create instance
             login.Show(); // show it
         }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnContributers_Click(object sender, EventArgs e)
         {
             Contributors contributors = new Contributors();
             contributors.Show();
-            
-
         }
     }
 
 
-        }
+        
+}
 
 
 
