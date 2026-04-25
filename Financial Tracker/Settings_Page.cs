@@ -67,8 +67,10 @@ namespace Financial_Tracker
 
                 MessageBox.Show("Settings saved successfully!");
 
-                new Dashboard().Show();
+                Dashboard dashboard = new Dashboard();
+                dashboard.WindowState = this.WindowState;
                 this.Close();
+                dashboard.Show();
             }
             catch
             {
@@ -79,23 +81,27 @@ namespace Financial_Tracker
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Expenses_Page expenses_ = new Expenses_Page();
-            expenses_.Show();
+            Expenses_Page expenses = new Expenses_Page();
+            expenses.WindowState = this.WindowState;
+            expenses.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
+            dashboard.WindowState = this.WindowState;
             dashboard.Show();
             this.Hide();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             Login_Page login = new Login_Page();
+            login.WindowState = this.WindowState;
             login.Show();
+            this.Close();
         }
 
         private void btnClearData_Click(object sender, EventArgs e)
@@ -125,8 +131,10 @@ namespace Financial_Tracker
 
                     MessageBox.Show("All data has been wiped! 🧹");
 
-                    new Dashboard().Show();
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.WindowState = this.WindowState;
                     this.Close();
+                    dashboard.Show();
                 }
                 catch (Exception ex)
                 {

@@ -1,13 +1,14 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO; 
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO; 
 
 namespace Financial_Tracker
 {
@@ -24,6 +25,7 @@ namespace Financial_Tracker
         private void btn_Settings_Click(object sender, EventArgs e)
         {
             Settings_Page settings = new Settings_Page();
+            settings.WindowState = this.WindowState;
             settings.Show();
             this.Hide();
         }
@@ -31,35 +33,19 @@ namespace Financial_Tracker
 
         private void btn_Expenses_Click(object sender, EventArgs e)
         {
-            Expenses_Page expenses_ = new Expenses_Page();
-            expenses_.Show();
+            Expenses_Page expenses = new Expenses_Page();
+            expenses.WindowState = this.WindowState;
+            expenses.Show();
             this.Hide();
         }
 
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             Login_Page login = new Login_Page();
+            login.WindowState = this.WindowState;
+            this.Close();
             login.Show();
-        }
-
-        private void btn_ShowTotalExpenses_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Total Expenses is 180 EGP", "Expense Details");
-        }
-
-        private void btn_ShowTotalBalance_Click(object sender, EventArgs e)
-        {
-            {
-                MessageBox.Show("Your Total Balance is: 4,820 EGP", "Financial Summary");
-            }
-        }
-
-        private void btn_ShowTotalIncome_Click(object sender, EventArgs e)
-        {
-            {
-                MessageBox.Show("Your Total Income is: 5,000 EGP", "Financial Summary");
-            }
         }
 
 
@@ -71,10 +57,11 @@ namespace Financial_Tracker
             double expenses = Properties.Settings.Default.TotalExpenses;
             double balance = income - expenses;
 
-            // Display values in labels 
-            lbl_IncomeValue.Text = income.ToString("N0") + " $";
-            lbl_ExpenseValue.Text = expenses.ToString("N0") + " $";
-            lbl_BalanceValue.Text = balance.ToString("N0") + " $"; 
+            // Display values in labels
+            string currency = Properties.Settings.Default.Currency;
+            lbl_IncomeValue.Text = income.ToString("N0") + $" {currency}";
+            lbl_ExpenseValue.Text = expenses.ToString("N0") + $" {currency}";
+            lbl_BalanceValue.Text = balance.ToString("N0") + $" {currency}"; 
 
 
 

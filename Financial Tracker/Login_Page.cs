@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Logging;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,7 @@ namespace Financial_Tracker
 
                 //  Open the Dashboard and hide the login page
                 Dashboard dashboard = new Dashboard();
+                dashboard.WindowState = this.WindowState;
                 dashboard.Show();
                 this.Hide();
             }

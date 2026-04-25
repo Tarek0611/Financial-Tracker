@@ -54,11 +54,11 @@
             pictureBox9 = new PictureBox();
             lbltotalExpenses = new Label();
             panel10 = new Panel();
-            lbl_ExpenseValue = new Label();
+            lbl_IncomeValue = new Label();
             pictureBox8 = new PictureBox();
             lblTotalIncome = new Label();
             panel9 = new Panel();
-            lbl_IncomeValue = new Label();
+            lbl_ExpenseValue = new Label();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
             panel1.SuspendLayout();
@@ -260,7 +260,7 @@
             panel2.Dock = DockStyle.Top;
             panel2.Location = new Point(219, 0);
             panel2.Name = "panel2";
-            panel2.Size = new Size(1160, 125);
+            panel2.Size = new Size(1553, 125);
             panel2.TabIndex = 1;
             // 
             // label3
@@ -295,17 +295,17 @@
             panel3.Dock = DockStyle.Fill;
             panel3.Location = new Point(219, 125);
             panel3.Name = "panel3";
-            panel3.Size = new Size(1160, 655);
+            panel3.Size = new Size(1553, 655);
             panel3.TabIndex = 2;
             // 
             // dgvTransactions
             // 
-            dgvTransactions.Anchor = AnchorStyles.Top;
+            dgvTransactions.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTransactions.Location = new Point(95, 197);
+            dgvTransactions.Location = new Point(62, 197);
             dgvTransactions.Name = "dgvTransactions";
             dgvTransactions.RowHeadersWidth = 51;
-            dgvTransactions.Size = new Size(1013, 413);
+            dgvTransactions.Size = new Size(1453, 436);
             dgvTransactions.TabIndex = 7;
             // 
             // label7
@@ -313,7 +313,7 @@
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label7.ForeColor = SystemColors.AppWorkspace;
-            label7.Location = new Point(61, 148);
+            label7.Location = new Point(44, 148);
             label7.Name = "label7";
             label7.Size = new Size(164, 28);
             label7.TabIndex = 6;
@@ -323,11 +323,11 @@
             // 
             panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(35, 45, 63);
-            panel11.Controls.Add(lbl_BalanceValue);
+            panel11.Controls.Add(lbl_ExpenseValue);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(lbltotalExpenses);
             panel11.Cursor = Cursors.Hand;
-            panel11.Location = new Point(807, 29);
+            panel11.Location = new Point(1200, 29);
             panel11.Name = "panel11";
             panel11.Size = new Size(315, 99);
             panel11.TabIndex = 2;
@@ -337,7 +337,7 @@
             lbl_BalanceValue.AutoSize = true;
             lbl_BalanceValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbl_BalanceValue.ForeColor = Color.White;
-            lbl_BalanceValue.Location = new Point(87, 55);
+            lbl_BalanceValue.Location = new Point(84, 41);
             lbl_BalanceValue.Name = "lbl_BalanceValue";
             lbl_BalanceValue.Size = new Size(31, 35);
             lbl_BalanceValue.TabIndex = 4;
@@ -368,25 +368,25 @@
             // 
             panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = Color.FromArgb(35, 45, 63);
-            panel10.Controls.Add(lbl_ExpenseValue);
+            panel10.Controls.Add(lbl_IncomeValue);
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(lblTotalIncome);
             panel10.Cursor = Cursors.Hand;
-            panel10.Location = new Point(426, 29);
+            panel10.Location = new Point(622, 29);
             panel10.Name = "panel10";
             panel10.Size = new Size(315, 99);
             panel10.TabIndex = 2;
             // 
-            // lbl_ExpenseValue
+            // lbl_IncomeValue
             // 
-            lbl_ExpenseValue.AutoSize = true;
-            lbl_ExpenseValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_ExpenseValue.ForeColor = Color.White;
-            lbl_ExpenseValue.Location = new Point(96, 55);
-            lbl_ExpenseValue.Name = "lbl_ExpenseValue";
-            lbl_ExpenseValue.Size = new Size(31, 35);
-            lbl_ExpenseValue.TabIndex = 3;
-            lbl_ExpenseValue.Text = "0";
+            lbl_IncomeValue.AutoSize = true;
+            lbl_IncomeValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_IncomeValue.ForeColor = Color.White;
+            lbl_IncomeValue.Location = new Point(84, 41);
+            lbl_IncomeValue.Name = "lbl_IncomeValue";
+            lbl_IncomeValue.Size = new Size(31, 35);
+            lbl_IncomeValue.TabIndex = 2;
+            lbl_IncomeValue.Text = "0";
             // 
             // pictureBox8
             // 
@@ -412,8 +412,8 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(35, 45, 63);
-            panel9.Controls.Add(lbl_IncomeValue);
             panel9.Controls.Add(pictureBox7);
+            panel9.Controls.Add(lbl_BalanceValue);
             panel9.Controls.Add(lblTotalBalance);
             panel9.Cursor = Cursors.Hand;
             panel9.Location = new Point(45, 29);
@@ -421,16 +421,16 @@
             panel9.Size = new Size(315, 99);
             panel9.TabIndex = 0;
             // 
-            // lbl_IncomeValue
+            // lbl_ExpenseValue
             // 
-            lbl_IncomeValue.AutoSize = true;
-            lbl_IncomeValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_IncomeValue.ForeColor = Color.White;
-            lbl_IncomeValue.Location = new Point(87, 55);
-            lbl_IncomeValue.Name = "lbl_IncomeValue";
-            lbl_IncomeValue.Size = new Size(31, 35);
-            lbl_IncomeValue.TabIndex = 2;
-            lbl_IncomeValue.Text = "0";
+            lbl_ExpenseValue.AutoSize = true;
+            lbl_ExpenseValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_ExpenseValue.ForeColor = Color.White;
+            lbl_ExpenseValue.Location = new Point(84, 41);
+            lbl_ExpenseValue.Name = "lbl_ExpenseValue";
+            lbl_ExpenseValue.Size = new Size(31, 35);
+            lbl_ExpenseValue.TabIndex = 3;
+            lbl_ExpenseValue.Text = "0";
             // 
             // pictureBox7
             // 
@@ -458,7 +458,7 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(10, 15, 30);
-            ClientSize = new Size(1379, 780);
+            ClientSize = new Size(1772, 780);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);

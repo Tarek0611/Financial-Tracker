@@ -9,10 +9,10 @@ namespace Financial_Tracker
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide(); // hide current form
-
-            Login_Page login = new Login_Page(); // create instance
-            login.Show(); // show it
+            Login_Page login = new Login_Page();
+            login.WindowState = this.WindowState;
+            this.Hide(); 
+            login.Show(); 
         }
         private void btnContributers_Click(object sender, EventArgs e)
         {

@@ -59,10 +59,12 @@ namespace Financial_Tracker
             double expenses = Properties.Settings.Default.TotalExpenses;
             double balance = income - expenses;
 
+
             // 2. Display values 
-            lblincomereport.Text = income.ToString("N0") + " $";
-            lblexpensesreport.Text = expenses.ToString("N0") + " $";
-            lblbalancereport.Text = balance.ToString("N0") + " $";
+            string currency = Properties.Settings.Default.Currency;
+            lblincomereport.Text = income.ToString("N0") + $" {currency}";
+            lblexpensesreport.Text = expenses.ToString("N0") + $" {currency}";
+            lblbalancereport.Text = balance.ToString("N0") + $" {currency}";
 
             // 3. Update the table
             FinanceLogic.FinanceManager.LoadFromFile();

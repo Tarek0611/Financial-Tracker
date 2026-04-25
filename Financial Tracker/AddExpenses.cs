@@ -38,6 +38,9 @@ namespace Financial_Tracker
 
                 // Calculate the current balance
                 double currentBalance = Properties.Settings.Default.TotalIncome - Properties.Settings.Default.TotalExpenses;
+                double total_expenses = Properties.Settings.Default.TotalExpenses;
+                double budgetLimit = Properties.Settings.Default.BudgetLimit;
+                string currency = Properties.Settings.Default.Currency;
 
                 // The first condition: If the balance will be completely exhausted (preventing the transaction)
                 if (currentBalance - amountValue < 0)
@@ -47,9 +50,9 @@ namespace Financial_Tracker
                 }
 
                 // The second condition: If the balance falls below 3000 (warning only)
-                if (currentBalance - amountValue < 3000)
+                if (total_expenses>=budgetLimit)
                 {
-                    MessageBox.Show("Warning: Your balance is dropping below 3000 EGP! ⚠️", "Low Balance", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Warning: Your expenses are exceeding {budgetLimit} {currency}! ⚠️", "Low Balance", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     
                 }
 

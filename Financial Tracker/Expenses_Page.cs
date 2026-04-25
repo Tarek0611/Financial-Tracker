@@ -21,15 +21,18 @@ namespace Financial_Tracker
         private void button3_Click(object sender, EventArgs e)
         {
             Settings_Page setting_Page = new Settings_Page();
+            setting_Page.WindowState = this.WindowState;
             setting_Page.Show();
             this.Hide();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             Dashboard dashboard = new Dashboard();
+            dashboard.WindowState = this.WindowState;
             dashboard.Show();
+            this.Hide();
         }
 
 
@@ -49,8 +52,10 @@ namespace Financial_Tracker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
             Login_Page login = new Login_Page();
+            login.WindowState = this.WindowState;
+            this.Close();
             login.Show();
         }
 

@@ -152,7 +152,7 @@
             // 
             cmbCategory.Anchor = AnchorStyles.Top;
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Items.AddRange(new object[] { "Salary / Wages", "", "Freelance / Contract", "Work", "", "Business Income", "", "Bonuses", "", "Overtime Pay", "", "Dividends", "", "Interest Income", "", "Rental Income", "", "Capital Gains", "", "Pension / Retirement", "", "Government Benefits", "", "Side Hustle Income", "", "Gifts", "", "Selling Items", "", "Refunds / Cashback", "", "", "Other" });
+            cmbCategory.Items.AddRange(new object[] { "Salary / Wages", "Freelance / Contract", "Work", "Business Income", "Bonuses", "Overtime Pay", "Dividends", "Interest Income", "Rental Income", "Capital Gains", "Pension / Retirement", "Government Benefits", "Side Hustle Income", "Gifts", "Selling Items", "Refunds / Cashback", "Other" });
             cmbCategory.Location = new Point(116, 293);
             cmbCategory.Name = "cmbCategory";
             cmbCategory.Size = new Size(364, 28);
