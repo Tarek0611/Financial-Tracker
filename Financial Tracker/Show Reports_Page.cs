@@ -61,8 +61,8 @@ namespace Financial_Tracker
             dt.Columns.Add("Category");
             dt.Columns.Add("Description");
 
-            decimal totalIncome = 0;
-            decimal totalExpenses = 0;
+            double totalIncome = 0;
+            double totalExpenses = 0;
 
             foreach (var t in FinanceManager.Transactions)
             {

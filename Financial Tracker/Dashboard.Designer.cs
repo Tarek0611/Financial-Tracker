@@ -53,17 +53,17 @@
             Column3 = new DataGridViewTextBoxColumn();
             label7 = new Label();
             panel11 = new Panel();
-            btn_ShowTotalExpenses = new Button();
             pictureBox9 = new PictureBox();
             lbltotalExpenses = new Label();
             panel10 = new Panel();
-            btn_ShowTotalIncome = new Button();
             pictureBox8 = new PictureBox();
             lblTotalIncome = new Label();
             panel9 = new Panel();
-            btn_ShowTotalBalance = new Button();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
+            label1 = new Label();
+            label2 = new Label();
+            label4 = new Label();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -348,7 +348,7 @@
             // 
             panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(35, 45, 63);
-            panel11.Controls.Add(btn_ShowTotalExpenses);
+            panel11.Controls.Add(label4);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(lbltotalExpenses);
             panel11.Cursor = Cursors.Hand;
@@ -356,17 +356,6 @@
             panel11.Name = "panel11";
             panel11.Size = new Size(315, 99);
             panel11.TabIndex = 2;
-            // 
-            // btn_ShowTotalExpenses
-            // 
-            btn_ShowTotalExpenses.Location = new Point(138, 56);
-            btn_ShowTotalExpenses.Margin = new Padding(3, 4, 3, 4);
-            btn_ShowTotalExpenses.Name = "btn_ShowTotalExpenses";
-            btn_ShowTotalExpenses.Size = new Size(86, 31);
-            btn_ShowTotalExpenses.TabIndex = 2;
-            btn_ShowTotalExpenses.Text = "SHOW";
-            btn_ShowTotalExpenses.UseVisualStyleBackColor = true;
-            btn_ShowTotalExpenses.Click += btn_ShowTotalExpenses_Click;
             // 
             // pictureBox9
             // 
@@ -393,7 +382,7 @@
             // 
             panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = Color.FromArgb(35, 45, 63);
-            panel10.Controls.Add(btn_ShowTotalIncome);
+            panel10.Controls.Add(label2);
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(lblTotalIncome);
             panel10.Cursor = Cursors.Hand;
@@ -401,17 +390,6 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(315, 99);
             panel10.TabIndex = 2;
-            // 
-            // btn_ShowTotalIncome
-            // 
-            btn_ShowTotalIncome.Location = new Point(173, 56);
-            btn_ShowTotalIncome.Margin = new Padding(3, 4, 3, 4);
-            btn_ShowTotalIncome.Name = "btn_ShowTotalIncome";
-            btn_ShowTotalIncome.Size = new Size(86, 31);
-            btn_ShowTotalIncome.TabIndex = 2;
-            btn_ShowTotalIncome.Text = "SHOW";
-            btn_ShowTotalIncome.UseVisualStyleBackColor = true;
-            btn_ShowTotalIncome.Click += btn_ShowTotalIncome_Click;
             // 
             // pictureBox8
             // 
@@ -437,7 +415,7 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(35, 45, 63);
-            panel9.Controls.Add(btn_ShowTotalBalance);
+            panel9.Controls.Add(label1);
             panel9.Controls.Add(pictureBox7);
             panel9.Controls.Add(lblTotalBalance);
             panel9.Cursor = Cursors.Hand;
@@ -445,17 +423,6 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(315, 99);
             panel9.TabIndex = 0;
-            // 
-            // btn_ShowTotalBalance
-            // 
-            btn_ShowTotalBalance.Location = new Point(167, 59);
-            btn_ShowTotalBalance.Margin = new Padding(3, 4, 3, 4);
-            btn_ShowTotalBalance.Name = "btn_ShowTotalBalance";
-            btn_ShowTotalBalance.Size = new Size(86, 31);
-            btn_ShowTotalBalance.TabIndex = 2;
-            btn_ShowTotalBalance.Text = "SHOW";
-            btn_ShowTotalBalance.UseVisualStyleBackColor = true;
-            btn_ShowTotalBalance.Click += btn_ShowTotalBalance_Click;
             // 
             // pictureBox7
             // 
@@ -477,6 +444,39 @@
             lblTotalBalance.Size = new Size(168, 28);
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(87, 55);
+            label1.Name = "label1";
+            label1.Size = new Size(31, 35);
+            label1.TabIndex = 2;
+            label1.Text = "0";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.ForeColor = Color.White;
+            label2.Location = new Point(96, 55);
+            label2.Name = "label2";
+            label2.Size = new Size(31, 35);
+            label2.TabIndex = 3;
+            label2.Text = "0";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label4.ForeColor = Color.White;
+            label4.Location = new Point(87, 55);
+            label4.Name = "label4";
+            label4.Size = new Size(31, 35);
+            label4.TabIndex = 4;
+            label4.Text = "0";
             // 
             // Dashboard
             // 
@@ -554,8 +554,7 @@
         private DataGridViewTextBoxColumn Column1;
         private DataGridViewTextBoxColumn Column2;
         private DataGridViewTextBoxColumn Column3;
-        private Button btn_ShowTotalExpenses;
-        private Button btn_ShowTotalIncome;
-        private Button btn_ShowTotalBalance;
+        private Label label2;
+        private Label label1;
     }
 }

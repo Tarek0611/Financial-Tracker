@@ -5,11 +5,7 @@ namespace Financial_Tracker
 {
     public partial class Settings_Page : Form
     {
-        
-        public static string UserName = "";
-        public static string UserEmail = "";
-        public static double BudgetLimit = 0;
-        public static string Currency = "EGP";
+        public string Currency;
 
         public Settings_Page()
         {
@@ -21,49 +17,66 @@ namespace Financial_Tracker
         {
             try
             {
-                if (txtUserProfile.Text == "" || txt_Email.Text == "")
+                bool changed = false;
+
+                if (!string.IsNullOrWhiteSpace(txtUsername.Text))
                 {
-                    MessageBox.Show("Please fill out all the information");
+                    Properties.Settings.Default.Username = txtUsername.Text;
+                    
+                    changed = true;
+                }
+                else
+                {
+                    Properties.Settings.Default.Username = "admin";
+                }
+
+                if (!string.IsNullOrWhiteSpace(txtPassword.Text))
+                {
+                    Properties.Settings.Default.Password = txtPassword.Text;
+                    changed = true;
+                }
+                else
+                {
+                    Properties.Settings.Default.Password = "1234";
+                }
+
+                if (!string.IsNullOrWhiteSpace(cmb_Currency.Text))
+                {
+                    Properties.Settings.Default.Currency = cmb_Currency.Text;
+                    changed = true;
+                }
+                else
+                {
+                    Properties.Settings.Default.Currency = "EGP";
+                }
+
+                if (!string.IsNullOrWhiteSpace(txtBudgetLimit.Text) &&
+                    double.TryParse(txtBudgetLimit.Text, out double budget))
+                {
+                    Properties.Settings.Default.BudgetLimit = budget;
+                    changed = true;
+                }
+
+                if (!changed)
+                {
+                    MessageBox.Show("Nothing to update.");
                     return;
                 }
 
-                UserName = txtUserProfile.Text;
-                UserEmail = txt_Email.Text;
-
-                double.TryParse(txtBudgetProfile.Text, out BudgetLimit);
-
-                if (cmb_Currency.SelectedItem != null)
-                    Currency = cmb_Currency.SelectedItem.ToString();
-                else
-                    Currency = "EGP";
+                Properties.Settings.Default.Save();
 
                 MessageBox.Show("Settings saved successfully!");
 
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
+                new Dashboard().Show();
                 this.Close();
             }
-            catch (Exception)
+            catch
             {
                 MessageBox.Show("An error occurred!");
             }
         }
 
-        //  Budget warning function
-        public static void CheckBudget(double totalSpent)
-        {
-            if (BudgetLimit > 0 && totalSpent > BudgetLimit)
-            {
-                MessageBox.Show(
-                    $"⚠️ Over budget ({BudgetLimit} {Currency})\nTotal expenses: {totalSpent}",
-                    "warning",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Warning
-                );
-            }
-        }
 
-       
         private void button2_Click(object sender, EventArgs e)
         {
             Expenses_Page expenses_ = new Expenses_Page();

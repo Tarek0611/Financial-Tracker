@@ -19,12 +19,13 @@ namespace Financial_Tracker
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            // We pull data from NextBox 
-            string username = txtUserName.Text;
-            string password = txtPassword.Text;
+            
+            
+            string Login = txtUserName.Text;
+            string Password = txtPassword.Text;
 
             //  Data verification
-            if (username == "admin" && password == "123")
+            if (Login == Properties.Settings.Default.Username && Password == Properties.Settings.Default.Password)
             {
                 MessageBox.Show("Hello, you are logged in");
 
@@ -33,9 +34,10 @@ namespace Financial_Tracker
                 dashboard.Show();
                 this.Hide();
             }
+            
             else
             {
-                MessageBox.Show("Error in name or password. Try again!");
+                MessageBox.Show("Invalid username or password. Try again!");
 
                 // Cleaning the cells
                 txtUserName.Clear();

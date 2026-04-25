@@ -18,7 +18,7 @@ namespace Financial_Tracker
         // 2. Class Definitions & Inheritance:
         public abstract class Transaction // abstract so that no one can create an object directly from it
         {
-            public decimal Amount { get; set; }
+            public double Amount { get; set; }
             public DateTime Date { get; set; }
             public Category Category { get; set; }
             public string Description { get; set; }
@@ -86,7 +86,7 @@ namespace Financial_Tracker
                     if (p[0] == "Expense") t = new Expense();
                     else t = new Income();
 
-                    t.Amount = decimal.Parse(p[1]);
+                    t.Amount = double.Parse(p[1]);
                     t.Date = DateTime.Parse(p[2]);
                     t.Category = (Category)Enum.Parse(typeof(Category), p[3]);
                     t.Description = p[4];

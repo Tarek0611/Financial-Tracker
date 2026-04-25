@@ -36,7 +36,7 @@ namespace Financial_Tracker
                     MessageBox.Show("Please fill in the amount and select a category! ⚠️", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
-                if (!decimal.TryParse(txtAmount.Text, out decimal amountValue) || amountValue <= 0)
+                if (!double.TryParse(txtAmount.Text, out double amountValue) || amountValue <= 0)
                 {
                     MessageBox.Show("Please enter a valid amount!");
                     return;
@@ -50,6 +50,8 @@ namespace Financial_Tracker
                     Category = (FinanceLogic.Category)cmbCategory.SelectedIndex,
                     Description = txtDescription.Text
                 };
+                Properties.Settings.Default.TotalIncome += amountValue;
+                Properties.Settings.Default.Save();
 
                 // File handling
                 FinanceManager.AddTransaction(newIncome);

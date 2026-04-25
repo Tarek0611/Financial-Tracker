@@ -34,16 +34,16 @@ namespace Financial_Tracker
             panel8 = new Panel();
             panel12 = new Panel();
             pictureBox9 = new PictureBox();
-            txtBudgetProfile = new TextBox();
+            txtBudgetLimit = new TextBox();
             panel11 = new Panel();
             cmb_Currency = new ComboBox();
             pictureBox8 = new PictureBox();
             panel10 = new Panel();
             pictureBox7 = new PictureBox();
-            txt_Email = new TextBox();
+            txtPassword = new TextBox();
             panel9 = new Panel();
             pictureBox6 = new PictureBox();
-            txtUserProfile = new TextBox();
+            txtUsername = new TextBox();
             panel13 = new Panel();
             btnSaveChanges = new Button();
             lblBudgetProfile = new Label();
@@ -121,7 +121,7 @@ namespace Financial_Tracker
             // 
             panel12.BackColor = Color.FromArgb(35, 45, 63);
             panel12.Controls.Add(pictureBox9);
-            panel12.Controls.Add(txtBudgetProfile);
+            panel12.Controls.Add(txtBudgetLimit);
             panel12.Location = new Point(677, 273);
             panel12.Name = "panel12";
             panel12.Size = new Size(280, 36);
@@ -137,15 +137,15 @@ namespace Financial_Tracker
             pictureBox9.TabIndex = 1;
             pictureBox9.TabStop = false;
             // 
-            // txtBudgetProfile
+            // txtBudgetLimit
             // 
-            txtBudgetProfile.BackColor = Color.FromArgb(35, 45, 63);
-            txtBudgetProfile.BorderStyle = BorderStyle.None;
-            txtBudgetProfile.ForeColor = Color.White;
-            txtBudgetProfile.Location = new Point(66, 8);
-            txtBudgetProfile.Name = "txtBudgetProfile";
-            txtBudgetProfile.Size = new Size(205, 20);
-            txtBudgetProfile.TabIndex = 0;
+            txtBudgetLimit.BackColor = Color.FromArgb(35, 45, 63);
+            txtBudgetLimit.BorderStyle = BorderStyle.None;
+            txtBudgetLimit.ForeColor = Color.White;
+            txtBudgetLimit.Location = new Point(66, 8);
+            txtBudgetLimit.Name = "txtBudgetLimit";
+            txtBudgetLimit.Size = new Size(205, 20);
+            txtBudgetLimit.TabIndex = 0;
             // 
             // panel11
             // 
@@ -182,7 +182,7 @@ namespace Financial_Tracker
             // 
             panel10.BackColor = Color.FromArgb(35, 45, 63);
             panel10.Controls.Add(pictureBox7);
-            panel10.Controls.Add(txt_Email);
+            panel10.Controls.Add(txtPassword);
             panel10.Location = new Point(677, 89);
             panel10.Name = "panel10";
             panel10.Size = new Size(280, 36);
@@ -190,7 +190,7 @@ namespace Financial_Tracker
             // 
             // pictureBox7
             // 
-            pictureBox7.Image = Properties.Resources.mail;
+            pictureBox7.Image = Properties.Resources.reset_password;
             pictureBox7.Location = new Point(3, 1);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(35, 35);
@@ -198,21 +198,21 @@ namespace Financial_Tracker
             pictureBox7.TabIndex = 1;
             pictureBox7.TabStop = false;
             // 
-            // txt_Email
+            // txtPassword
             // 
-            txt_Email.BackColor = Color.FromArgb(35, 45, 63);
-            txt_Email.BorderStyle = BorderStyle.None;
-            txt_Email.ForeColor = Color.White;
-            txt_Email.Location = new Point(63, 8);
-            txt_Email.Name = "txt_Email";
-            txt_Email.Size = new Size(205, 20);
-            txt_Email.TabIndex = 0;
+            txtPassword.BackColor = Color.FromArgb(35, 45, 63);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.ForeColor = Color.White;
+            txtPassword.Location = new Point(63, 8);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Size = new Size(205, 20);
+            txtPassword.TabIndex = 0;
             // 
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(35, 45, 63);
             panel9.Controls.Add(pictureBox6);
-            panel9.Controls.Add(txtUserProfile);
+            panel9.Controls.Add(txtUsername);
             panel9.Location = new Point(203, 99);
             panel9.Name = "panel9";
             panel9.Size = new Size(280, 36);
@@ -228,15 +228,15 @@ namespace Financial_Tracker
             pictureBox6.TabIndex = 1;
             pictureBox6.TabStop = false;
             // 
-            // txtUserProfile
+            // txtUsername
             // 
-            txtUserProfile.BackColor = Color.FromArgb(35, 45, 63);
-            txtUserProfile.BorderStyle = BorderStyle.None;
-            txtUserProfile.ForeColor = Color.White;
-            txtUserProfile.Location = new Point(66, 8);
-            txtUserProfile.Name = "txtUserProfile";
-            txtUserProfile.Size = new Size(205, 20);
-            txtUserProfile.TabIndex = 0;
+            txtUsername.BackColor = Color.FromArgb(35, 45, 63);
+            txtUsername.BorderStyle = BorderStyle.None;
+            txtUsername.ForeColor = Color.White;
+            txtUsername.Location = new Point(66, 8);
+            txtUsername.Name = "txtUsername";
+            txtUsername.Size = new Size(205, 20);
+            txtUsername.TabIndex = 0;
             // 
             // panel13
             // 
@@ -305,9 +305,9 @@ namespace Financial_Tracker
             lblEmailProfile.ForeColor = Color.White;
             lblEmailProfile.Location = new Point(531, 43);
             lblEmailProfile.Name = "lblEmailProfile";
-            lblEmailProfile.Size = new Size(124, 25);
+            lblEmailProfile.Size = new Size(87, 25);
             lblEmailProfile.TabIndex = 3;
-            lblEmailProfile.Text = "Email Address";
+            lblEmailProfile.Text = "Password";
             // 
             // lblReferences
             // 
@@ -626,12 +626,12 @@ namespace Financial_Tracker
         private Panel panel8;
         private Label lblProfile;
         private Panel panel9;
-        private TextBox txtUserProfile;
+        private TextBox txtUsername;
         private Label lbluserProfile;
         private PictureBox pictureBox6;
         private Panel panel10;
         private PictureBox pictureBox7;
-        private TextBox txt_Email;
+        private TextBox txtPassword;
         private Label lblEmailProfile;
         private Label lblReferences;
         private Panel panel11;
@@ -642,7 +642,7 @@ namespace Financial_Tracker
         private Button btnSaveChanges;
         private Panel panel12;
         private PictureBox pictureBox9;
-        private TextBox txtBudgetProfile;
+        private TextBox txtBudgetLimit;
         private Label lblBudgetProfile;
         private Panel panel13;
         private Button btnDiscardProfile;

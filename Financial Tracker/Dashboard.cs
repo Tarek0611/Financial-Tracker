@@ -14,38 +14,20 @@ namespace Financial_Tracker
     public partial class Dashboard : Form
     {
 
-        double income = 5000;
-        double totalExpenses = 180;
 
         public Dashboard()
         {
             InitializeComponent();            
-            // Call accounts
-            CalculateFinancials();
-        }
 
-        private void CalculateFinancials()
-        {
-            Settings_Page.CheckBudget(totalExpenses);
         }
 
 
 
-        private void button5_Click(object sender, EventArgs e) // Balance button
-        {
-            double balance = income - totalExpenses;
-            MessageBox.Show("Your total balance is: " + balance + " EGP", "Financial Summary");
-        }
 
-        private void button6_Click(object sender, EventArgs e) // Income button
-        {
-            MessageBox.Show("Total Income: " + income + " EGP", "Income Details");
-        }
 
-        private void button7_Click(object sender, EventArgs e) // Expenses button
-        {
-            MessageBox.Show("Total Expenses: " + totalExpenses + " EGP", "Expense Details");
-        }
+
+
+
 
 
         private void btn_Settings_Click(object sender, EventArgs e)
