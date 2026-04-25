@@ -25,7 +25,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("tarek")]
+        [global::System.Configuration.DefaultSettingValueAttribute("admin")]
         public string Username {
             get {
                 return ((string)(this["Username"]));
@@ -37,7 +37,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("2006")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1234")]
         public string Password {
             get {
                 return ((string)(this["Password"]));

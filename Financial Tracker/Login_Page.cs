@@ -16,16 +16,18 @@ namespace Financial_Tracker
         {
             InitializeComponent();
         }
+        public string username = Properties.Settings.Default.Username;
+        public string password = Properties.Settings.Default.Password;
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
             
             
-            string Login = txtUserName.Text;
+            string Username = txtUserName.Text;
             string Password = txtPassword.Text;
 
             //  Data verification
-            if (Login == Properties.Settings.Default.Username && Password == Properties.Settings.Default.Password)
+            if (Username == username && Password == password)
             {
                 MessageBox.Show("Hello, you are logged in");
 
