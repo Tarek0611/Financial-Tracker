@@ -44,9 +44,9 @@
             label1 = new Label();
             label11 = new Label();
             label12 = new Label();
-            label13 = new Label();
-            label14 = new Label();
-            label15 = new Label();
+            lblbalancereport = new Label();
+            lblexpensesreport = new Label();
+            lblincomereport = new Label();
             panel16 = new Panel();
             panel17 = new Panel();
             pictureBox7 = new PictureBox();
@@ -177,9 +177,9 @@
             panel10.Controls.Add(label1);
             panel10.Controls.Add(label11);
             panel10.Controls.Add(label12);
-            panel10.Controls.Add(label13);
-            panel10.Controls.Add(label14);
-            panel10.Controls.Add(label15);
+            panel10.Controls.Add(lblbalancereport);
+            panel10.Controls.Add(lblexpensesreport);
+            panel10.Controls.Add(lblincomereport);
             panel10.Controls.Add(panel16);
             panel10.Controls.Add(panel17);
             panel10.Controls.Add(pictureBox7);
@@ -224,38 +224,38 @@
             label12.TabIndex = 9;
             label12.Text = "$";
             // 
-            // label13
+            // lblbalancereport
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.FromArgb(10, 15, 30);
-            label13.Location = new Point(386, 151);
-            label13.Name = "label13";
-            label13.Size = new Size(130, 31);
-            label13.TabIndex = 8;
-            label13.Text = "123,154,22";
+            lblbalancereport.AutoSize = true;
+            lblbalancereport.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblbalancereport.ForeColor = Color.FromArgb(10, 15, 30);
+            lblbalancereport.Location = new Point(386, 151);
+            lblbalancereport.Name = "lblbalancereport";
+            lblbalancereport.Size = new Size(27, 31);
+            lblbalancereport.TabIndex = 8;
+            lblbalancereport.Text = "0";
             // 
-            // label14
+            // lblexpensesreport
             // 
-            label14.AutoSize = true;
-            label14.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label14.ForeColor = Color.FromArgb(10, 15, 30);
-            label14.Location = new Point(386, 103);
-            label14.Name = "label14";
-            label14.Size = new Size(130, 31);
-            label14.TabIndex = 7;
-            label14.Text = "123,512,15";
+            lblexpensesreport.AutoSize = true;
+            lblexpensesreport.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblexpensesreport.ForeColor = Color.FromArgb(10, 15, 30);
+            lblexpensesreport.Location = new Point(386, 103);
+            lblexpensesreport.Name = "lblexpensesreport";
+            lblexpensesreport.Size = new Size(27, 31);
+            lblexpensesreport.TabIndex = 7;
+            lblexpensesreport.Text = "0";
             // 
-            // label15
+            // lblincomereport
             // 
-            label15.AutoSize = true;
-            label15.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label15.ForeColor = Color.FromArgb(10, 15, 30);
-            label15.Location = new Point(386, 31);
-            label15.Name = "label15";
-            label15.Size = new Size(130, 31);
-            label15.TabIndex = 6;
-            label15.Text = "564,216,25";
+            lblincomereport.AutoSize = true;
+            lblincomereport.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblincomereport.ForeColor = Color.FromArgb(10, 15, 30);
+            lblincomereport.Location = new Point(386, 31);
+            lblincomereport.Name = "lblincomereport";
+            lblincomereport.Size = new Size(27, 31);
+            lblincomereport.TabIndex = 6;
+            lblincomereport.Text = "0";
             // 
             // panel16
             // 
@@ -651,9 +651,8 @@
         private Label label1;
         private Label label11;
         private Label label12;
-        private Label label13;
-        private Label label14;
-        private Label label15;
+        private Label lblbalancereport;
+        private Label lblexpensesreport;
         private Panel panel16;
         private Panel panel17;
         private PictureBox pictureBox7;
@@ -662,5 +661,6 @@
         private Label label18;
         private Panel panel18;
         private Label label19;
+        private Label lblincomereport;
     }
 }

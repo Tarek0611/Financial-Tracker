@@ -15,6 +15,7 @@ namespace Financial_Tracker
         public Show_Reports_Page()
         {
             InitializeComponent();
+            RefreshReportsData();
             tblShowReports.BackgroundColor = Color.FromArgb(45, 45, 48);
             tblShowReports.BorderStyle = BorderStyle.None;
             tblShowReports.EnableHeadersVisualStyles = false;
@@ -50,6 +51,35 @@ namespace Financial_Tracker
         {
             FinanceManager.LoadFromFile();
             LoadReportData();
+        }
+        private void RefreshReportsData()
+        {
+            // 1. Update numbers
+            double income = Properties.Settings.Default.TotalIncome;
+            double expenses = Properties.Settings.Default.TotalExpenses;
+            double balance = income - expenses;
+
+            // 2. Display values 
+            lblincomereport.Text = income.ToString("N0") + " $";
+            lblexpensesreport.Text = expenses.ToString("N0") + " $";
+            lblbalancereport.Text = balance.ToString("N0") + " $";
+
+            // 3. Update the table
+            FinanceLogic.FinanceManager.LoadFromFile();
+
+            // 4. Link the table
+            if (tblShowReports != null)
+            {
+                tblShowReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                tblShowReports.DataSource = null;
+                tblShowReports.DataSource = FinanceLogic.FinanceManager.Transactions.Select(t => new {
+                    Date = t.Date.ToShortDateString(),
+                    Amount = t.Amount.ToString("N2"),
+                    Type = t.TType.ToString(),
+                    Category = t.Category.ToString(),
+                    Description = t.Description
+                }).ToList();
+            }
         }
         private void LoadReportData()
         {

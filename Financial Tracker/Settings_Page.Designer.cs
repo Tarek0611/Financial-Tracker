@@ -70,6 +70,7 @@ namespace Financial_Tracker
             button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
+            btnClearData = new Button();
             panel3.SuspendLayout();
             panel8.SuspendLayout();
             panel12.SuspendLayout();
@@ -241,6 +242,7 @@ namespace Financial_Tracker
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(25, 35, 55);
+            panel13.Controls.Add(btnClearData);
             panel13.Controls.Add(btnSaveChanges);
             panel13.Controls.Add(lblBudgetProfile);
             panel13.Controls.Add(btnDiscardProfile);
@@ -557,6 +559,20 @@ namespace Financial_Tracker
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
+            // btnClearData
+            // 
+            btnClearData.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnClearData.BackColor = Color.Crimson;
+            btnClearData.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClearData.ForeColor = Color.White;
+            btnClearData.Location = new Point(761, 482);
+            btnClearData.Name = "btnClearData";
+            btnClearData.Size = new Size(147, 48);
+            btnClearData.TabIndex = 12;
+            btnClearData.Text = "Clear All Data";
+            btnClearData.UseVisualStyleBackColor = false;
+            btnClearData.Click += btnClearData_Click;
+            // 
             // Settings_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -646,5 +662,6 @@ namespace Financial_Tracker
         private Label lblBudgetProfile;
         private Panel panel13;
         private Button btnDiscardProfile;
+        private Button btnClearData;
     }
 }

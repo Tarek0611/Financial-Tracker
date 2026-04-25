@@ -22,7 +22,7 @@ namespace Financial_Tracker
                 if (!string.IsNullOrWhiteSpace(txtUsername.Text))
                 {
                     Properties.Settings.Default.Username = txtUsername.Text;
-                    
+
                     changed = true;
                 }
                 else
@@ -96,6 +96,43 @@ namespace Financial_Tracker
             this.Close();
             Login_Page login = new Login_Page();
             login.Show();
+        }
+
+        private void btnClearData_Click(object sender, EventArgs e)
+        {
+            //Confirmation message
+            DialogResult result = MessageBox.Show("Are you sure you want to delete ALL data? This cannot be undone! ⚠️",
+                "Confirm Reset", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                try
+                {
+                    //Zero numbers in Settings
+                    Properties.Settings.Default.TotalIncome = 0;
+                    Properties.Settings.Default.TotalExpenses = 0;
+                    Properties.Settings.Default.Balance = 0;
+                    Properties.Settings.Default.Save();
+
+                    //Clear file content
+                    if (File.Exists("my_data.txt"))
+                    {
+                        File.WriteAllText("my_data.txt", string.Empty);
+                    }
+
+                    //Whistling the tongue in the memory
+                    FinanceLogic.FinanceManager.Transactions.Clear();
+
+                    MessageBox.Show("All data has been wiped! 🧹");
+
+                    new Dashboard().Show();
+                    this.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error resetting data: " + ex.Message);
+                }
+            }
         }
     }
 }

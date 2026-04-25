@@ -49,6 +49,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double BudgetLimit {
             get {
                 return ((double)(this["BudgetLimit"]));
@@ -60,6 +61,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double TotalExpenses {
             get {
                 return ((double)(this["TotalExpenses"]));
@@ -71,6 +73,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double TotalIncome {
             get {
                 return ((double)(this["TotalIncome"]));
@@ -82,6 +85,7 @@ namespace Financial_Tracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public double Balance {
             get {
                 return ((double)(this["Balance"]));

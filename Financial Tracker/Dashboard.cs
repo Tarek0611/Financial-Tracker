@@ -17,18 +17,9 @@ namespace Financial_Tracker
 
         public Dashboard()
         {
-            InitializeComponent();            
-
+            InitializeComponent();
+            RefreshReportsData();
         }
-
-
-
-
-
-
-
-
-
 
         private void btn_Settings_Click(object sender, EventArgs e)
         {
@@ -70,15 +61,52 @@ namespace Financial_Tracker
                 MessageBox.Show("Your Total Income is: 5,000 EGP", "Financial Summary");
             }
         }
-    }
 
 
 
-    public enum ExpenseType { Food, Transport, Shopping, Entertainment, Health }
-    public class Expense
-    {
-        public string Name { get; set; }
-        public double Amount { get; set; }
-        public ExpenseType Type { get; set; }
+        private void RefreshReportsData()
+        {
+            //Update numbers (income, expenses, balance)
+            double income = Properties.Settings.Default.TotalIncome;
+            double expenses = Properties.Settings.Default.TotalExpenses;
+            double balance = income - expenses;
+
+            // Display values in labels 
+            lbl_IncomeValue.Text = income.ToString("N0") + " $";
+            lbl_ExpenseValue.Text = expenses.ToString("N0") + " $";
+            lbl_BalanceValue.Text = balance.ToString("N0") + " $"; 
+
+
+
+            // Update the table
+            FinanceLogic.FinanceManager.LoadFromFile();
+
+            // Link the table to List
+            if (dgvTransactions != null)
+            {
+                dgvTransactions.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+                dgvTransactions.DataSource = null;
+                dgvTransactions.DataSource = FinanceLogic.FinanceManager.Transactions.Select(t => new {
+                    Date = t.Date.ToShortDateString(),
+                    Amount = t.Amount.ToString("N2"),
+                    Type = t.TType.ToString(),
+                    Category = t.Category.ToString(),
+                    Description = t.Description
+                }).ToList();
+            }
+        }
+
+        //The event that automatically refreshes the screen as soon as you open it or return to it
+        private void Show_Reports_Page_Activated(object sender, EventArgs e)
+        {
+            RefreshReportsData();
+        }
+        public enum ExpenseType { Food, Transport, Shopping, Entertainment, Health }
+        public class Expense
+        {
+            public string Name { get; set; }
+            public double Amount { get; set; }
+            public ExpenseType Type { get; set; }
+        }
     }
 }

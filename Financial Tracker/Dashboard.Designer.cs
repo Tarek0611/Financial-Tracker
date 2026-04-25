@@ -47,23 +47,20 @@
             label3 = new Label();
             welcome_label = new Label();
             panel3 = new Panel();
-            dataGridView1 = new DataGridView();
-            Column1 = new DataGridViewTextBoxColumn();
-            Column2 = new DataGridViewTextBoxColumn();
-            Column3 = new DataGridViewTextBoxColumn();
+            dgvTransactions = new DataGridView();
             label7 = new Label();
             panel11 = new Panel();
+            lbl_BalanceValue = new Label();
             pictureBox9 = new PictureBox();
             lbltotalExpenses = new Label();
             panel10 = new Panel();
+            lbl_ExpenseValue = new Label();
             pictureBox8 = new PictureBox();
             lblTotalIncome = new Label();
             panel9 = new Panel();
+            lbl_IncomeValue = new Label();
             pictureBox7 = new PictureBox();
             lblTotalBalance = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            label4 = new Label();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
@@ -76,7 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
             panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
             panel11.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel10.SuspendLayout();
@@ -290,7 +287,7 @@
             // 
             // panel3
             // 
-            panel3.Controls.Add(dataGridView1);
+            panel3.Controls.Add(dgvTransactions);
             panel3.Controls.Add(label7);
             panel3.Controls.Add(panel11);
             panel3.Controls.Add(panel10);
@@ -301,37 +298,15 @@
             panel3.Size = new Size(1160, 655);
             panel3.TabIndex = 2;
             // 
-            // dataGridView1
+            // dgvTransactions
             // 
-            dataGridView1.Anchor = AnchorStyles.Top;
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { Column1, Column2, Column3 });
-            dataGridView1.Location = new Point(95, 197);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(1013, 413);
-            dataGridView1.TabIndex = 7;
-            // 
-            // Column1
-            // 
-            Column1.HeaderText = "Date";
-            Column1.MinimumWidth = 6;
-            Column1.Name = "Column1";
-            Column1.Width = 320;
-            // 
-            // Column2
-            // 
-            Column2.HeaderText = "Amount";
-            Column2.MinimumWidth = 6;
-            Column2.Name = "Column2";
-            Column2.Width = 320;
-            // 
-            // Column3
-            // 
-            Column3.HeaderText = "Type";
-            Column3.MinimumWidth = 6;
-            Column3.Name = "Column3";
-            Column3.Width = 320;
+            dgvTransactions.Anchor = AnchorStyles.Top;
+            dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTransactions.Location = new Point(95, 197);
+            dgvTransactions.Name = "dgvTransactions";
+            dgvTransactions.RowHeadersWidth = 51;
+            dgvTransactions.Size = new Size(1013, 413);
+            dgvTransactions.TabIndex = 7;
             // 
             // label7
             // 
@@ -348,7 +323,7 @@
             // 
             panel11.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             panel11.BackColor = Color.FromArgb(35, 45, 63);
-            panel11.Controls.Add(label4);
+            panel11.Controls.Add(lbl_BalanceValue);
             panel11.Controls.Add(pictureBox9);
             panel11.Controls.Add(lbltotalExpenses);
             panel11.Cursor = Cursors.Hand;
@@ -356,6 +331,17 @@
             panel11.Name = "panel11";
             panel11.Size = new Size(315, 99);
             panel11.TabIndex = 2;
+            // 
+            // lbl_BalanceValue
+            // 
+            lbl_BalanceValue.AutoSize = true;
+            lbl_BalanceValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_BalanceValue.ForeColor = Color.White;
+            lbl_BalanceValue.Location = new Point(87, 55);
+            lbl_BalanceValue.Name = "lbl_BalanceValue";
+            lbl_BalanceValue.Size = new Size(31, 35);
+            lbl_BalanceValue.TabIndex = 4;
+            lbl_BalanceValue.Text = "0";
             // 
             // pictureBox9
             // 
@@ -382,7 +368,7 @@
             // 
             panel10.Anchor = AnchorStyles.Top;
             panel10.BackColor = Color.FromArgb(35, 45, 63);
-            panel10.Controls.Add(label2);
+            panel10.Controls.Add(lbl_ExpenseValue);
             panel10.Controls.Add(pictureBox8);
             panel10.Controls.Add(lblTotalIncome);
             panel10.Cursor = Cursors.Hand;
@@ -390,6 +376,17 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(315, 99);
             panel10.TabIndex = 2;
+            // 
+            // lbl_ExpenseValue
+            // 
+            lbl_ExpenseValue.AutoSize = true;
+            lbl_ExpenseValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_ExpenseValue.ForeColor = Color.White;
+            lbl_ExpenseValue.Location = new Point(96, 55);
+            lbl_ExpenseValue.Name = "lbl_ExpenseValue";
+            lbl_ExpenseValue.Size = new Size(31, 35);
+            lbl_ExpenseValue.TabIndex = 3;
+            lbl_ExpenseValue.Text = "0";
             // 
             // pictureBox8
             // 
@@ -415,7 +412,7 @@
             // panel9
             // 
             panel9.BackColor = Color.FromArgb(35, 45, 63);
-            panel9.Controls.Add(label1);
+            panel9.Controls.Add(lbl_IncomeValue);
             panel9.Controls.Add(pictureBox7);
             panel9.Controls.Add(lblTotalBalance);
             panel9.Cursor = Cursors.Hand;
@@ -423,6 +420,17 @@
             panel9.Name = "panel9";
             panel9.Size = new Size(315, 99);
             panel9.TabIndex = 0;
+            // 
+            // lbl_IncomeValue
+            // 
+            lbl_IncomeValue.AutoSize = true;
+            lbl_IncomeValue.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_IncomeValue.ForeColor = Color.White;
+            lbl_IncomeValue.Location = new Point(87, 55);
+            lbl_IncomeValue.Name = "lbl_IncomeValue";
+            lbl_IncomeValue.Size = new Size(31, 35);
+            lbl_IncomeValue.TabIndex = 2;
+            lbl_IncomeValue.Text = "0";
             // 
             // pictureBox7
             // 
@@ -445,39 +453,6 @@
             lblTotalBalance.TabIndex = 0;
             lblTotalBalance.Text = "TOTAL BALANCE";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(87, 55);
-            label1.Name = "label1";
-            label1.Size = new Size(31, 35);
-            label1.TabIndex = 2;
-            label1.Text = "0";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(96, 55);
-            label2.Name = "label2";
-            label2.Size = new Size(31, 35);
-            label2.TabIndex = 3;
-            label2.Text = "0";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Impact", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.White;
-            label4.Location = new Point(87, 55);
-            label4.Name = "label4";
-            label4.Size = new Size(31, 35);
-            label4.TabIndex = 4;
-            label4.Text = "0";
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -490,6 +465,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Dashboard";
             Text = "Dashboard";
+            Activated += Show_Reports_Page_Activated;
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
@@ -504,7 +480,7 @@
             panel2.PerformLayout();
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).EndInit();
             panel11.ResumeLayout(false);
             panel11.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
@@ -539,7 +515,7 @@
         private Panel panel5;
         private Panel panel7;
         private PictureBox pictureBox2;
-        private Label label4;
+        private Label lbl_BalanceValue;
         private Label label6;
         private PictureBox pictureBox4;
         private Label label5;
@@ -550,11 +526,8 @@
         private Button btn_Logout;
         private PictureBox pictureBox5;
         private Label label7;
-        private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn Column1;
-        private DataGridViewTextBoxColumn Column2;
-        private DataGridViewTextBoxColumn Column3;
-        private Label label2;
-        private Label label1;
+        private DataGridView dgvTransactions;
+        private Label lbl_ExpenseValue;
+        private Label lbl_IncomeValue;
     }
 }
