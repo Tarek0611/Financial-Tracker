@@ -126,7 +126,6 @@ namespace Financial_Tracker
                         File.WriteAllText("my_data.txt", string.Empty);
                     }
 
-                    //Whistling the tongue in the memory
                     FinanceLogic.FinanceManager.Transactions.Clear();
 
                     MessageBox.Show("All data has been wiped! 🧹");

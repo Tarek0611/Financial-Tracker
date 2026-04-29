@@ -99,7 +99,14 @@ namespace Financial_Tracker
 
                     t.Amount = double.Parse(p[1]);
                     t.Date = DateTime.Parse(p[2]);
-                    t.Category = (Category)Enum.Parse(typeof(Category), p[3]);
+                    if (Enum.TryParse(p[3], out Category tempCat))
+                    {
+                        t.Category = tempCat;
+                    }
+                    else
+                    {
+                        t.Category = Category.Other_Expense;
+                    }
                     t.Description = p[4];
 
                     Transactions.Add(t);
