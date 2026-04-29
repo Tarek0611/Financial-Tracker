@@ -22,8 +22,8 @@ namespace Financial_Tracker
 
         private void btnLogIn_Click(object sender, EventArgs e)
         {
-            
-            
+
+
             string Username = txtUserName.Text;
             string Password = txtPassword.Text;
 
@@ -38,7 +38,7 @@ namespace Financial_Tracker
                 dashboard.Show();
                 this.Hide();
             }
-            
+
             else
             {
                 MessageBox.Show("Invalid username or password. Try again!");
@@ -48,6 +48,11 @@ namespace Financial_Tracker
                 txtPassword.Clear();
                 txtUserName.Focus();
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

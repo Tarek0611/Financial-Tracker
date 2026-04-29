@@ -74,7 +74,8 @@ namespace Financial_Tracker
             {
                 tblShowReports.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
                 tblShowReports.DataSource = null;
-                tblShowReports.DataSource = FinanceLogic.FinanceManager.Transactions.Select(t => new {
+                tblShowReports.DataSource = FinanceLogic.FinanceManager.Transactions.Select(t => new
+                {
                     Date = t.Date.ToShortDateString(),
                     Amount = t.Amount.ToString("N2"),
                     Type = t.TType.ToString(),
@@ -112,12 +113,17 @@ namespace Financial_Tracker
                     totalExpenses += t.Amount;
             }
 
-            tblShowReports.Columns.Clear();   
-            tblShowReports.DataSource = dt; 
+            tblShowReports.Columns.Clear();
+            tblShowReports.DataSource = dt;
 
             lblTotalIncome.Text = totalIncome.ToString();
             lblTotalExpenses.Text = totalExpenses.ToString();
             lblTotal.Text = (totalIncome - totalExpenses).ToString();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -8,12 +8,23 @@ namespace Financial_Tracker
 {
     internal class FinanceLogic
     {
-        
 
 
-        // 1. Enumerations: 
+
+        // 1. Enumerations:
         public enum TransactionType { Income, Expense }
-        public enum Category { Food, Transport, Salary, Shopping, Others }
+        public enum Category
+        {
+            // --- Income Categories  ---
+            Salary_Wages, Freelance_Contract, Work, Business_Income, Bonuses, Overtime_Pay,
+            Dividends, Interest_Income, Rental_Income, Capital_Gains, Pension_Retirement,
+            Government_Benefits, Side_Hustle_Income, Gifts, Selling_Items, Refunds_Cashback, Other_Income,
+
+            // --- Expense Categories ---
+            Rent_Mortgage, Utilities, Groceries, Transportation, Dining_Out, Entertainment,
+            Subscriptions, Healthcare, Insurance, Debt_Payments, Education, Shopping_Retail,
+            Travel, Personal_Care, Household_Supplies, Other_Expense
+        }
 
         // 2. Class Definitions & Inheritance:
         public abstract class Transaction // abstract so that no one can create an object directly from it

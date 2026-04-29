@@ -128,7 +128,7 @@
             tblShowReports.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
             tblShowReports.EnableHeadersVisualStyles = false;
             tblShowReports.GridColor = Color.FromArgb(64, 64, 64);
-            tblShowReports.Location = new Point(3, 248);
+            tblShowReports.Location = new Point(4, 290);
             tblShowReports.Name = "tblShowReports";
             dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = SystemColors.ActiveCaption;
@@ -140,7 +140,7 @@
             tblShowReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
             tblShowReports.RowHeadersVisible = false;
             tblShowReports.RowHeadersWidth = 100;
-            tblShowReports.Size = new Size(910, 679);
+            tblShowReports.Size = new Size(910, 476);
             tblShowReports.TabIndex = 4;
             // 
             // dataGridViewTextBoxColumn1
@@ -282,6 +282,7 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 3;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // label16
             // 

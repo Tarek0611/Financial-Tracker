@@ -30,7 +30,8 @@ namespace Financial_Tracker
         {
             try
             {
-                
+
+
                 if (string.IsNullOrWhiteSpace(txtAmount.Text) || cmbCategory.SelectedIndex == -1)
                 {
                     MessageBox.Show("Please fill in the amount and select a category! ⚠️", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -71,6 +72,11 @@ namespace Financial_Tracker
         private void btnDiscardProfile_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

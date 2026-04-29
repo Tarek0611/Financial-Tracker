@@ -36,31 +36,28 @@ namespace Financial_Tracker
                     return;
                 }
 
-                // Calculate the current balance
+                // 1. Calculate the available balance (Income - Expenses already spent)
                 double currentBalance = Properties.Settings.Default.TotalIncome - Properties.Settings.Default.TotalExpenses;
-                double total_expenses = Properties.Settings.Default.TotalExpenses;
-                double budgetLimit = Properties.Settings.Default.BudgetLimit;
                 string currency = Properties.Settings.Default.Currency;
 
-                // The first condition: If the balance will be completely exhausted (preventing the transaction)
+                // 2. Check if the new expense is more than the available balance
                 if (currentBalance - amountValue < 0)
                 {
                     MessageBox.Show("Transaction failed! Your balance is 0. You cannot spend more! ⛔", "Insufficient Funds", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return; 
+                    return;
                 }
 
-                // The second condition: If the balance falls below 3000 (warning only)
-                if (total_expenses>=budgetLimit)
+                // 3. Optional: Warning if you are about to exceed your budget limit
+                if (Properties.Settings.Default.TotalExpenses + amountValue > Properties.Settings.Default.BudgetLimit)
                 {
-                    MessageBox.Show($"Warning: Your expenses are exceeding {budgetLimit} {currency}! ⚠️", "Low Balance", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    
+                    MessageBox.Show($"Warning: You are exceeding your budget limit of {Properties.Settings.Default.BudgetLimit} {currency}! ⚠️", "Budget Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
                 var newExpense = new FinanceLogic.Expense()
                 {
                     Amount = amountValue,
                     Date = dtpDate.Value,
-                    Category = (FinanceLogic.Category)cmbCategory.SelectedIndex,
+                    Category = (FinanceLogic.Category)(cmbCategory.SelectedIndex + 17),
                     Description = txtDescription.Text
                 };
 
@@ -85,6 +82,11 @@ namespace Financial_Tracker
         private void btnDiscardProfile_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
