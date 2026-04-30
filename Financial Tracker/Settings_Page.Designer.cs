@@ -272,9 +272,9 @@ namespace Financial_Tracker
             label1.ForeColor = Color.White;
             label1.Location = new Point(69, 324);
             label1.Name = "label1";
-            label1.Size = new Size(153, 25);
+            label1.Size = new Size(152, 25);
             label1.TabIndex = 13;
-            label1.Text = "minimum balance";
+            label1.Text = "Minimum Balance";
             // 
             // panel14
             // 
