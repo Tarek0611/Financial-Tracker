@@ -38,19 +38,30 @@ namespace Financial_Tracker
 
                 // 1. Calculate the available balance (Income - Expenses already spent)
                 double currentBalance = Properties.Settings.Default.TotalIncome - Properties.Settings.Default.TotalExpenses;
+                double balanceAfterExpense = currentBalance - amountValue;
+                double totalExpensesBefore = Properties.Settings.Default.TotalExpenses;
+                double totalExpensesAfter = totalExpensesBefore + amountValue;
                 string currency = Properties.Settings.Default.Currency;
 
                 // 2. Check if the new expense is more than the available balance
-                if (currentBalance - amountValue < 0)
+                if (balanceAfterExpense < 0)
                 {
                     MessageBox.Show("Transaction failed! Your balance is 0. You cannot spend more! ⛔", "Insufficient Funds", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
+                // New alert: Has the safety limit (minimum balance) been reached?
+                if (balanceAfterExpense <= Properties.Settings.Default.MinBalance)
+                {
+                    MessageBox.Show($"Warning: Your balance will reach {balanceAfterExpense} {currency}, " +
+                                    $"which is at or below your safety limit of {Properties.Settings.Default.MinBalance}! ⚠️",
+                                    "Minimum Balance Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
 
                 // 3. Optional: Warning if you are about to exceed your budget limit
-                if (Properties.Settings.Default.TotalExpenses + amountValue > Properties.Settings.Default.BudgetLimit)
+                if (totalExpensesBefore <= Properties.Settings.Default.BudgetLimit && totalExpensesAfter > Properties.Settings.Default.BudgetLimit)
                 {
-                    MessageBox.Show($"Warning: You are exceeding your budget limit of {Properties.Settings.Default.BudgetLimit} {currency}! ⚠️", "Budget Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show($"Warning: You have just exceeded your budget limit of {Properties.Settings.Default.BudgetLimit} {currency}! ⚠️",
+                                    "Budget Limit Reached", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
 
                 var newExpense = new FinanceLogic.Expense()

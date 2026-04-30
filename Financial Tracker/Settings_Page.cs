@@ -49,6 +49,19 @@ namespace Financial_Tracker
                 {
                     Properties.Settings.Default.Currency = "EGP";
                 }
+                if (!string.IsNullOrWhiteSpace(txtMinimumBalance.Text))
+                {
+                    if (double.TryParse(txtMinimumBalance.Text, out double minBal))
+                    {
+                        Properties.Settings.Default.MinBalance = minBal;
+                        changed = true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Please enter a valid number for Minimum Balance!");
+                        return;
+                    }
+                }
 
                 if (!string.IsNullOrWhiteSpace(txtBudgetLimit.Text) &&
                     double.TryParse(txtBudgetLimit.Text, out double budget))
@@ -72,9 +85,9 @@ namespace Financial_Tracker
                 this.Close();
                 dashboard.Show();
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("An error occurred!");
+                MessageBox.Show("An error occurred!" + ex.Message);
             }
         }
 
@@ -97,7 +110,7 @@ namespace Financial_Tracker
 
         private void button4_Click(object sender, EventArgs e)
         {
-            
+
             Login_Page login = new Login_Page();
             login.WindowState = this.WindowState;
             login.Show();
@@ -140,6 +153,11 @@ namespace Financial_Tracker
                     MessageBox.Show("Error resetting data: " + ex.Message);
                 }
             }
+        }
+
+        private void txtBudgetLimit_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

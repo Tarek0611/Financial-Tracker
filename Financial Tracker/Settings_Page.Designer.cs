@@ -45,6 +45,11 @@ namespace Financial_Tracker
             pictureBox6 = new PictureBox();
             txtUsername = new TextBox();
             panel13 = new Panel();
+            label1 = new Label();
+            panel14 = new Panel();
+            txtMinimumBalance = new TextBox();
+            pictureBox10 = new PictureBox();
+            btnClearData = new Button();
             btnSaveChanges = new Button();
             lblBudgetProfile = new Label();
             btnDiscardProfile = new Button();
@@ -70,7 +75,6 @@ namespace Financial_Tracker
             button1 = new Button();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
-            btnClearData = new Button();
             panel3.SuspendLayout();
             panel8.SuspendLayout();
             panel12.SuspendLayout();
@@ -82,6 +86,8 @@ namespace Financial_Tracker
             panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             panel13.SuspendLayout();
+            panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             panel2.SuspendLayout();
             panel1.SuspendLayout();
             panel7.SuspendLayout();
@@ -147,6 +153,7 @@ namespace Financial_Tracker
             txtBudgetLimit.Name = "txtBudgetLimit";
             txtBudgetLimit.Size = new Size(205, 20);
             txtBudgetLimit.TabIndex = 0;
+            txtBudgetLimit.TextChanged += txtBudgetLimit_TextChanged;
             // 
             // panel11
             // 
@@ -242,6 +249,8 @@ namespace Financial_Tracker
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(25, 35, 55);
+            panel13.Controls.Add(label1);
+            panel13.Controls.Add(panel14);
             panel13.Controls.Add(btnClearData);
             panel13.Controls.Add(btnSaveChanges);
             panel13.Controls.Add(lblBudgetProfile);
@@ -255,6 +264,61 @@ namespace Financial_Tracker
             panel13.Name = "panel13";
             panel13.Size = new Size(911, 533);
             panel13.TabIndex = 12;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(69, 324);
+            label1.Name = "label1";
+            label1.Size = new Size(153, 25);
+            label1.TabIndex = 13;
+            label1.Text = "minimum balance";
+            // 
+            // panel14
+            // 
+            panel14.BackColor = Color.FromArgb(35, 45, 63);
+            panel14.Controls.Add(txtMinimumBalance);
+            panel14.Controls.Add(pictureBox10);
+            panel14.Location = new Point(76, 359);
+            panel14.Name = "panel14";
+            panel14.Size = new Size(280, 36);
+            panel14.TabIndex = 14;
+            // 
+            // txtMinimumBalance
+            // 
+            txtMinimumBalance.BackColor = Color.FromArgb(35, 45, 63);
+            txtMinimumBalance.BorderStyle = BorderStyle.None;
+            txtMinimumBalance.ForeColor = Color.White;
+            txtMinimumBalance.Location = new Point(68, 8);
+            txtMinimumBalance.Name = "txtMinimumBalance";
+            txtMinimumBalance.Size = new Size(205, 20);
+            txtMinimumBalance.TabIndex = 2;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(3, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(35, 35);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 1;
+            pictureBox10.TabStop = false;
+            // 
+            // btnClearData
+            // 
+            btnClearData.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
+            btnClearData.BackColor = Color.Crimson;
+            btnClearData.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            btnClearData.ForeColor = Color.White;
+            btnClearData.Location = new Point(761, 482);
+            btnClearData.Name = "btnClearData";
+            btnClearData.Size = new Size(147, 48);
+            btnClearData.TabIndex = 12;
+            btnClearData.Text = "Clear All Data";
+            btnClearData.UseVisualStyleBackColor = false;
+            btnClearData.Click += btnClearData_Click;
             // 
             // btnSaveChanges
             // 
@@ -559,20 +623,6 @@ namespace Financial_Tracker
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
             // 
-            // btnClearData
-            // 
-            btnClearData.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            btnClearData.BackColor = Color.Crimson;
-            btnClearData.Font = new Font("Impact", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnClearData.ForeColor = Color.White;
-            btnClearData.Location = new Point(761, 482);
-            btnClearData.Name = "btnClearData";
-            btnClearData.Size = new Size(147, 48);
-            btnClearData.TabIndex = 12;
-            btnClearData.Text = "Clear All Data";
-            btnClearData.UseVisualStyleBackColor = false;
-            btnClearData.Click += btnClearData_Click;
-            // 
             // Settings_Page
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -599,6 +649,9 @@ namespace Financial_Tracker
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             panel13.ResumeLayout(false);
             panel13.PerformLayout();
+            panel14.ResumeLayout(false);
+            panel14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
             panel1.ResumeLayout(false);
@@ -663,5 +716,9 @@ namespace Financial_Tracker
         private Panel panel13;
         private Button btnDiscardProfile;
         private Button btnClearData;
+        private Label label1;
+        private Panel panel14;
+        private PictureBox pictureBox10;
+        private TextBox txtMinimumBalance;
     }
 }
