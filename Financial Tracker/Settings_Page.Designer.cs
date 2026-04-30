@@ -113,8 +113,6 @@ namespace Financial_Tracker
             // panel8
             // 
             panel8.BackColor = Color.FromArgb(10, 15, 30);
-            panel8.Controls.Add(panel12);
-            panel8.Controls.Add(panel11);
             panel8.Controls.Add(panel10);
             panel8.Controls.Add(panel9);
             panel8.Controls.Add(panel13);
@@ -129,7 +127,7 @@ namespace Financial_Tracker
             panel12.BackColor = Color.FromArgb(35, 45, 63);
             panel12.Controls.Add(pictureBox9);
             panel12.Controls.Add(txtBudgetLimit);
-            panel12.Location = new Point(677, 273);
+            panel12.Location = new Point(543, 223);
             panel12.Name = "panel12";
             panel12.Size = new Size(280, 36);
             panel12.TabIndex = 9;
@@ -160,7 +158,7 @@ namespace Financial_Tracker
             panel11.BackColor = Color.FromArgb(35, 45, 63);
             panel11.Controls.Add(cmb_Currency);
             panel11.Controls.Add(pictureBox8);
-            panel11.Location = new Point(207, 275);
+            panel11.Location = new Point(72, 223);
             panel11.Name = "panel11";
             panel11.Size = new Size(280, 36);
             panel11.TabIndex = 6;
@@ -249,7 +247,9 @@ namespace Financial_Tracker
             // panel13
             // 
             panel13.BackColor = Color.FromArgb(25, 35, 55);
+            panel13.Controls.Add(panel12);
             panel13.Controls.Add(label1);
+            panel13.Controls.Add(panel11);
             panel13.Controls.Add(panel14);
             panel13.Controls.Add(btnClearData);
             panel13.Controls.Add(btnSaveChanges);
@@ -270,7 +270,7 @@ namespace Financial_Tracker
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(69, 324);
+            label1.Location = new Point(69, 282);
             label1.Name = "label1";
             label1.Size = new Size(152, 25);
             label1.TabIndex = 13;
@@ -281,7 +281,7 @@ namespace Financial_Tracker
             panel14.BackColor = Color.FromArgb(35, 45, 63);
             panel14.Controls.Add(txtMinimumBalance);
             panel14.Controls.Add(pictureBox10);
-            panel14.Location = new Point(76, 359);
+            panel14.Location = new Point(76, 317);
             panel14.Name = "panel14";
             panel14.Size = new Size(280, 36);
             panel14.TabIndex = 14;
@@ -342,7 +342,7 @@ namespace Financial_Tracker
             lblBudgetProfile.AutoSize = true;
             lblBudgetProfile.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblBudgetProfile.ForeColor = Color.White;
-            lblBudgetProfile.Location = new Point(529, 227);
+            lblBudgetProfile.Location = new Point(529, 185);
             lblBudgetProfile.Name = "lblBudgetProfile";
             lblBudgetProfile.Size = new Size(112, 25);
             lblBudgetProfile.TabIndex = 8;
@@ -380,7 +380,7 @@ namespace Financial_Tracker
             lblReferences.AutoSize = true;
             lblReferences.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblReferences.ForeColor = Color.Silver;
-            lblReferences.Location = new Point(59, 185);
+            lblReferences.Location = new Point(59, 143);
             lblReferences.Name = "lblReferences";
             lblReferences.Size = new Size(163, 31);
             lblReferences.TabIndex = 7;
@@ -391,7 +391,7 @@ namespace Financial_Tracker
             lblCurrency.AutoSize = true;
             lblCurrency.Font = new Font("Segoe UI", 10.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCurrency.ForeColor = Color.White;
-            lblCurrency.Location = new Point(62, 228);
+            lblCurrency.Location = new Point(62, 186);
             lblCurrency.Name = "lblCurrency";
             lblCurrency.Size = new Size(81, 25);
             lblCurrency.TabIndex = 5;
