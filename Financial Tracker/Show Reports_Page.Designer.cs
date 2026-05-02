@@ -36,14 +36,7 @@
             panel3 = new Panel();
             panel9 = new Panel();
             tblShowReports = new DataGridView();
-            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
             panel10 = new Panel();
-            label1 = new Label();
-            label11 = new Label();
-            label12 = new Label();
             lblbalancereport = new Label();
             lblexpensesreport = new Label();
             lblincomereport = new Label();
@@ -125,7 +118,6 @@
             dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
             tblShowReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             tblShowReports.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tblShowReports.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
             tblShowReports.EnableHeadersVisualStyles = false;
             tblShowReports.GridColor = Color.FromArgb(64, 64, 64);
             tblShowReports.Location = new Point(4, 290);
@@ -143,40 +135,9 @@
             tblShowReports.Size = new Size(910, 476);
             tblShowReports.TabIndex = 4;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.HeaderText = "Amount";
-            dataGridViewTextBoxColumn1.MinimumWidth = 6;
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.HeaderText = "Desription";
-            dataGridViewTextBoxColumn2.MinimumWidth = 6;
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.HeaderText = "Date";
-            dataGridViewTextBoxColumn3.MinimumWidth = 6;
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Width = 225;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            dataGridViewTextBoxColumn4.HeaderText = "Action";
-            dataGridViewTextBoxColumn4.MinimumWidth = 6;
-            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            dataGridViewTextBoxColumn4.Width = 225;
-            // 
             // panel10
             // 
             panel10.BackColor = Color.FromArgb(189, 215, 238);
-            panel10.Controls.Add(label1);
-            panel10.Controls.Add(label11);
-            panel10.Controls.Add(label12);
             panel10.Controls.Add(lblbalancereport);
             panel10.Controls.Add(lblexpensesreport);
             panel10.Controls.Add(lblincomereport);
@@ -190,39 +151,6 @@
             panel10.Name = "panel10";
             panel10.Size = new Size(901, 428);
             panel10.TabIndex = 3;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(10, 15, 30);
-            label1.Location = new Point(362, 103);
-            label1.Name = "label1";
-            label1.Size = new Size(27, 31);
-            label1.TabIndex = 11;
-            label1.Text = "$";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label11.ForeColor = Color.FromArgb(10, 15, 30);
-            label11.Location = new Point(362, 152);
-            label11.Name = "label11";
-            label11.Size = new Size(27, 31);
-            label11.TabIndex = 10;
-            label11.Text = "$";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label12.ForeColor = Color.FromArgb(10, 15, 30);
-            label12.Location = new Point(362, 32);
-            label12.Name = "label12";
-            label12.Size = new Size(27, 31);
-            label12.TabIndex = 9;
-            label12.Text = "$";
             // 
             // lblbalancereport
             // 
@@ -282,7 +210,6 @@
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 3;
             pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox7_Click;
             // 
             // label16
             // 
@@ -644,14 +571,7 @@
         private Label label5;
         private Panel panel9;
         private DataGridView tblShowReports;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private Panel panel10;
-        private Label label1;
-        private Label label11;
-        private Label label12;
         private Label lblbalancereport;
         private Label lblexpensesreport;
         private Panel panel16;

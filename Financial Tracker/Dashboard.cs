@@ -79,21 +79,15 @@ namespace Financial_Tracker
                     Type = t.TType.ToString(),
                     Category = t.Category.ToString(),
                     Description = t.Description
-                }).ToList();
+                }).ToArray();
             }
         }
 
         //The event that automatically refreshes the screen as soon as you open it or return to it
-        private void Show_Reports_Page_Activated(object sender, EventArgs e)
+        private void Dashboard_Activated(object sender, EventArgs e)
         {
             RefreshReportsData();
         }
-        public enum ExpenseType { Food, Transport, Shopping, Entertainment, Health }
-        public class Expense
-        {
-            public string Name { get; set; }
-            public double Amount { get; set; }
-            public ExpenseType Type { get; set; }
-        }
+        
     }
 }

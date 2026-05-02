@@ -18,14 +18,6 @@ namespace Financial_Tracker
             InitializeComponent();
         }
 
-
-
-        private void AddIncome_Load(object sender, EventArgs e)
-        {
-        }
-
-
-
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
             try
@@ -72,11 +64,6 @@ namespace Financial_Tracker
         private void btnDiscardProfile_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -151,7 +151,6 @@ namespace Financial_Tracker
             txtBudgetLimit.Name = "txtBudgetLimit";
             txtBudgetLimit.Size = new Size(205, 20);
             txtBudgetLimit.TabIndex = 0;
-            txtBudgetLimit.TextChanged += txtBudgetLimit_TextChanged;
             // 
             // panel11
             // 

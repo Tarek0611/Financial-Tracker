@@ -465,7 +465,7 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Dashboard";
             Text = "Dashboard";
-            Activated += Show_Reports_Page_Activated;
+            //Activated += Show_Reports_Page_Activated;
             panel1.ResumeLayout(false);
             panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();

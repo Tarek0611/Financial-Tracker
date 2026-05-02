@@ -5,7 +5,6 @@ namespace Financial_Tracker
 {
     public partial class Settings_Page : Form
     {
-        public string Currency;
 
         public Settings_Page()
         {
@@ -153,11 +152,6 @@ namespace Financial_Tracker
                     MessageBox.Show("Error resetting data: " + ex.Message);
                 }
             }
-        }
-
-        private void txtBudgetLimit_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

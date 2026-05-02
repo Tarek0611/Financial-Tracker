@@ -50,7 +50,7 @@ namespace Financial_Tracker
         private void Show_Reports_Page_Load(object sender, EventArgs e)
         {
             FinanceManager.LoadFromFile();
-            LoadReportData();
+            RefreshReportsData();
         }
         private void RefreshReportsData()
         {
@@ -66,9 +66,6 @@ namespace Financial_Tracker
             lblexpensesreport.Text = expenses.ToString("N0") + $" {currency}";
             lblbalancereport.Text = balance.ToString("N0") + $" {currency}";
 
-            // 3. Update the table
-            FinanceLogic.FinanceManager.LoadFromFile();
-
             // 4. Link the table
             if (tblShowReports != null)
             {
@@ -81,49 +78,9 @@ namespace Financial_Tracker
                     Type = t.TType.ToString(),
                     Category = t.Category.ToString(),
                     Description = t.Description
-                }).ToList();
+                }).ToArray();
             }
         }
-        private void LoadReportData()
-        {
-            DataTable dt = new DataTable();
-
-            dt.Columns.Add("Type");
-            dt.Columns.Add("Amount");
-            dt.Columns.Add("Date");
-            dt.Columns.Add("Category");
-            dt.Columns.Add("Description");
-
-            double totalIncome = 0;
-            double totalExpenses = 0;
-
-            foreach (var t in FinanceManager.Transactions)
-            {
-                dt.Rows.Add(
-                    t.TType.ToString(),
-                    t.Amount,
-                    t.Date.ToShortDateString(),
-                    t.Category.ToString(),
-                    t.Description
-                );
-
-                if (t.TType == TransactionType.Income)
-                    totalIncome += t.Amount;
-                else
-                    totalExpenses += t.Amount;
-            }
-
-            tblShowReports.Columns.Clear();
-            tblShowReports.DataSource = dt;
-
-            lblTotalIncome.Text = totalIncome.ToString();
-            lblTotalExpenses.Text = totalExpenses.ToString();
-            lblTotal.Text = (totalIncome - totalExpenses).ToString();
-        }
-
-        private void pictureBox7_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
